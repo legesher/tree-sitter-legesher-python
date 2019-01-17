@@ -12,3 +12,11 @@ Python grammar for [tree-sitter][].
 
 * [Python 2 Grammar](https://docs.python.org/2/reference/grammar.html)
 * [Python 3 Grammar](https://docs.python.org/3/reference/grammar.html)
+
+
+### Using Legesher
+Generate the updated tree-sitter parser by running the below command:
+`tree-sitter generate`
+
+To make sure that the parse is properly updated, run the tests.
+`tree-sitter test`
