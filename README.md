@@ -1,19 +1,13 @@
-# Legesher: Python Tree-Sitter 
-### `tree-sitter-legesher-python` The tree-sitter grammar for the python language of the Legesher project, an extension off of [tree-sitter's](http://tree-sitter.github.io) `tree-sitter-python`.
+# Legesher: Python Tree-Sitter  
 ==================
 
-[![Build Status](https://travis-ci.org/tree-sitter/tree-sitter-python.svg?branch=master)](https://travis-ci.org/tree-sitter/tree-sitter-python)
-[![Build status](https://ci.appveyor.com/api/projects/status/ddxtf154nsck4wbe/branch/master?svg=true)](https://ci.appveyor.com/project/maxbrunsfeld/tree-sitter-python/branch/master)
-
-Python grammar for [tree-sitter][].
-
-[tree-sitter]: https://github.com/tree-sitter/tree-sitter
+**`tree-sitter-legesher-python`**: The tree-sitter grammar for the python language of the Legesher project, an extension off of [tree-sitter's](http://tree-sitter.github.io) `tree-sitter-python`.
 
 #### References
 
 * [Python 2 Grammar](https://docs.python.org/2/reference/grammar.html)
 * [Python 3 Grammar](https://docs.python.org/3/reference/grammar.html)
-
+* [tree-sitter]: https://github.com/tree-sitter/tree-sitter
 
 ### Contributing to Legesher in Python
 Generate the updated tree-sitter parser by running the below command:
