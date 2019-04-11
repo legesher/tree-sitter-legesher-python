@@ -1,13 +1,13 @@
-def set_password(args):
+{def} set_password(args):
 	password = args.password
-	while not password  :
-		password1 = getpass("" if args.quiet else "Provide password: ")
-		password_repeat = getpass("" if args.quiet else "Repeat password:  ")
-		if password1 != password_repeat:
-			print("Passwords do not match, try again")
-		elif len(password1) < 4:
-			print("Please provide at least 4 characters")
-		else:
+	{while} {not} password  :
+		password1 = getpass("" {if} args.quiet {else} "Provide password: ")
+		password_repeat = getpass("" {if} args.quiet {else} "Repeat password:  ")
+		{if} password1 != password_repeat:
+			{print}("Passwords do not match, try again")
+		{elif} len(password1) < 4:
+			{print}("Please provide at least 4 characters")
+		{else}:
 			password = password1
 
 	password_hash = passwd(password)
@@ -17,10 +17,10 @@ def set_password(args):
 			'password': password_hash,
 		}
 	})
-	if not args.quiet:
-		print("password stored in config dir: %s" % jupyter_config_dir())
+	{if} {not} args.quiet:
+		{print}("password stored in config dir: %s" % jupyter_config_dir())
 
-def main(argv):
+{def} main(argv):
 	parser = argparse.ArgumentParser(argv[0])
 	subparsers = parser.add_subparsers()
 	parser_password = subparsers.add_parser('password', help='sets a password for your notebook server')

@@ -1,4 +1,4 @@
-tree-sitter-python
+# Legesher: Python Tree-Sitter `tree-sitter-legesher-python`
 ==================
 
 [![Build Status](https://travis-ci.org/tree-sitter/tree-sitter-python.svg?branch=master)](https://travis-ci.org/tree-sitter/tree-sitter-python)

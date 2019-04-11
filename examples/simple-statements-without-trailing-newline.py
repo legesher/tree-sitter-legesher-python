@@ -1,1 +1,1 @@
-pass; print "hi"
+{pass}; {print} "hi"

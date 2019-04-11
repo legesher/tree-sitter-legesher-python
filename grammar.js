@@ -82,7 +82,7 @@ module.exports = grammar({
     ),
 
     import_statement: $ => seq(
-      'import',
+      '{import}',
       $._import_list
     ),
 
@@ -94,19 +94,19 @@ module.exports = grammar({
     ),
 
     future_import_statement: $ => seq(
-      'from',
+      '{from}',
       '__future__',
-      'import',
+      '{import}',
       $._import_list
     ),
 
     import_from_statement: $ => seq(
-      'from',
+      '{from}',
       choice(
         $.relative_import,
         $.dotted_name
       ),
-      'import',
+      '{import}',
       choice(
         $.wildcard_import,
         $._import_list,
@@ -124,7 +124,7 @@ module.exports = grammar({
 
     aliased_import: $ => seq(
       $.dotted_name,
-      'as',
+      '{as}',
       $.identifier
     ),
 
@@ -132,13 +132,13 @@ module.exports = grammar({
 
     print_statement: $ => choice(
       prec(1, seq(
-        'print',
+        '{print}',
         $.chevron,
         repeat(seq(',', $._expression)),
         optional(','))
       ),
       prec(-1, seq(
-        'print',
+        '{print}',
         commaSep1($._expression),
         optional(','))
       )
@@ -150,7 +150,7 @@ module.exports = grammar({
     ),
 
     assert_statement: $ => seq(
-      'assert',
+      '{assert}',
       $._expression,
       repeat(seq(',', $._expression))
     ),
@@ -164,24 +164,24 @@ module.exports = grammar({
     ),
 
     return_statement: $ => seq(
-      'return',
+      '{return}',
       optional($.expression_list)
     ),
 
     delete_statement: $ => seq(
-      'del',
+      '{del}',
       $.expression_list
     ),
 
     raise_statement: $ => seq(
-      'raise',
+      '{raise}',
       optional($.expression_list),
-      optional(seq('from', $._expression))
+      optional(seq('{from}', $._expression))
     ),
 
-    pass_statement: $ => prec.left('pass'),
-    break_statement: $ => prec.left('break'),
-    continue_statement: $ => prec.left('continue'),
+    pass_statement: $ => prec.left('{pass}'),
+    break_statement: $ => prec.left('{break}'),
+    continue_statement: $ => prec.left('{continue}'),
 
     // Compount statements
 
@@ -197,7 +197,7 @@ module.exports = grammar({
     ),
 
     if_statement: $ => seq(
-      'if',
+      '{if}',
       $._expression,
       ':',
       $._suite,
@@ -206,23 +206,23 @@ module.exports = grammar({
     ),
 
     elif_clause: $ => seq(
-      'elif',
+      '{elif}',
       $._expression,
       ':',
       $._suite
     ),
 
     else_clause: $ => seq(
-      'else',
+      '{else}',
       ':',
       $._suite
     ),
 
     for_statement: $ => seq(
-      optional('async'),
-      'for',
+      optional('{async}'),
+      '{for}',
       $.variables,
-      'in',
+      '{in}',
       $.expression_list,
       ':',
       $._suite,
@@ -230,7 +230,7 @@ module.exports = grammar({
     ),
 
     while_statement: $ => seq(
-      'while',
+      '{while}',
       $._expression,
       ':',
       $._suite,
@@ -238,7 +238,7 @@ module.exports = grammar({
     ),
 
     try_statement: $ => seq(
-      'try',
+      '{try}',
       ':',
       $._suite,
       choice(
@@ -252,11 +252,11 @@ module.exports = grammar({
     ),
 
     except_clause: $ => seq(
-      'except',
+      '{except}',
       optional(seq(
         $._expression,
         optional(seq(
-          choice('as', ','),
+          choice('{as}', ','),
           $._expression
         ))
       )),
@@ -265,14 +265,14 @@ module.exports = grammar({
     ),
 
     finally_clause: $ => seq(
-      'finally',
+      '{finally}',
       ':',
       $._suite
     ),
 
     with_statement: $ => seq(
-      optional('async'),
-      'with',
+      optional('{async}'),
+      '{with}',
       commaSep1($.with_item),
       ':',
       $._suite
@@ -281,14 +281,14 @@ module.exports = grammar({
     with_item: $ => seq(
       $._expression,
       optional(seq(
-        'as',
+        '{as}',
         $._expression
       ))
     ),
 
     function_definition: $ => seq(
-      optional('async'),
-      'def',
+      optional('{async}'),
+      '{def}',
       $.identifier,
       $.parameters,
       optional(
@@ -349,28 +349,28 @@ module.exports = grammar({
     ),
 
     global_statement: $ => seq(
-      'global',
+      '{global}',
       commaSep1($.identifier)
     ),
 
     nonlocal_statement: $ => seq(
-      'nonlocal',
+      '{nonlocal}',
       commaSep1($.identifier)
     ),
 
     exec_statement: $ => seq(
-      'exec',
+      '{exec}',
       $.string,
       optional(
         seq(
-          'in',
+          '{in}',
           commaSep1($._expression)
         )
       )
     ),
 
     class_definition: $ => seq(
-      'class',
+      '{class}',
       $.identifier,
       optional($.argument_list),
       ':',
@@ -470,11 +470,11 @@ module.exports = grammar({
       $.ellipsis
     ),
 
-    not_operator: $ => prec(PREC.not, seq('not', $._expression)),
+    not_operator: $ => prec(PREC.not, seq('{not}', $._expression)),
 
     boolean_operator: $ => choice(
-      prec.left(PREC.and, seq($._expression, 'and', $._expression)),
-      prec.left(PREC.or, seq($._expression, 'or', $._expression))
+      prec.left(PREC.and, seq($._expression, '{and}', $._expression)),
+      prec.left(PREC.or, seq($._expression, '{or}', $._expression))
     ),
 
     binary_operator: $ => choice(
@@ -510,24 +510,24 @@ module.exports = grammar({
           '>=',
           '>',
           '<>',
-          'in',
-          seq('not', 'in'),
-          'is',
-          seq('is', 'not')
+          '{in}',
+          seq('{not}', '{in}'),
+          '{is}',
+          seq('{is}', '{not}')
         ),
         $._primary_expression
       ))
     )),
 
     lambda: $ => prec(PREC.lambda, seq(
-      'lambda',
+      '{lambda}',
       optional($.lambda_parameters),
       ':',
       $._expression
     )),
 
     lambda_within_for_in_clause: $ => seq(
-      'lambda',
+      '{lambda}',
       optional($.lambda_parameters),
       ':',
       $._expression_within_for_in_clause
@@ -556,10 +556,10 @@ module.exports = grammar({
     ),
 
     yield: $ => seq(
-      'yield',
+      '{yield}',
       choice(
         seq(
-          'from',
+          '{from}',
           $._expression
         ),
         optional($.expression_list)
@@ -694,24 +694,24 @@ module.exports = grammar({
     ),
 
     for_in_clause: $ => seq(
-      optional('async'),
-      'for',
+      optional('{async}'),
+      '{for}',
       $.variables,
-      'in',
+      '{in}',
       commaSep1($._expression_within_for_in_clause),
       optional(',')
     ),
 
     if_clause: $ => seq(
-      'if',
+      '{if}',
       $._expression
     ),
 
     conditional_expression: $ => prec.right(PREC.conditional, seq(
       $._expression,
-      'if',
+      '{if}',
       $._expression,
-      'else',
+      '{else}',
       $._expression
     )),
 
@@ -789,14 +789,15 @@ module.exports = grammar({
 
     identifier: $ => /[a-zA-Z_]\w*/,
 
-    keyword_identifier: $ => alias(choice('print', 'exec'), $.identifier),
+    // keyword_identifier: $ => alias(choice('{print}', '{exec}'), $.identifier),
+    keyword_identifier: $ => alias(choice('{print}', '{exec}'), $.identifier),
 
-    true: $ => 'True',
-    false: $ => 'False',
-    none: $ => 'None',
+    true: $ => '{True}',
+    false: $ => '{False}',
+    none: $ => '{None}',
 
     await: $ => prec(PREC.unary, seq(
-      'await',
+      '{await}',
       $._expression
     )),
 

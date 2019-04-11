@@ -1,24 +1,26 @@
 {
-  "name": "tree-sitter-python",
-  "version": "0.13.4",
-  "description": "Python grammar for tree-sitter",
+  "name": "tree-sitter-legesher-python",
+  "version": "0.13.5",
+  "description": "Legesher's Python grammar for tree-sitter",
   "main": "index.js",
   "keywords": [
     "parser",
-    "lexer"
+    "lexer",
+    "legesher",
+    "tree-sitter"
   ],
-  "author": "Max Brunsfeld",
+  "author": "Madison Edgar <withmadico@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "nan": "^2.4.0"
+    "nan": "^2.13.2"
   },
   "devDependencies": {
-    "tree-sitter-cli": "^0.13.2"
+    "tree-sitter-cli": "^0.15.1"
   },
   "scripts": {
     "build": "tree-sitter generate && node-gyp build",
     "test": "tree-sitter test && script/parse-examples",
     "test-windows": "tree-sitter test"
   },
-  "repository": "https://github.com/tree-sitter/tree-sitter-python"
+  "repository": "https://github.com/madiedgar/tree-sitter-legesher-python"
 }

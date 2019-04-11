@@ -1,25 +1,9 @@
-def hi():
+{def} hi():
 
 
 
-    print "hi"
+    {print} "hi"
 
 
-def bye():
-    print "bye"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{def} bye():
+    {print} "bye"
