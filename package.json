@@ -9,7 +9,7 @@
     "legesher",
     "tree-sitter"
   ],
-  "author": "Madison Edgar <withmadico@gmail.com>",
+  "author": "Max Brunsfeld>",
   "license": "MIT",
   "dependencies": {
     "nan": "^2.4.0"
