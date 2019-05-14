@@ -163,6 +163,12 @@ module.exports = grammar({
       $.yield
     ),
 
+    named_expression: $ => seq(
+      $.identifier,
+      ':=',
+      $._expression
+    ),
+
     return_statement: $ => seq(
       '{return}',
       optional($.expression_list)
@@ -440,7 +446,8 @@ module.exports = grammar({
       $.await,
       $.lambda,
       $._primary_expression,
-      $.conditional_expression
+      $.conditional_expression,
+      $.named_expression
     ),
 
     _primary_expression: $ => choice(
@@ -730,6 +737,7 @@ module.exports = grammar({
       '{',
       $._expression,
       optional($.type_conversion),
+      optional($.format_specifier),
       '}'
     ),
 
@@ -744,6 +752,16 @@ module.exports = grammar({
         /[^uxo]/
       )
     )),
+
+    format_specifier: $ => seq(
+      ':',
+      repeat(choice(
+        /[^{}\n]+/,
+        $.format_expression
+      ))
+    ),
+
+    format_expression: $ => seq('{', $._expression, '}'),
 
     type_conversion: $ => /![a-z]/,
 
@@ -772,22 +790,21 @@ module.exports = grammar({
       )
     )),
 
-    float: $ => token(
-      seq(
-        choice(
-          seq(repeat(/[0-9]+_?/), '.', repeat(/[0-9]+_?/), optional(/[eE][\+-]?/), repeat(/[0-9]+_?/)),
-          seq(repeat(/[0-9]+_?/), optional(/[eE][\+-]?/), repeat1(/[0-9]+_?/))
-        ),
-        optional(
-          choice(
-            optional(/[Ll]/), // long numbers
-            optional(/[jJ]/) // complex numbers
-          )
-        )
-      )
-    ),
+    float: $ => {
+      const digits = repeat1(/[0-9]+_?/);
+      const exponent = seq(/[eE][\+-]?/, digits)
 
-    identifier: $ => /[a-zA-Z_]\w*/,
+      return token(seq(
+        choice(
+          seq(digits, '.', optional(digits), optional(exponent)),
+          seq(optional(digits), '.', digits, optional(exponent)),
+          seq(digits, exponent)
+        ),
+        optional(choice(/[Ll]/, /[jJ]/))
+      ))
+    },
+
+    identifier: $ => /[a-zA-Zα-ωΑ-Ω_][a-zA-Zα-ωΑ-Ω_0-9]*/,
 
     // keyword_identifier: $ => alias(choice('{print}', '{exec}'), $.identifier),
     keyword_identifier: $ => alias(choice('{print}', '{exec}'), $.identifier),

@@ -133,6 +133,22 @@ ur"\n"
   (expression_statement (string)))
 
 =====================================
+Raw strings with escaped quotes
+=====================================
+
+re.compile(r"(\n|\A)#include\s*['\"]"
+           r"(?P<name>[\w\d./\\]+[.]src)['\"]")
+
+---
+
+(module
+  (expression_statement
+    (call
+      (attribute (identifier) (identifier))
+      (argument_list
+        (concatenated_string (string) (string))))))
+
+=====================================
 Format strings
 =====================================
 
@@ -152,6 +168,28 @@ f"a {{}} e"
           (string (interpolation
             (identifier))))))))
   (expression_statement (string)))
+
+======================================
+Format strings with format specifiers
+======================================
+
+f"a {b:2} {c:34.5}"
+f"{b:{c.d}.{d.e}}"
+
+---
+
+(module
+  (expression_statement
+    (string
+      (interpolation (identifier) (format_specifier))
+      (interpolation (identifier) (format_specifier))))
+  (expression_statement
+    (string
+      (interpolation
+        (identifier)
+        (format_specifier
+          (format_expression (attribute (identifier) (identifier)))
+          (format_expression (attribute (identifier) (identifier))))))))
 
 =====================================
 Unicode escape sequences

@@ -90,9 +90,12 @@ struct Scanner {
   unsigned serialize(char *buffer) {
     size_t i = 0;
 
-    buffer[i++] = delimiter_stack.size();
-    memcpy(&buffer[i], delimiter_stack.data(), delimiter_stack.size());
-    i += delimiter_stack.size();
+    size_t stack_size = delimiter_stack.size();
+    if (stack_size > UINT8_MAX) stack_size = UINT8_MAX;
+    buffer[i++] = stack_size;
+
+    memcpy(&buffer[i], delimiter_stack.data(), stack_size);
+    i += stack_size;
 
     vector<uint16_t>::iterator
       iter = indent_length_stack.begin() + 1,
@@ -113,7 +116,7 @@ struct Scanner {
     if (length > 0) {
       size_t i = 0;
 
-      size_t delimiter_count = buffer[i++];
+      size_t delimiter_count = (uint8_t)buffer[i++];
       delimiter_stack.resize(delimiter_count);
       memcpy(delimiter_stack.data(), &buffer[i], delimiter_count);
       i += delimiter_count;
@@ -133,7 +136,7 @@ struct Scanner {
   }
 
   bool scan(TSLexer *lexer, const bool *valid_symbols) {
-    if (valid_symbols[STRING_CONTENT] && !delimiter_stack.empty()) {
+    if (valid_symbols[STRING_CONTENT] && !valid_symbols[INDENT] && !delimiter_stack.empty()) {
       Delimiter delimiter = delimiter_stack.back();
       int32_t end_character = delimiter.end_character();
       bool has_content = false;
@@ -147,10 +150,14 @@ struct Scanner {
             lexer->result_symbol = STRING_CONTENT;
             return has_content;
           }
-        } else if (lexer->lookahead == '\\' && !delimiter.is_raw()) {
-          lexer->mark_end(lexer);
-          lexer->result_symbol = STRING_CONTENT;
-          return has_content;
+        } else if (lexer->lookahead == '\\') {
+          if (delimiter.is_raw()) {
+            lexer->advance(lexer, false);
+          } else {
+            lexer->mark_end(lexer);
+            lexer->result_symbol = STRING_CONTENT;
+            return has_content;
+          }
         } else if (lexer->lookahead == end_character) {
           if (delimiter.is_triple()) {
             lexer->mark_end(lexer);
