@@ -464,10 +464,10 @@ a := x
 (y := f(x))
 foo(x=(y := f(x)))
 y0 = (y1 := f(x))
-def foo(answer=(p := 42)):
-  return answer;
-def foo(answer: (p := 42) = 5):
-  return answer;
+{def} foo(answer=(p := 42)):
+  {return} answer;
+{def} foo(answer: (p := 42) = 5):
+  {return} answer;
 foo(x := 3, cat='vector')
 (z := (y := (x := 0)))
 
