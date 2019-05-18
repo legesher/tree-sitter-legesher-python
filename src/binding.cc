@@ -4,7 +4,7 @@
 
 using namespace v8;
 
-extern "C" TSLanguage * tree_sitter_python();
+extern "C" TSLanguage * tree_sitter_python_legesher();
 
 namespace {
 
@@ -17,12 +17,12 @@ void Init(Handle<Object> exports, Handle<Object> module) {
 
   Local<Function> constructor = tpl->GetFunction();
   Local<Object> instance = constructor->NewInstance(Nan::GetCurrentContext()).ToLocalChecked();
-  Nan::SetInternalFieldPointer(instance, 0, tree_sitter_python());
+  Nan::SetInternalFieldPointer(instance, 0, tree_sitter_python_legesher());
 
   instance->Set(Nan::New("name").ToLocalChecked(), Nan::New("python").ToLocalChecked());
   module->Set(Nan::New("exports").ToLocalChecked(), instance);
 }
 
-NODE_MODULE(tree_sitter_python_binding, Init)
+NODE_MODULE(tree_sitter_python_legesher_binding, Init)
 
 }  // namespace

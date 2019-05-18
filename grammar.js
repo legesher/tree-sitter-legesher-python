@@ -22,7 +22,7 @@ const PREC = {
 }
 
 module.exports = grammar({
-  name: 'python',
+  name: 'python_legesher',
 
   extras: $ => [
     $.comment,

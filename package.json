@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-legesher-python",
-  "version": "0.14.2",
+  "version": "0.14.3",
   "description": "Legesher's grammar for tree-sitter",
   "main": "index.js",
   "keywords": [
@@ -24,7 +24,7 @@
   "repository": "https://github.com/legesher/tree-sitter-legesher-python",
   "tree-sitter": [
     {
-      "scope": "source.python",
+      "scope": "source.python.legesher",
       "highlights": "src/highlights.json",
       "file-types": [
         "py"

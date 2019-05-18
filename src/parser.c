@@ -79005,17 +79005,17 @@ static TSParseActionEntry ts_parse_actions[] = {
   [4513] = {.count = 1, .reusable = true}, SHIFT(2168),
 };
 
-void *tree_sitter_python_external_scanner_create();
-void tree_sitter_python_external_scanner_destroy(void *);
-bool tree_sitter_python_external_scanner_scan(void *, TSLexer *, const bool *);
-unsigned tree_sitter_python_external_scanner_serialize(void *, char *);
-void tree_sitter_python_external_scanner_deserialize(void *, const char *, unsigned);
+void *tree_sitter_python_legesher_external_scanner_create();
+void tree_sitter_python_legesher_external_scanner_destroy(void *);
+bool tree_sitter_python_legesher_external_scanner_scan(void *, TSLexer *, const bool *);
+unsigned tree_sitter_python_legesher_external_scanner_serialize(void *, char *);
+void tree_sitter_python_legesher_external_scanner_deserialize(void *, const char *, unsigned);
 
 #ifdef _WIN32
 #define extern __declspec(dllexport)
 #endif
 
-extern const TSLanguage *tree_sitter_python() {
+extern const TSLanguage *tree_sitter_python_legesher() {
   static TSLanguage language = {
     .version = LANGUAGE_VERSION,
     .symbol_count = SYMBOL_COUNT,
@@ -79035,11 +79035,11 @@ extern const TSLanguage *tree_sitter_python() {
     .external_scanner = {
       (const bool *)ts_external_scanner_states,
       ts_external_scanner_symbol_map,
-      tree_sitter_python_external_scanner_create,
-      tree_sitter_python_external_scanner_destroy,
-      tree_sitter_python_external_scanner_scan,
-      tree_sitter_python_external_scanner_serialize,
-      tree_sitter_python_external_scanner_deserialize,
+      tree_sitter_python_legesher_external_scanner_create,
+      tree_sitter_python_legesher_external_scanner_destroy,
+      tree_sitter_python_legesher_external_scanner_scan,
+      tree_sitter_python_legesher_external_scanner_serialize,
+      tree_sitter_python_legesher_external_scanner_deserialize,
     },
   };
   return &language;
