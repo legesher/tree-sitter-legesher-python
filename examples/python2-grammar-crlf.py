@@ -906,7 +906,7 @@ hello world
             {return} ret
 
         self.assertEqual([ x() {for} x {in} {lambda}: {True}, {lambda}: {False} {if} x() ], [{True}])
-        self.assertEqual([ x() {for} x {in} (lambda: {True}, {lambda}: {False}) {if} x() ], [{True}])
+        self.assertEqual([ x() {for} x {in} ({lambda}: {True}, {lambda}: {False}) {if} x() ], [{True}])
         self.assertEqual([ x({False}) {for} x {in} ({lambda} x: {False} {if} x {else} {True}, {lambda} x: {True} {if} x {else} {False}) {if} x({False}) ], [{True}])
         self.assertEqual((5 {if} 1 {else} _checkeval("check 1", 0)), 5)
         self.assertEqual((_checkeval("check 2", 0) {if} 0 {else} 5), 5)

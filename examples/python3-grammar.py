@@ -325,7 +325,7 @@
         self.assertEquals(l5(1, 2), 5)
         self.assertEquals(l5(1, 2, 3), 6)
         check_syntax_error(self, "{lambda} x: x = 2")
-        check_syntax_error(self, "{lambda} (None,): None")
+        check_syntax_error(self, "{lambda} ({None},): {None}")
         l6 = {lambda} x, y, *, k=20: x+y+k
         self.assertEquals(l6(1,2), 1+2+20)
         self.assertEquals(l6(1,2,k=10), 1+2+10)
@@ -758,7 +758,7 @@
         {def} test_in_func(l):
             {return} [0 < x < 3 {for} x {in} l {if} x > 2]
 
-        self.assertEqual(test_in_func(nums), [False, False, False])
+        self.assertEqual(test_in_func(nums), [{False}, {False}, {False}])
 
         {def} test_nested_front():
             self.assertEqual([[y {for} y {in} [x, x + 1]] {for} x {in} [1,3,5]],
@@ -826,8 +826,8 @@
         self.assertEqual(sum(x {for} x {in} (y {for} y {in} range(10))), sum([x {for} x {in} range(10)]))
         self.assertEqual(sum(x {for} x {in} (y {for} y {in} (z {for} z {in} range(10)))), sum([x {for} x {in} range(10)]))
         self.assertEqual(sum(x {for} x {in} [y {for} y {in} (z {for} z {in} range(10))]), sum([x {for} x {in} range(10)]))
-        self.assertEqual(sum(x {for} x {in} (y {for} y {in} (z {for} z {in} range(10) {if} True)) {if} True), sum([x {for} x {in} range(10)]))
-        self.assertEqual(sum(x {for} x {in} (y {for} y {in} (z {for} z {in} range(10) {if} True) {if} False) {if} True), 0)
+        self.assertEqual(sum(x {for} x {in} (y {for} y {in} (z {for} z {in} range(10) {if} {True})) {if} {True}), sum([x {for} x {in} range(10)]))
+        self.assertEqual(sum(x {for} x {in} (y {for} y {in} (z {for} z {in} range(10) {if} {True}) {if} {False}) {if} {True}), 0)
         check_syntax_error(self, "foo(x {for} x {in} range(10), 100)")
         check_syntax_error(self, "foo(100, x {for} x {in} range(10))")
 
@@ -837,8 +837,8 @@
         self.assertEqual(len(list(g)), 10)
 
         # This should hold, since we're only precomputing outmost iterable.
-        x = 10; t = False; g = ((i,j) {for} i {in} range(x) {if} t {for} j {in} range(x))
-        x = 5; t = True;
+        x = 10; t = {False}; g = ((i,j) {for} i {in} range(x) {if} t {for} j {in} range(x))
+        x = 5; t = {True};
         self.assertEqual([(i,j) {for} i {in} range(10) {for} j {in} range(5)], list(g))
 
         # Grammar allows multiple adjacent 'if's in listcomps and genexps,
@@ -878,9 +878,9 @@
             {return} ret
 
         # the next line is not allowed anymore
-        #self.assertEqual([ x() {for} x {in} {lambda}: True, {lambda}: False {if} x() ], [True])
-        self.assertEqual([ x() {for} x {in} ({lambda}: True, {lambda}: False) {if} x() ], [True])
-        self.assertEqual([ x(False) {for} x {in} ({lambda} x: False {if} x {else} True, {lambda} x: True {if} x {else} False) {if} x(False) ], [True])
+        #self.assertEqual([ x() {for} x {in} {lambda}: {True}, {lambda}: {False} {if} x() ], [{True}])
+        self.assertEqual([ x() {for} x {in} ({lambda}: {True}, {lambda}: {False}) {if} x() ], [{True}])
+        self.assertEqual([ x({False}) {for} x {in} ({lambda} x: {False} {if} x {else} {True}, {lambda} x: {True} {if} x {else} {False}) {if} x({False}) ], [{True}])
         self.assertEqual((5 {if} 1 {else} _checkeval("check 1", 0)), 5)
         self.assertEqual((_checkeval("check 2", 0) {if} 0 {else} 5), 5)
         self.assertEqual((5 {and} 6 {if} 0 {else} 1), 1)
@@ -889,7 +889,7 @@
         self.assertEqual((0 {or} _checkeval("check 3", 2) {if} 0 {else} 3), 3)
         self.assertEqual((1 {or} _checkeval("check 4", 2) {if} 1 {else} _checkeval("check 5", 3)), 1)
         self.assertEqual((0 {or} 5 {if} 1 {else} _checkeval("check 6", 3)), 5)
-        self.assertEqual(({not} 5 {if} 1 {else} 1), False)
+        self.assertEqual(({not} 5 {if} 1 {else} 1), {False})
         self.assertEqual(({not} 5 {if} 0 {else} 1), 1)
         self.assertEqual((6 + 1 {if} 1 {else} 2), 7)
         self.assertEqual((6 - 1 {if} 1 {else} 2), 5)
