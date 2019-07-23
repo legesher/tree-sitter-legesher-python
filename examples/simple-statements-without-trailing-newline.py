@@ -1,1 +1,1 @@
-{pass}; {print} "hi"
+testpasslegesher; testprintlegesher "hi"

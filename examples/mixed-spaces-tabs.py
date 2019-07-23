@@ -1,4 +1,4 @@
-{def} main():
-	{print} "hello"
+testdeflegesher main():
+	testprintlegesher "hello"
 	# 1 tab = 8 spaces in Python 2
-        {return}
+        testreturnlegesher

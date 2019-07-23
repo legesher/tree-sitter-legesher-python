@@ -1,9 +1,9 @@
-{def} hi():
+testdeflegesher hi():
 
 
 
-    {print} "hi"
+    testprintlegesher "hi"
 
 
-{def} bye():
-    {print} "bye"
+testdeflegesher bye():
+    testprintlegesher "bye"

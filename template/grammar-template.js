@@ -82,7 +82,7 @@ module.exports = grammar({
     ),
 
     import_statement: $ => seq(
-      'testimportlegesher',
+      '{import}',
       $._import_list
     ),
 
@@ -94,19 +94,19 @@ module.exports = grammar({
     ),
 
     future_import_statement: $ => seq(
-      'testfromlegesher',
+      '{from}',
       '__future__',
-      'testimportlegesher',
+      '{import}',
       $._import_list
     ),
 
     import_from_statement: $ => seq(
-      'testfromlegesher',
+      '{from}',
       choice(
         $.relative_import,
         $.dotted_name
       ),
-      'testimportlegesher',
+      '{import}',
       choice(
         $.wildcard_import,
         $._import_list,
@@ -124,7 +124,7 @@ module.exports = grammar({
 
     aliased_import: $ => seq(
       $.dotted_name,
-      'testaslegesher',
+      '{as}',
       $.identifier
     ),
 
@@ -132,13 +132,13 @@ module.exports = grammar({
 
     print_statement: $ => choice(
       prec(1, seq(
-        'testprintlegesher',
+        '{print}',
         $.chevron,
         repeat(seq(',', $._expression)),
         optional(','))
       ),
       prec(-1, seq(
-        'testprintlegesher',
+        '{print}',
         commaSep1($._expression),
         optional(','))
       )
@@ -150,7 +150,7 @@ module.exports = grammar({
     ),
 
     assert_statement: $ => seq(
-      'testassertlegesher',
+      '{assert}',
       $._expression,
       repeat(seq(',', $._expression))
     ),
@@ -170,24 +170,24 @@ module.exports = grammar({
     ),
 
     return_statement: $ => seq(
-      'testreturnlegesher',
+      '{return}',
       optional($.expression_list)
     ),
 
     delete_statement: $ => seq(
-      'testdellegesher',
+      '{del}',
       $.expression_list
     ),
 
     raise_statement: $ => seq(
-      'testraiselegesher',
+      '{raise}',
       optional($.expression_list),
-      optional(seq('testfromlegesher', $._expression))
+      optional(seq('{from}', $._expression))
     ),
 
-    pass_statement: $ => prec.left('testpasslegesher'),
-    break_statement: $ => prec.left('testbreaklegesher'),
-    continue_statement: $ => prec.left('testcontinuelegesher'),
+    pass_statement: $ => prec.left('{pass}'),
+    break_statement: $ => prec.left('{break}'),
+    continue_statement: $ => prec.left('{continue}'),
 
     // Compount statements
 
@@ -203,7 +203,7 @@ module.exports = grammar({
     ),
 
     if_statement: $ => seq(
-      'testiflegesher',
+      '{if}',
       $._expression,
       ':',
       $._suite,
@@ -212,23 +212,23 @@ module.exports = grammar({
     ),
 
     elif_clause: $ => seq(
-      'testeliflegesher',
+      '{elif}',
       $._expression,
       ':',
       $._suite
     ),
 
     else_clause: $ => seq(
-      'testelselegesher',
+      '{else}',
       ':',
       $._suite
     ),
 
     for_statement: $ => seq(
-      optional('testasynclegesher'),
-      'testforlegesher',
+      optional('{async}'),
+      '{for}',
       $.variables,
-      'testinlegesher',
+      '{in}',
       $.expression_list,
       ':',
       $._suite,
@@ -236,7 +236,7 @@ module.exports = grammar({
     ),
 
     while_statement: $ => seq(
-      'testwhilelegesher',
+      '{while}',
       $._expression,
       ':',
       $._suite,
@@ -244,7 +244,7 @@ module.exports = grammar({
     ),
 
     try_statement: $ => seq(
-      'testtrylegesher',
+      '{try}',
       ':',
       $._suite,
       choice(
@@ -258,11 +258,11 @@ module.exports = grammar({
     ),
 
     except_clause: $ => seq(
-      'testexceptlegesher',
+      '{except}',
       optional(seq(
         $._expression,
         optional(seq(
-          choice('testaslegesher', ','),
+          choice('{as}', ','),
           $._expression
         ))
       )),
@@ -271,14 +271,14 @@ module.exports = grammar({
     ),
 
     finally_clause: $ => seq(
-      'testfinallylegesher',
+      '{finally}',
       ':',
       $._suite
     ),
 
     with_statement: $ => seq(
-      optional('testasynclegesher'),
-      'testwithlegesher',
+      optional('{async}'),
+      '{with}',
       commaSep1($.with_item),
       ':',
       $._suite
@@ -287,14 +287,14 @@ module.exports = grammar({
     with_item: $ => seq(
       $._expression,
       optional(seq(
-        'testaslegesher',
+        '{as}',
         $._expression
       ))
     ),
 
     function_definition: $ => seq(
-      optional('testasynclegesher'),
-      'testdeflegesher',
+      optional('{async}'),
+      '{def}',
       $.identifier,
       $.parameters,
       optional(
@@ -355,28 +355,28 @@ module.exports = grammar({
     ),
 
     global_statement: $ => seq(
-      'testgloballegesher',
+      '{global}',
       commaSep1($.identifier)
     ),
 
     nonlocal_statement: $ => seq(
-      'testnonlocallegesher',
+      '{nonlocal}',
       commaSep1($.identifier)
     ),
 
     exec_statement: $ => seq(
-      'testexeclegesher',
+      '{exec}',
       $.string,
       optional(
         seq(
-          'testinlegesher',
+          '{in}',
           commaSep1($._expression)
         )
       )
     ),
 
     class_definition: $ => seq(
-      'testclasslegesher',
+      '{class}',
       $.identifier,
       optional($.argument_list),
       ':',
@@ -477,11 +477,11 @@ module.exports = grammar({
       $.ellipsis
     ),
 
-    not_operator: $ => prec(PREC.not, seq('testnotlegesher', $._expression)),
+    not_operator: $ => prec(PREC.not, seq('{not}', $._expression)),
 
     boolean_operator: $ => choice(
-      prec.left(PREC.and, seq($._expression, 'testandlegesher', $._expression)),
-      prec.left(PREC.or, seq($._expression, 'testorlegesher', $._expression))
+      prec.left(PREC.and, seq($._expression, '{and}', $._expression)),
+      prec.left(PREC.or, seq($._expression, '{or}', $._expression))
     ),
 
     binary_operator: $ => choice(
@@ -517,24 +517,24 @@ module.exports = grammar({
           '>=',
           '>',
           '<>',
-          'testinlegesher',
-          seq('testnotlegesher', 'testinlegesher'),
-          'testislegesher',
-          seq('testislegesher', 'testnotlegesher')
+          '{in}',
+          seq('{not}', '{in}'),
+          '{is}',
+          seq('{is}', '{not}')
         ),
         $._primary_expression
       ))
     )),
 
     lambda: $ => prec(PREC.lambda, seq(
-      'testlambdalegesher',
+      '{lambda}',
       optional($.lambda_parameters),
       ':',
       $._expression
     )),
 
     lambda_within_for_in_clause: $ => seq(
-      'testlambdalegesher',
+      '{lambda}',
       optional($.lambda_parameters),
       ':',
       $._expression_within_for_in_clause
@@ -563,10 +563,10 @@ module.exports = grammar({
     ),
 
     yield: $ => seq(
-      'testyieldlegesher',
+      '{yield}',
       choice(
         seq(
-          'testfromlegesher',
+          '{from}',
           $._expression
         ),
         optional($.expression_list)
@@ -701,24 +701,24 @@ module.exports = grammar({
     ),
 
     for_in_clause: $ => seq(
-      optional('testasynclegesher'),
-      'testforlegesher',
+      optional('{async}'),
+      '{for}',
       $.variables,
-      'testinlegesher',
+      '{in}',
       commaSep1($._expression_within_for_in_clause),
       optional(',')
     ),
 
     if_clause: $ => seq(
-      'testiflegesher',
+      '{if}',
       $._expression
     ),
 
     conditional_expression: $ => prec.right(PREC.conditional, seq(
       $._expression,
-      'testiflegesher',
+      '{if}',
       $._expression,
-      'testelselegesher',
+      '{else}',
       $._expression
     )),
 
@@ -807,14 +807,14 @@ module.exports = grammar({
     identifier: $ => /[a-zA-Zα-ωΑ-Ω_][a-zA-Zα-ωΑ-Ω_0-9]*/,
 
     // keyword_identifier: $ => alias(choice('{print}', '{exec}'), $.identifier),
-    keyword_identifier: $ => alias(choice('testprintlegesher', 'testexeclegesher'), $.identifier),
+    keyword_identifier: $ => alias(choice('{print}', '{exec}'), $.identifier),
 
-    true: $ => 'testTruelegesher',
-    false: $ => 'testFalselegesher',
-    none: $ => 'testNonelegesher',
+    true: $ => '{True}',
+    false: $ => '{False}',
+    none: $ => '{None}',
 
     await: $ => prec(PREC.unary, seq(
-      'testawaitlegesher',
+      '{await}',
       $._expression
     )),
 

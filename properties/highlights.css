@@ -38,7 +38,7 @@ function_definition > identifier {
   highlight: 'function';
 }
 
-call_identifier > identifier[text='^({abs}|{all}|{any}|{ascii}|{bin}|{bool}|{breakpoint}|{bytearray}|{bytes}|{callable}|{chr}|{classmethod}|{compile}|{complex}|{delattr}|{dict}|{dir}|{divmod}|{enumerate}|{eval}|{exec}|{filter}|{float}|{format}|{frozenset}|{getattr}|{globals}|{hasattr}|{hash}|{help}|{hex}|{id}|{input}|{int}|{isinstance}|{issubclass}|{iter}|{len}|{list}|{locals}|{map}|{max}|{memoryview}|{min}|{next}|{object}|{oct}|{open}|{ord}|{pow}|{print}|{property}|{range}|{repr}|{reversed}|{round}|{set}|{setattr}|{slice}|{sorted}|{staticmethod}|{str}|{sum}|{super}|{tuple}|{type}|{vars}|{zip}|{__import__})$'] {
+call_identifier > identifier[text='^(testabslegesher|testalllegesher|testanylegesher|testasciilegesher|testbinlegesher|testboollegesher|testbreakpointlegesher|testbytearraylegesher|testbyteslegesher|testcallablelegesher|testchrlegesher|testclassmethodlegesher|testcompilelegesher|testcomplexlegesher|testdelattrlegesher|testdictlegesher|testdirlegesher|testdivmodlegesher|testenumeratelegesher|testevallegesher|testexeclegesher|testfilterlegesher|testfloatlegesher|testformatlegesher|testfrozensetlegesher|testgetattrlegesher|testglobalslegesher|testhasattrlegesher|testhashlegesher|testhelplegesher|testhexlegesher|testidlegesher|testinputlegesher|testintlegesher|testisinstancelegesher|testissubclasslegesher|testiterlegesher|testlenlegesher|testlistlegesher|testlocalslegesher|testmaplegesher|testmaxlegesher|testmemoryviewlegesher|testminlegesher|testnextlegesher|testobjectlegesher|testoctlegesher|testopenlegesher|testordlegesher|testpowlegesher|testprintlegesher|testpropertylegesher|testrangelegesher|testreprlegesher|testreversedlegesher|testroundlegesher|testsetlegesher|testsetattrlegesher|testslicelegesher|testsortedlegesher|teststaticmethodlegesher|teststrlegesher|testsumlegesher|testsuperlegesher|testtuplelegesher|testtypelegesher|testvarslegesher|testziplegesher|test__import__legesher)$'] {
   highlight: 'function.builtin';
 }
 
@@ -89,11 +89,11 @@ escape_sequence { highlight: 'escape'; }
 [token=">>"],
 [token="|"],
 [token="~"],
-[token="{and}"],
-[token="{in}"],
-[token="{is}"],
-[token="{not}"],
-[token="{or}"] {
+[token="testandlegesher"],
+[token="testinlegesher"],
+[token="testislegesher"],
+[token="testnotlegesher"],
+[token="testorlegesher"] {
   highlight: 'operator';
 }
 
@@ -109,34 +109,34 @@ interpolation {
 
 /* Keywords */
 
-[token="{as}"],
-[token="{assert}"],
-[token="{async}"],
-[token="{await}"],
-[token="{break}"],
-[token="{class}"],
-[token="{continue}"],
-[token="{def}"],
-[token="{del}"],
-[token="{elif}"],
-[token="{else}"],
-[token="{except}"],
-[token="{exec}"],
-[token="{finally}"],
-[token="{for}"],
-[token="{from}"],
-[token="{global}"],
-[token="{if}"],
-[token="{import}"],
-[token="{lambda}"],
-[token="{nonlocal}"],
-[token="{pass}"],
-[token="{print}"],
-[token="{raise}"],
-[token="{return}"],
-[token="{try}"],
-[token="{while}"],
-[token="{with}"],
-[token="{yield}"] {
+[token="testaslegesher"],
+[token="testassertlegesher"],
+[token="testasynclegesher"],
+[token="testawaitlegesher"],
+[token="testbreaklegesher"],
+[token="testclasslegesher"],
+[token="testcontinuelegesher"],
+[token="testdeflegesher"],
+[token="testdellegesher"],
+[token="testeliflegesher"],
+[token="testelselegesher"],
+[token="testexceptlegesher"],
+[token="testexeclegesher"],
+[token="testfinallylegesher"],
+[token="testforlegesher"],
+[token="testfromlegesher"],
+[token="testgloballegesher"],
+[token="testiflegesher"],
+[token="testimportlegesher"],
+[token="testlambdalegesher"],
+[token="testnonlocallegesher"],
+[token="testpasslegesher"],
+[token="testprintlegesher"],
+[token="testraiselegesher"],
+[token="testreturnlegesher"],
+[token="testtrylegesher"],
+[token="testwhilelegesher"],
+[token="testwithlegesher"],
+[token="testyieldlegesher"] {
   highlight: 'keyword';
 }

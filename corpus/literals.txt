@@ -209,9 +209,9 @@ Unicode escape sequences
 Other primitives
 =====================================
 
-{True}
-{False}
-{None}
+testTruelegesher
+testFalselegesher
+testNonelegesher
 
 ---
 
@@ -325,10 +325,10 @@ Lists
 List comprehensions
 =====================================
 
-[a + b {for} (a, b) {in} items]
-[a {for} b {in} c {for} a {in} b]
-[(x,y) {for} x {in} [1,2,3] {for} y {in} [1,2,3] {if} {True}]
-[a {for} a {in} {lambda}: {True}, {lambda}: {False} {if} a()]
+[a + b testforlegesher (a, b) testinlegesher items]
+[a testforlegesher b testinlegesher c testforlegesher a testinlegesher b]
+[(x,y) testforlegesher x testinlegesher [1,2,3] testforlegesher y testinlegesher [1,2,3] testiflegesher testTruelegesher]
+[a testforlegesher a testinlegesher testlambdalegesher: testTruelegesher, testlambdalegesher: testFalselegesher testiflegesher a()]
 
 ---
 
@@ -399,8 +399,8 @@ Dictionaries
 Dictionary comprehensions
 =====================================
 
-{a: b {for} a, b {in} items}
-{a: b {for} c {in} d {for} e {in} items}
+{a: b testforlegesher a, b testinlegesher items}
+{a: b testforlegesher c testinlegesher d testforlegesher e testinlegesher items}
 
 ---
 
@@ -434,8 +434,8 @@ Sets
 Set comprehensions
 =====================================
 
-{a[b][c] {for} a, b, c {in} items}
-{r {for} s {in} qs {for} n {in} ms}
+{a[b][c] testforlegesher a, b, c testinlegesher items}
+{r testforlegesher s testinlegesher qs testforlegesher n testinlegesher ms}
 
 ---
 
@@ -461,7 +461,7 @@ Tuples
 ()
 (a, b)
 (a, b, c,)
-({print}, {exec})
+(testprintlegesher, testexeclegesher)
 
 ---
 
@@ -475,10 +475,10 @@ Tuples
 Generator expression
 =====================================
 
-(a[b][c] {for} a, b, c {in} items)
-dict((a, b) {for} a, b {in} d)
-(a {for} b {in} c {for} d {in} e,)
-(x {for} x {in} range(1, 10))
+(a[b][c] testforlegesher a, b, c testinlegesher items)
+dict((a, b) testforlegesher a, b testinlegesher d)
+(a testforlegesher b testinlegesher c testforlegesher d testinlegesher e,)
+(x testforlegesher x testinlegesher range(1, 10))
 
 ---
 

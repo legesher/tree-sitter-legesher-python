@@ -141,7 +141,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{import}"
+          "value": "testimportlegesher"
         },
         {
           "type": "SYMBOL",
@@ -182,7 +182,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{from}"
+          "value": "testfromlegesher"
         },
         {
           "type": "STRING",
@@ -190,7 +190,7 @@
         },
         {
           "type": "STRING",
-          "value": "{import}"
+          "value": "testimportlegesher"
         },
         {
           "type": "SYMBOL",
@@ -203,7 +203,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{from}"
+          "value": "testfromlegesher"
         },
         {
           "type": "CHOICE",
@@ -220,7 +220,7 @@
         },
         {
           "type": "STRING",
-          "value": "{import}"
+          "value": "testimportlegesher"
         },
         {
           "type": "CHOICE",
@@ -323,7 +323,7 @@
         },
         {
           "type": "STRING",
-          "value": "{as}"
+          "value": "testaslegesher"
         },
         {
           "type": "SYMBOL",
@@ -346,7 +346,7 @@
             "members": [
               {
                 "type": "STRING",
-                "value": "{print}"
+                "value": "testprintlegesher"
               },
               {
                 "type": "SYMBOL",
@@ -391,7 +391,7 @@
             "members": [
               {
                 "type": "STRING",
-                "value": "{print}"
+                "value": "testprintlegesher"
               },
               {
                 "type": "SEQ",
@@ -453,7 +453,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{assert}"
+          "value": "testassertlegesher"
         },
         {
           "type": "SYMBOL",
@@ -562,7 +562,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{return}"
+          "value": "testreturnlegesher"
         },
         {
           "type": "CHOICE",
@@ -583,7 +583,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{del}"
+          "value": "testdellegesher"
         },
         {
           "type": "SYMBOL",
@@ -596,7 +596,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{raise}"
+          "value": "testraiselegesher"
         },
         {
           "type": "CHOICE",
@@ -618,7 +618,7 @@
               "members": [
                 {
                   "type": "STRING",
-                  "value": "{from}"
+                  "value": "testfromlegesher"
                 },
                 {
                   "type": "SYMBOL",
@@ -638,7 +638,7 @@
       "value": 0,
       "content": {
         "type": "STRING",
-        "value": "{pass}"
+        "value": "testpasslegesher"
       }
     },
     "break_statement": {
@@ -646,7 +646,7 @@
       "value": 0,
       "content": {
         "type": "STRING",
-        "value": "{break}"
+        "value": "testbreaklegesher"
       }
     },
     "continue_statement": {
@@ -654,7 +654,7 @@
       "value": 0,
       "content": {
         "type": "STRING",
-        "value": "{continue}"
+        "value": "testcontinuelegesher"
       }
     },
     "_compound_statement": {
@@ -699,7 +699,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{if}"
+          "value": "testiflegesher"
         },
         {
           "type": "SYMBOL",
@@ -739,7 +739,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{elif}"
+          "value": "testeliflegesher"
         },
         {
           "type": "SYMBOL",
@@ -760,7 +760,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{else}"
+          "value": "testelselegesher"
         },
         {
           "type": "STRING",
@@ -780,7 +780,7 @@
           "members": [
             {
               "type": "STRING",
-              "value": "{async}"
+              "value": "testasynclegesher"
             },
             {
               "type": "BLANK"
@@ -789,7 +789,7 @@
         },
         {
           "type": "STRING",
-          "value": "{for}"
+          "value": "testforlegesher"
         },
         {
           "type": "SYMBOL",
@@ -797,7 +797,7 @@
         },
         {
           "type": "STRING",
-          "value": "{in}"
+          "value": "testinlegesher"
         },
         {
           "type": "SYMBOL",
@@ -830,7 +830,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{while}"
+          "value": "testwhilelegesher"
         },
         {
           "type": "SYMBOL",
@@ -863,7 +863,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{try}"
+          "value": "testtrylegesher"
         },
         {
           "type": "STRING",
@@ -925,7 +925,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{except}"
+          "value": "testexceptlegesher"
         },
         {
           "type": "CHOICE",
@@ -948,7 +948,7 @@
                           "members": [
                             {
                               "type": "STRING",
-                              "value": "{as}"
+                              "value": "testaslegesher"
                             },
                             {
                               "type": "STRING",
@@ -989,7 +989,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{finally}"
+          "value": "testfinallylegesher"
         },
         {
           "type": "STRING",
@@ -1009,7 +1009,7 @@
           "members": [
             {
               "type": "STRING",
-              "value": "{async}"
+              "value": "testasynclegesher"
             },
             {
               "type": "BLANK"
@@ -1018,7 +1018,7 @@
         },
         {
           "type": "STRING",
-          "value": "{with}"
+          "value": "testwithlegesher"
         },
         {
           "type": "SEQ",
@@ -1070,7 +1070,7 @@
               "members": [
                 {
                   "type": "STRING",
-                  "value": "{as}"
+                  "value": "testaslegesher"
                 },
                 {
                   "type": "SYMBOL",
@@ -1093,7 +1093,7 @@
           "members": [
             {
               "type": "STRING",
-              "value": "{async}"
+              "value": "testasynclegesher"
             },
             {
               "type": "BLANK"
@@ -1102,7 +1102,7 @@
         },
         {
           "type": "STRING",
-          "value": "{def}"
+          "value": "testdeflegesher"
         },
         {
           "type": "SYMBOL",
@@ -1387,7 +1387,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{global}"
+          "value": "testgloballegesher"
         },
         {
           "type": "SEQ",
@@ -1421,7 +1421,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{nonlocal}"
+          "value": "testnonlocallegesher"
         },
         {
           "type": "SEQ",
@@ -1455,7 +1455,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{exec}"
+          "value": "testexeclegesher"
         },
         {
           "type": "SYMBOL",
@@ -1469,7 +1469,7 @@
               "members": [
                 {
                   "type": "STRING",
-                  "value": "{in}"
+                  "value": "testinlegesher"
                 },
                 {
                   "type": "SEQ",
@@ -1510,7 +1510,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{class}"
+          "value": "testclasslegesher"
         },
         {
           "type": "SYMBOL",
@@ -1990,7 +1990,7 @@
         "members": [
           {
             "type": "STRING",
-            "value": "{not}"
+            "value": "testnotlegesher"
           },
           {
             "type": "SYMBOL",
@@ -2014,7 +2014,7 @@
               },
               {
                 "type": "STRING",
-                "value": "{and}"
+                "value": "testandlegesher"
               },
               {
                 "type": "SYMBOL",
@@ -2035,7 +2035,7 @@
               },
               {
                 "type": "STRING",
-                "value": "{or}"
+                "value": "testorlegesher"
               },
               {
                 "type": "SYMBOL",
@@ -2428,35 +2428,35 @@
                     },
                     {
                       "type": "STRING",
-                      "value": "{in}"
+                      "value": "testinlegesher"
                     },
                     {
                       "type": "SEQ",
                       "members": [
                         {
                           "type": "STRING",
-                          "value": "{not}"
+                          "value": "testnotlegesher"
                         },
                         {
                           "type": "STRING",
-                          "value": "{in}"
+                          "value": "testinlegesher"
                         }
                       ]
                     },
                     {
                       "type": "STRING",
-                      "value": "{is}"
+                      "value": "testislegesher"
                     },
                     {
                       "type": "SEQ",
                       "members": [
                         {
                           "type": "STRING",
-                          "value": "{is}"
+                          "value": "testislegesher"
                         },
                         {
                           "type": "STRING",
-                          "value": "{not}"
+                          "value": "testnotlegesher"
                         }
                       ]
                     }
@@ -2480,7 +2480,7 @@
         "members": [
           {
             "type": "STRING",
-            "value": "{lambda}"
+            "value": "testlambdalegesher"
           },
           {
             "type": "CHOICE",
@@ -2510,7 +2510,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{lambda}"
+          "value": "testlambdalegesher"
         },
         {
           "type": "CHOICE",
@@ -2691,7 +2691,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{yield}"
+          "value": "testyieldlegesher"
         },
         {
           "type": "CHOICE",
@@ -2701,7 +2701,7 @@
               "members": [
                 {
                   "type": "STRING",
-                  "value": "{from}"
+                  "value": "testfromlegesher"
                 },
                 {
                   "type": "SYMBOL",
@@ -3430,7 +3430,7 @@
           "members": [
             {
               "type": "STRING",
-              "value": "{async}"
+              "value": "testasynclegesher"
             },
             {
               "type": "BLANK"
@@ -3439,7 +3439,7 @@
         },
         {
           "type": "STRING",
-          "value": "{for}"
+          "value": "testforlegesher"
         },
         {
           "type": "SYMBOL",
@@ -3447,7 +3447,7 @@
         },
         {
           "type": "STRING",
-          "value": "{in}"
+          "value": "testinlegesher"
         },
         {
           "type": "SEQ",
@@ -3493,7 +3493,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{if}"
+          "value": "testiflegesher"
         },
         {
           "type": "SYMBOL",
@@ -3513,7 +3513,7 @@
           },
           {
             "type": "STRING",
-            "value": "{if}"
+            "value": "testiflegesher"
           },
           {
             "type": "SYMBOL",
@@ -3521,7 +3521,7 @@
           },
           {
             "type": "STRING",
-            "value": "{else}"
+            "value": "testelselegesher"
           },
           {
             "type": "SYMBOL",
@@ -4060,11 +4060,11 @@
         "members": [
           {
             "type": "STRING",
-            "value": "{print}"
+            "value": "testprintlegesher"
           },
           {
             "type": "STRING",
-            "value": "{exec}"
+            "value": "testexeclegesher"
           }
         ]
       },
@@ -4073,15 +4073,15 @@
     },
     "true": {
       "type": "STRING",
-      "value": "{True}"
+      "value": "testTruelegesher"
     },
     "false": {
       "type": "STRING",
-      "value": "{False}"
+      "value": "testFalselegesher"
     },
     "none": {
       "type": "STRING",
-      "value": "{None}"
+      "value": "testNonelegesher"
     },
     "await": {
       "type": "PREC",
@@ -4091,7 +4091,7 @@
         "members": [
           {
             "type": "STRING",
-            "value": "{await}"
+            "value": "testawaitlegesher"
           },
           {
             "type": "SYMBOL",

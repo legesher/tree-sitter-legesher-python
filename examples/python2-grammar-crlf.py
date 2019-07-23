@@ -8,15 +8,15 @@
 # regression test, the filterwarnings() call has been added to
 # regrtest.py.
 
-{from} test.test_support {import} run_unittest, check_syntax_error
-{import} unittest
-{import} sys
+testfromlegesher test.test_support testimportlegesher run_unittest, check_syntax_error
+testimportlegesher unittest
+testimportlegesher sys
 # testing import *
-{from} sys {import} *
+testfromlegesher sys testimportlegesher *
 
-{class} TokenTests(unittest.TestCase):
+testclasslegesher TokenTests(unittest.TestCase):
 
-    {def} testBackslash(self):
+    testdeflegesher testBackslash(self):
         # Backslash means line continuation:
         x = 1 \
         + 1
@@ -26,36 +26,36 @@
         x = 0
         self.assertEquals(x, 0, 'backslash ending comment')
 
-    {def} testPlainIntegers(self):
+    testdeflegesher testPlainIntegers(self):
         self.assertEquals(0xff, 255)
         self.assertEquals(0377, 255)
         self.assertEquals(2147483647, 017777777777)
         # "0x" is not a valid literal
         self.assertRaises(SyntaxError, eval, "0x")
-        {from} sys {import} maxint
-        {if} maxint == 2147483647:
+        testfromlegesher sys testimportlegesher maxint
+        testiflegesher maxint == 2147483647:
             self.assertEquals(-2147483647-1, -020000000000)
             # XXX -2147483648
             self.assert_(037777777777 > 0)
             self.assert_(0xffffffff > 0)
-            {for} s {in} '2147483648', '040000000000', '0x100000000':
-                {try}:
+            testforlegesher s testinlegesher '2147483648', '040000000000', '0x100000000':
+                testtrylegesher:
                     x = eval(s)
-                {except} OverflowError:
+                testexceptlegesher OverflowError:
                     self.fail("OverflowError on huge integer literal %r" % s)
-        {elif} maxint == 9223372036854775807:
+        testeliflegesher maxint == 9223372036854775807:
             self.assertEquals(-9223372036854775807-1, -01000000000000000000000)
             self.assert_(01777777777777777777777 > 0)
             self.assert_(0xffffffffffffffff > 0)
-            {for} s {in} '9223372036854775808', '02000000000000000000000','0x10000000000000000':
-                {try}:
+            testforlegesher s testinlegesher '9223372036854775808', '02000000000000000000000','0x10000000000000000':
+                testtrylegesher:
                     x = eval(s)
-                {except} OverflowError:
+                testexceptlegesher OverflowError:
                     self.fail("OverflowError on huge integer literal %r" % s)
-        {else}:
+        testelselegesher:
             self.fail('Weird maxint value %r' % maxint)
 
-    {def} testLongIntegers(self):
+    testdeflegesher testLongIntegers(self):
         x = 0L
         x = 0l
         x = 0xffffffffffffffffL
@@ -65,7 +65,7 @@
         x = 123456789012345678901234567890L
         x = 123456789012345678901234567890l
 
-    {def} testFloats(self):
+    testdeflegesher testFloats(self):
         x = 3.14
         x = 314.
         x = 0.314
@@ -79,7 +79,7 @@
         x = .3e14
         x = 3.1e4
 
-{class} GrammarTests(unittest.TestCase):
+testclasslegesher GrammarTests(unittest.TestCase):
 
     # single_input: NEWLINE | simple_stmt | compound_stmt NEWLINE
     # XXX can't test in a script -- this rule is only used when interactive
@@ -90,11 +90,11 @@
     # expr_input: testlist NEWLINE
     # XXX Hard to test -- used only in calls to input()
 
-    {def} testEvalInput(self):
+    testdeflegesher testEvalInput(self):
         # testlist ENDMARKER
-        x = eval('1, 0 {or} 1')
+        x = eval('1, 0 testorlegesher 1')
 
-    {def} testFuncdef(self):
+    testdeflegesher testFuncdef(self):
         ### 'def' NAME parameters ':' suite
         ### parameters: '(' [varargslist] ')'
         ### varargslist: (fpdef ['=' test] ',')* ('*' NAME [',' ('**'|'*' '*') NAME]
@@ -104,33 +104,33 @@
         ### fplist: fpdef (',' fpdef)* [',']
         ### arglist: (argument ',')* (argument | *' test [',' '**' test] | '**' test)
         ### argument: [test '='] test   # Really [keyword '='] test
-        {def} f1(): {pass}
+        testdeflegesher f1(): testpasslegesher
         f1()
         f1(*())
         f1(*(), **{})
-        {def} f2(one_argument): {pass}
-        {def} f3(two, arguments): {pass}
-        {def} f4(two, (compound, (argument, list))): {pass}
-        {def} f5((compound, first), two): {pass}
+        testdeflegesher f2(one_argument): testpasslegesher
+        testdeflegesher f3(two, arguments): testpasslegesher
+        testdeflegesher f4(two, (compound, (argument, list))): testpasslegesher
+        testdeflegesher f5((compound, first), two): testpasslegesher
         self.assertEquals(f2.func_code.co_varnames, ('one_argument',))
         self.assertEquals(f3.func_code.co_varnames, ('two', 'arguments'))
-        {if} sys.platform.startswith('java'):
+        testiflegesher sys.platform.startswith('java'):
             self.assertEquals(f4.func_code.co_varnames,
                    ('two', '(compound, (argument, list))', 'compound', 'argument',
                                 'list',))
             self.assertEquals(f5.func_code.co_varnames,
                    ('(compound, first)', 'two', 'compound', 'first'))
-        {else}:
+        testelselegesher:
             self.assertEquals(f4.func_code.co_varnames,
                   ('two', '.1', 'compound', 'argument',  'list'))
             self.assertEquals(f5.func_code.co_varnames,
                   ('.0', 'two', 'compound', 'first'))
-        {def} a1(one_arg,): {pass}
-        {def} a2(two, args,): {pass}
-        {def} v0(*rest): {pass}
-        {def} v1(a, *rest): {pass}
-        {def} v2(a, b, *rest): {pass}
-        {def} v3(a, (b, c), *rest): {return} a, b, c, rest
+        testdeflegesher a1(one_arg,): testpasslegesher
+        testdeflegesher a2(two, args,): testpasslegesher
+        testdeflegesher v0(*rest): testpasslegesher
+        testdeflegesher v1(a, *rest): testpasslegesher
+        testdeflegesher v2(a, b, *rest): testpasslegesher
+        testdeflegesher v3(a, (b, c), *rest): testreturnlegesher a, b, c, rest
 
         f1()
         f2(1)
@@ -158,28 +158,28 @@
 
         # ceval unpacks the formal arguments into the first argcount names;
         # thus, the names nested inside tuples must appear after these names.
-        {if} sys.platform.startswith('java'):
+        testiflegesher sys.platform.startswith('java'):
             self.assertEquals(v3.func_code.co_varnames, ('a', '(b, c)', 'rest', 'b', 'c'))
-        {else}:
+        testelselegesher:
             self.assertEquals(v3.func_code.co_varnames, ('a', '.1', 'rest', 'b', 'c'))
         self.assertEquals(v3(1, (2, 3), 4), (1, 2, 3, (4,)))
-        {def} d01(a=1): {pass}
+        testdeflegesher d01(a=1): testpasslegesher
         d01()
         d01(1)
         d01(*(1,))
         d01(**{'a':2})
-        {def} d11(a, b=1): {pass}
+        testdeflegesher d11(a, b=1): testpasslegesher
         d11(1)
         d11(1, 2)
         d11(1, **{'b':2})
-        {def} d21(a, b, c=1): {pass}
+        testdeflegesher d21(a, b, c=1): testpasslegesher
         d21(1, 2)
         d21(1, 2, 3)
         d21(*(1, 2, 3))
         d21(1, *(2, 3))
         d21(1, 2, *(3,))
         d21(1, 2, **{'c':3})
-        {def} d02(a=1, b=2): {pass}
+        testdeflegesher d02(a=1, b=2): testpasslegesher
         d02()
         d02(1)
         d02(1, 2)
@@ -187,39 +187,39 @@
         d02(1, *(2,))
         d02(1, **{'b':2})
         d02(**{'a': 1, 'b': 2})
-        {def} d12(a, b=1, c=2): {pass}
+        testdeflegesher d12(a, b=1, c=2): testpasslegesher
         d12(1)
         d12(1, 2)
         d12(1, 2, 3)
-        {def} d22(a, b, c=1, d=2): {pass}
+        testdeflegesher d22(a, b, c=1, d=2): testpasslegesher
         d22(1, 2)
         d22(1, 2, 3)
         d22(1, 2, 3, 4)
-        {def} d01v(a=1, *rest): {pass}
+        testdeflegesher d01v(a=1, *rest): testpasslegesher
         d01v()
         d01v(1)
         d01v(1, 2)
         d01v(*(1, 2, 3, 4))
         d01v(*(1,))
         d01v(**{'a':2})
-        {def} d11v(a, b=1, *rest): {pass}
+        testdeflegesher d11v(a, b=1, *rest): testpasslegesher
         d11v(1)
         d11v(1, 2)
         d11v(1, 2, 3)
-        {def} d21v(a, b, c=1, *rest): {pass}
+        testdeflegesher d21v(a, b, c=1, *rest): testpasslegesher
         d21v(1, 2)
         d21v(1, 2, 3)
         d21v(1, 2, 3, 4)
         d21v(*(1, 2, 3, 4))
         d21v(1, 2, **{'c': 3})
-        {def} d02v(a=1, b=2, *rest): {pass}
+        testdeflegesher d02v(a=1, b=2, *rest): testpasslegesher
         d02v()
         d02v(1)
         d02v(1, 2)
         d02v(1, 2, 3)
         d02v(1, *(2, 3, 4))
         d02v(**{'a': 1, 'b': 2})
-        {def} d12v(a, b=1, c=2, *rest): {pass}
+        testdeflegesher d12v(a, b=1, c=2, *rest): testpasslegesher
         d12v(1)
         d12v(1, 2)
         d12v(1, 2, 3)
@@ -227,7 +227,7 @@
         d12v(*(1, 2, 3, 4))
         d12v(1, 2, *(3, 4, 5))
         d12v(1, *(2,), **{'c': 3})
-        {def} d22v(a, b, c=1, d=2, *rest): {pass}
+        testdeflegesher d22v(a, b, c=1, d=2, *rest): testpasslegesher
         d22v(1, 2)
         d22v(1, 2, 3)
         d22v(1, 2, 3, 4)
@@ -235,14 +235,14 @@
         d22v(*(1, 2, 3, 4))
         d22v(1, 2, *(3, 4, 5))
         d22v(1, *(2, 3), **{'d': 4})
-        {def} d31v((x)): {pass}
+        testdeflegesher d31v((x)): testpasslegesher
         d31v(1)
-        {def} d32v((x,)): {pass}
+        testdeflegesher d32v((x,)): testpasslegesher
         d32v((1,))
 
         # keyword arguments after *arglist
-        {def} f(*args, **kwargs):
-            {return} args, kwargs
+        testdeflegesher f(*args, **kwargs):
+            testreturnlegesher args, kwargs
         self.assertEquals(f(1, x=2, *[3, 4], y=5), ((1, 3, 4),
                                                     {'x':2, 'y':5}))
         self.assertRaises(SyntaxError, eval, "f(1, *(2,3), 4)")
@@ -252,36 +252,36 @@
         check_syntax_error(self, "f(*g(1=2))")
         check_syntax_error(self, "f(**g(1=2))")
 
-    {def} testLambdef(self):
+    testdeflegesher testLambdef(self):
         ### lambdef: 'lambda' [varargslist] ':' test
-        l1 = {lambda} : 0
+        l1 = testlambdalegesher : 0
         self.assertEquals(l1(), 0)
-        l2 = {lambda} : a[d] # XXX just testing the expression
-        l3 = {lambda} : [2 < x {for} x {in} [-1, 3, 0L]]
+        l2 = testlambdalegesher : a[d] # XXX just testing the expression
+        l3 = testlambdalegesher : [2 < x testforlegesher x testinlegesher [-1, 3, 0L]]
         self.assertEquals(l3(), [0, 1, 0])
-        l4 = {lambda} x = {lambda} y = {lambda} z=1 : z : y() : x()
+        l4 = testlambdalegesher x = testlambdalegesher y = testlambdalegesher z=1 : z : y() : x()
         self.assertEquals(l4(), 1)
-        l5 = {lambda} x, y, z=2: x + y + z
+        l5 = testlambdalegesher x, y, z=2: x + y + z
         self.assertEquals(l5(1, 2), 5)
         self.assertEquals(l5(1, 2, 3), 6)
-        check_syntax_error(self, "{lambda} x: x = 2")
-        check_syntax_error(self, "{lambda} (None,): None")
+        check_syntax_error(self, "testlambdalegesher x: x = 2")
+        check_syntax_error(self, "testlambdalegesher (None,): None")
 
     ### stmt: simple_stmt | compound_stmt
     # Tested below
 
-    {def} testSimpleStmt(self):
+    testdeflegesher testSimpleStmt(self):
         ### simple_stmt: small_stmt (';' small_stmt)* [';']
-        x = 1; {pass}; {del} x
-        {def} foo():
+        x = 1; testpasslegesher; testdellegesher x
+        testdeflegesher foo():
             # verify statements that end with semi-colons
-            x = 1; {pass}; {del} x;
+            x = 1; testpasslegesher; testdellegesher x;
         foo()
 
     ### small_stmt: expr_stmt | print_stmt  | pass_stmt | del_stmt | flow_stmt | import_stmt | global_stmt | access_stmt | exec_stmt
     # Tested below
 
-    {def} testExprStmt(self):
+    testdeflegesher testExprStmt(self):
         # (exprlist '=')* exprlist
         1
         1, 2, 3
@@ -294,58 +294,58 @@
         check_syntax_error(self, "x + 1 = 1")
         check_syntax_error(self, "a + 1 = b + 2")
 
-    {def} testPrintStmt(self):
+    testdeflegesher testPrintStmt(self):
         # 'print' (test ',')* [test]
-        {import} StringIO
+        testimportlegesher StringIO
 
-        # Can't test {print} to real stdout without comparing output
+        # Can't test testprintlegesher to real stdout without comparing output
         # which is not available in unittest.
         save_stdout = sys.stdout
         sys.stdout = StringIO.StringIO()
 
-        {print} 1, 2, 3
-        {print} 1, 2, 3,
-        {print}
-        {print} 0 {or} 1, 0 {or} 1,
-        {print} 0 {or} 1
+        testprintlegesher 1, 2, 3
+        testprintlegesher 1, 2, 3,
+        testprintlegesher
+        testprintlegesher 0 testorlegesher 1, 0 testorlegesher 1,
+        testprintlegesher 0 testorlegesher 1
 
         # 'print' '>>' test ','
-        {print} >> sys.stdout, 1, 2, 3
-        {print} >> sys.stdout, 1, 2, 3,
-        {print} >> sys.stdout
-        {print} >> sys.stdout, 0 {or} 1, 0 {or} 1,
-        {print} >> sys.stdout, 0 {or} 1
+        testprintlegesher >> sys.stdout, 1, 2, 3
+        testprintlegesher >> sys.stdout, 1, 2, 3,
+        testprintlegesher >> sys.stdout
+        testprintlegesher >> sys.stdout, 0 testorlegesher 1, 0 testorlegesher 1,
+        testprintlegesher >> sys.stdout, 0 testorlegesher 1
 
-        # test {print} to an instance
-        {class} Gulp:
-            {def} write(self, msg): {pass}
+        # test testprintlegesher to an instance
+        testclasslegesher Gulp:
+            testdeflegesher write(self, msg): testpasslegesher
 
         gulp = Gulp()
-        {print} >> gulp, 1, 2, 3
-        {print} >> gulp, 1, 2, 3,
-        {print} >> gulp
-        {print} >> gulp, 0 {or} 1, 0 {or} 1,
-        {print} >> gulp, 0 {or} 1
+        testprintlegesher >> gulp, 1, 2, 3
+        testprintlegesher >> gulp, 1, 2, 3,
+        testprintlegesher >> gulp
+        testprintlegesher >> gulp, 0 testorlegesher 1, 0 testorlegesher 1,
+        testprintlegesher >> gulp, 0 testorlegesher 1
 
         # test print >> None
-        {def} driver():
+        testdeflegesher driver():
             oldstdout = sys.stdout
             sys.stdout = Gulp()
-            {try}:
+            testtrylegesher:
                 tellme(Gulp())
                 tellme()
-            {finally}:
+            testfinallylegesher:
                 sys.stdout = oldstdout
 
         # we should see this once
-        {def} tellme(file=sys.stdout):
-            {print} >> file, 'hello world'
+        testdeflegesher tellme(file=sys.stdout):
+            testprintlegesher >> file, 'hello world'
 
         driver()
 
         # we should not see this at all
-        {def} tellme(file=None):
-            {print} >> file, 'goodbye universe'
+        testdeflegesher tellme(file=None):
+            testprintlegesher >> file, 'goodbye universe'
 
         driver()
 
@@ -361,56 +361,56 @@ hello world
         sys.stdout = save_stdout
 
         # syntax errors
-        check_syntax_error(self, '{print} ,')
-        check_syntax_error(self, '{print} >> x,')
+        check_syntax_error(self, 'testprintlegesher ,')
+        check_syntax_error(self, 'testprintlegesher >> x,')
 
-    {def} testDelStmt(self):
+    testdeflegesher testDelStmt(self):
         # 'del' exprlist
         abc = [1,2,3]
         x, y, z = abc
         xyz = x, y, z
 
-        {del} abc
-        {del} x, y, (z, xyz)
+        testdellegesher abc
+        testdellegesher x, y, (z, xyz)
 
-    {def} testPassStmt(self):
+    testdeflegesher testPassStmt(self):
         # 'pass'
-        {pass}
+        testpasslegesher
 
     # flow_stmt: break_stmt | continue_stmt | return_stmt | raise_stmt
     # Tested below
 
-    {def} testBreakStmt(self):
+    testdeflegesher testBreakStmt(self):
         # 'break'
-        {while} 1: {break}
+        testwhilelegesher 1: testbreaklegesher
 
-    {def} testContinueStmt(self):
+    testdeflegesher testContinueStmt(self):
         # 'continue'
         i = 1
-        {while} i: i = 0; {continue}
+        testwhilelegesher i: i = 0; testcontinuelegesher
 
         msg = ""
-        {while} {not} msg:
+        testwhilelegesher testnotlegesher msg:
             msg = "ok"
-            {try}:
-                {continue}
+            testtrylegesher:
+                testcontinuelegesher
                 msg = "continue failed to continue inside try"
-            {except}:
+            testexceptlegesher:
                 msg = "continue inside try called except block"
-        {if} msg != "ok":
+        testiflegesher msg != "ok":
             self.fail(msg)
 
         msg = ""
-        {while} {not} msg:
+        testwhilelegesher testnotlegesher msg:
             msg = "finally block not called"
-            {try}:
-                {continue}
-            {finally}:
+            testtrylegesher:
+                testcontinuelegesher
+            testfinallylegesher:
                 msg = "ok"
-        {if} msg != "ok":
+        testiflegesher msg != "ok":
             self.fail(msg)
 
-    {def} test_break_continue_loop(self):
+    testdeflegesher test_break_continue_loop(self):
         # This test warrants an explanation. It is a test specifically for SF bugs
         # #463359 and #462937. The bug is that a 'break' statement executed or
         # exception raised inside a try/except inside a loop, *after* a continue
@@ -420,262 +420,262 @@ hello world
         # *must* written as a function, and the tracking vars *must* be function
         # arguments with default values. Otherwise, the test will loop and loop.
 
-        {def} test_inner(extra_burning_oil = 1, count=0):
+        testdeflegesher test_inner(extra_burning_oil = 1, count=0):
             big_hippo = 2
-            {while} big_hippo:
+            testwhilelegesher big_hippo:
                 count += 1
-                {try}:
-                    {if} extra_burning_oil {and} big_hippo == 1:
+                testtrylegesher:
+                    testiflegesher extra_burning_oil testandlegesher big_hippo == 1:
                         extra_burning_oil -= 1
-                        {break}
+                        testbreaklegesher
                     big_hippo -= 1
-                    {continue}
-                {except}:
-                    {raise}
-            {if} count > 2 {or} big_hippo <> 1:
+                    testcontinuelegesher
+                testexceptlegesher:
+                    testraiselegesher
+            testiflegesher count > 2 testorlegesher big_hippo <> 1:
                 self.fail("continue then break in try/except in loop broken!")
         test_inner()
 
-    {def} testReturn(self):
+    testdeflegesher testReturn(self):
         # 'return' [testlist]
-        {def} g1(): {return}
-        {def} g2(): {return} 1
+        testdeflegesher g1(): testreturnlegesher
+        testdeflegesher g2(): testreturnlegesher 1
         g1()
         x = g2()
-        check_syntax_error(self, "{class} foo:{return} 1")
+        check_syntax_error(self, "testclasslegesher foo:testreturnlegesher 1")
 
-    {def} testYield(self):
-        check_syntax_error(self, "{class} foo:{yield} 1")
+    testdeflegesher testYield(self):
+        check_syntax_error(self, "testclasslegesher foo:testyieldlegesher 1")
 
-    {def} testRaise(self):
+    testdeflegesher testRaise(self):
         # 'raise' test [',' test]
-        {try}: {raise} RuntimeError, 'just testing'
-        {except} RuntimeError: {pass}
-        {try}: {raise} KeyboardInterrupt
-        {except} KeyboardInterrupt: {pass}
+        testtrylegesher: testraiselegesher RuntimeError, 'just testing'
+        testexceptlegesher RuntimeError: testpasslegesher
+        testtrylegesher: testraiselegesher KeyboardInterrupt
+        testexceptlegesher KeyboardInterrupt: testpasslegesher
 
-    {def} testImport(self):
+    testdeflegesher testImport(self):
         # 'import' dotted_as_names
-        {import} sys
-        {import} time, sys
+        testimportlegesher sys
+        testimportlegesher time, sys
         # 'from' dotted_name 'import' ('*' | '(' import_as_names ')' | import_as_names)
-        {from} time {import} time
-        {from} time {import} (time)
+        testfromlegesher time testimportlegesher time
+        testfromlegesher time testimportlegesher (time)
         # not testable inside a function, but already done at top of the module
         # from sys import *
-        {from} sys {import} path, argv
-        {from} sys {import} (path, argv)
-        {from} sys {import} (path, argv,)
+        testfromlegesher sys testimportlegesher path, argv
+        testfromlegesher sys testimportlegesher (path, argv)
+        testfromlegesher sys testimportlegesher (path, argv,)
 
-    {def} testGlobal(self):
+    testdeflegesher testGlobal(self):
         # 'global' NAME (',' NAME)*
-        {global} a
-        {global} a, b
-        {global} one, two, three, four, five, six, seven, eight, nine, ten
+        testgloballegesher a
+        testgloballegesher a, b
+        testgloballegesher one, two, three, four, five, six, seven, eight, nine, ten
 
-    {def} testExec(self):
+    testdeflegesher testExec(self):
         # 'exec' expr ['in' expr [',' expr]]
         z = None
-        {del} z
-        {exec} 'z=1+1\n'
-        {if} z != 2: self.fail('{exec} \'z=1+1\'\\n')
-        {del} z
-        {exec} 'z=1+1'
-        {if} z != 2: self.fail('{exec} \'z=1+1\'')
+        testdellegesher z
+        testexeclegesher 'z=1+1\n'
+        testiflegesher z != 2: self.fail('testexeclegesher \'z=1+1\'\\n')
+        testdellegesher z
+        testexeclegesher 'z=1+1'
+        testiflegesher z != 2: self.fail('testexeclegesher \'z=1+1\'')
         z = None
-        {del} z
-        {import} types
-        {if} hasattr(types, "UnicodeType"):
-            {exec} r"""{if} 1:
-            {exec} u'z=1+1\n'
-            {if} z != 2: self.fail('{exec} u\'z=1+1\'\\n')
-            {del} z
-            {exec} u'z=1+1'
-            {if} z != 2: self.fail('{exec} u\'z=1+1\'')"""
+        testdellegesher z
+        testimportlegesher types
+        testiflegesher hasattr(types, "UnicodeType"):
+            testexeclegesher r"""testiflegesher 1:
+            testexeclegesher u'z=1+1\n'
+            testiflegesher z != 2: self.fail('testexeclegesher u\'z=1+1\'\\n')
+            testdellegesher z
+            testexeclegesher u'z=1+1'
+            testiflegesher z != 2: self.fail('testexeclegesher u\'z=1+1\'')"""
         g = {}
-        {exec} 'z = 1' {in} g
-        {if} g.has_key('__builtins__'): {del} g['__builtins__']
-        {if} g != {'z': 1}: self.fail('{exec} \'z = 1\' {in} g')
+        testexeclegesher 'z = 1' testinlegesher g
+        testiflegesher g.has_key('__builtins__'): testdellegesher g['__builtins__']
+        testiflegesher g != {'z': 1}: self.fail('testexeclegesher \'z = 1\' testinlegesher g')
         g = {}
         l = {}
 
-        {import} warnings
+        testimportlegesher warnings
         warnings.filterwarnings("ignore", "global statement", module="<string>")
-        {exec} 'global a; a = 1; b = 2' {in} g, l
-        {if} g.has_key('__builtins__'): {del} g['__builtins__']
-        {if} l.has_key('__builtins__'): {del} l['__builtins__']
-        {if} (g, l) != ({'a':1}, {'b':2}):
-            self.fail('exec ... {in} g (%s), l (%s)' %(g,l))
+        testexeclegesher 'global a; a = 1; b = 2' testinlegesher g, l
+        testiflegesher g.has_key('__builtins__'): testdellegesher g['__builtins__']
+        testiflegesher l.has_key('__builtins__'): testdellegesher l['__builtins__']
+        testiflegesher (g, l) != ({'a':1}, {'b':2}):
+            self.fail('exec ... testinlegesher g (%s), l (%s)' %(g,l))
 
-    {def} testAssert(self):
+    testdeflegesher testAssert(self):
         # assert_stmt: 'assert' test [',' test]
-        {assert} 1
-        {assert} 1, 1
-        {assert} {lambda} x:x
-        {assert} 1, {lambda} x:x+1
-        {try}:
-            {assert} 0, "msg"
-        {except} AssertionError, e:
+        testassertlegesher 1
+        testassertlegesher 1, 1
+        testassertlegesher testlambdalegesher x:x
+        testassertlegesher 1, testlambdalegesher x:x+1
+        testtrylegesher:
+            testassertlegesher 0, "msg"
+        testexceptlegesher AssertionError, e:
             self.assertEquals(e.args[0], "msg")
-        {else}:
-            {if} __debug__:
+        testelselegesher:
+            testiflegesher __debug__:
                 self.fail("AssertionError not raised by assert 0")
 
     ### compound_stmt: if_stmt | while_stmt | for_stmt | try_stmt | funcdef | classdef
     # Tested below
 
-    {def} testIf(self):
+    testdeflegesher testIf(self):
         # 'if' test ':' suite ('elif' test ':' suite)* ['else' ':' suite]
-        {if} 1: {pass}
-        {if} 1: {pass}
-        {else}:  {pass}
-        {if} 0: {pass}
-        {elif} 0: {pass}
-        {if} 0: {pass}
-        {elif} 0: {pass}
-        {elif} 0: {pass}
-        {elif} 0: {pass}
-        {else}:  {pass}
+        testiflegesher 1: testpasslegesher
+        testiflegesher 1: testpasslegesher
+        testelselegesher:  testpasslegesher
+        testiflegesher 0: testpasslegesher
+        testeliflegesher 0: testpasslegesher
+        testiflegesher 0: testpasslegesher
+        testeliflegesher 0: testpasslegesher
+        testeliflegesher 0: testpasslegesher
+        testeliflegesher 0: testpasslegesher
+        testelselegesher:  testpasslegesher
 
-    {def} testWhile(self):
+    testdeflegesher testWhile(self):
         # 'while' test ':' suite ['else' ':' suite]
-        {while} 0: {pass}
-        {while} 0: {pass}
-        {else}:  {pass}
+        testwhilelegesher 0: testpasslegesher
+        testwhilelegesher 0: testpasslegesher
+        testelselegesher:  testpasslegesher
 
         # Issue1920: "while 0" is optimized away,
         # ensure that the "else" clause is still present.
         x = 0
-        {while} 0:
+        testwhilelegesher 0:
             x = 1
-        {else}:
+        testelselegesher:
             x = 2
         self.assertEquals(x, 2)
 
-    {def} testFor(self):
+    testdeflegesher testFor(self):
         # 'for' exprlist 'in' exprlist ':' suite ['else' ':' suite]
-        {for} i {in} 1, 2, 3: {pass}
-        {for} i, j, k {in} (): {pass}
-        {else}:  {pass}
-        {class} Squares:
-            {def} __init__(self, max):
+        testforlegesher i testinlegesher 1, 2, 3: testpasslegesher
+        testforlegesher i, j, k testinlegesher (): testpasslegesher
+        testelselegesher:  testpasslegesher
+        testclasslegesher Squares:
+            testdeflegesher __init__(self, max):
                 self.max = max
                 self.sofar = []
-            {def} __len__(self): {return} len(self.sofar)
-            {def} __getitem__(self, i):
-                {if} {not} 0 <= i < self.max: raise IndexError
+            testdeflegesher __len__(self): testreturnlegesher len(self.sofar)
+            testdeflegesher __getitem__(self, i):
+                testiflegesher testnotlegesher 0 <= i < self.max: raise IndexError
                 n = len(self.sofar)
-                {while} n <= i:
+                testwhilelegesher n <= i:
                     self.sofar.append(n*n)
                     n = n+1
-                {return} self.sofar[i]
+                testreturnlegesher self.sofar[i]
         n = 0
-        {for} x {in} Squares(10): n = n+x
-        {if} n != 285:
+        testforlegesher x testinlegesher Squares(10): n = n+x
+        testiflegesher n != 285:
             self.fail('for over growing sequence')
 
         result = []
-        {for} x, {in} [(1,), (2,), (3,)]:
+        testforlegesher x, testinlegesher [(1,), (2,), (3,)]:
             result.append(x)
         self.assertEqual(result, [1, 2, 3])
 
-    {def} testTry(self):
+    testdeflegesher testTry(self):
         ### try_stmt: 'try' ':' suite (except_clause ':' suite)+ ['else' ':' suite]
         ###         | 'try' ':' suite 'finally' ':' suite
         ### except_clause: 'except' [expr [('as' | ',') expr]]
-        {try}:
+        testtrylegesher:
             1/0
-        {except} ZeroDivisionError:
-            {pass}
-        {else}:
-            {pass}
-        {try}: 1/0
-        {except} EOFError: {pass}
-        {except} TypeError {as} msg: {pass}
-        {except} RuntimeError, msg: {pass}
-        {except}: {pass}
-        {else}:  {pass}
-        {try}: 1/0
-        {except} (EOFError, TypeError, ZeroDivisionError): {pass}
-        {try}: 1/0
-        {except} (EOFError, TypeError, ZeroDivisionError), msg: {pass}
-        {try}: {pass}
-        {finally}: {pass}
+        testexceptlegesher ZeroDivisionError:
+            testpasslegesher
+        testelselegesher:
+            testpasslegesher
+        testtrylegesher: 1/0
+        testexceptlegesher EOFError: testpasslegesher
+        testexceptlegesher TypeError testaslegesher msg: testpasslegesher
+        testexceptlegesher RuntimeError, msg: testpasslegesher
+        testexceptlegesher: testpasslegesher
+        testelselegesher:  testpasslegesher
+        testtrylegesher: 1/0
+        testexceptlegesher (EOFError, TypeError, ZeroDivisionError): testpasslegesher
+        testtrylegesher: 1/0
+        testexceptlegesher (EOFError, TypeError, ZeroDivisionError), msg: testpasslegesher
+        testtrylegesher: testpasslegesher
+        testfinallylegesher: testpasslegesher
 
-    {def} testSuite(self):
+    testdeflegesher testSuite(self):
         # simple_stmt | NEWLINE INDENT NEWLINE* (stmt NEWLINE*)+ DEDENT
-        {if} 1: {pass}
-        {if} 1:
-            {pass}
-        {if} 1:
+        testiflegesher 1: testpasslegesher
+        testiflegesher 1:
+            testpasslegesher
+        testiflegesher 1:
             #
             #
             #
-            {pass}
-            {pass}
+            testpasslegesher
+            testpasslegesher
             #
-            {pass}
+            testpasslegesher
             #
 
-    {def} testTest(self):
+    testdeflegesher testTest(self):
         ### and_test ('or' and_test)*
         ### and_test: not_test ('and' not_test)*
         ### not_test: 'not' not_test | comparison
-        {if} {not} 1: {pass}
-        {if} 1 {and} 1: {pass}
-        {if} 1 {or} 1: {pass}
-        {if} {not} {not} {not} 1: {pass}
-        {if} {not} 1 {and} 1 {and} 1: {pass}
-        {if} 1 {and} 1 {or} 1 {and} 1 {and} 1 {or} {not} 1 {and} 1: {pass}
+        testiflegesher testnotlegesher 1: testpasslegesher
+        testiflegesher 1 testandlegesher 1: testpasslegesher
+        testiflegesher 1 testorlegesher 1: testpasslegesher
+        testiflegesher testnotlegesher testnotlegesher testnotlegesher 1: testpasslegesher
+        testiflegesher testnotlegesher 1 testandlegesher 1 testandlegesher 1: testpasslegesher
+        testiflegesher 1 testandlegesher 1 testorlegesher 1 testandlegesher 1 testandlegesher 1 testorlegesher testnotlegesher 1 testandlegesher 1: testpasslegesher
 
-    {def} testComparison(self):
+    testdeflegesher testComparison(self):
         ### comparison: expr (comp_op expr)*
         ### comp_op: '<'|'>'|'=='|'>='|'<='|'<>'|'!='|'in'|'not' 'in'|'is'|'is' 'not'
-        {if} 1: {pass}
+        testiflegesher 1: testpasslegesher
         x = (1 == 1)
-        {if} 1 == 1: {pass}
-        {if} 1 != 1: {pass}
-        {if} 1 <> 1: {pass}
-        {if} 1 < 1: {pass}
-        {if} 1 > 1: {pass}
-        {if} 1 <= 1: {pass}
-        {if} 1 >= 1: {pass}
-        {if} 1 {is} 1: {pass}
-        {if} 1 {is} {not} 1: {pass}
-        {if} 1 {in} (): {pass}
-        {if} 1 {not} {in} (): {pass}
-        {if} 1 < 1 > 1 == 1 >= 1 <= 1 <> 1 != 1 {in} 1 {not} {in} 1 {is} 1 {is} {not} 1: {pass}
+        testiflegesher 1 == 1: testpasslegesher
+        testiflegesher 1 != 1: testpasslegesher
+        testiflegesher 1 <> 1: testpasslegesher
+        testiflegesher 1 < 1: testpasslegesher
+        testiflegesher 1 > 1: testpasslegesher
+        testiflegesher 1 <= 1: testpasslegesher
+        testiflegesher 1 >= 1: testpasslegesher
+        testiflegesher 1 testislegesher 1: testpasslegesher
+        testiflegesher 1 testislegesher testnotlegesher 1: testpasslegesher
+        testiflegesher 1 testinlegesher (): testpasslegesher
+        testiflegesher 1 testnotlegesher testinlegesher (): testpasslegesher
+        testiflegesher 1 < 1 > 1 == 1 >= 1 <= 1 <> 1 != 1 testinlegesher 1 testnotlegesher testinlegesher 1 testislegesher 1 testislegesher testnotlegesher 1: testpasslegesher
 
-    {def} testBinaryMaskOps(self):
+    testdeflegesher testBinaryMaskOps(self):
         x = 1 & 1
         x = 1 ^ 1
         x = 1 | 1
 
-    {def} testShiftOps(self):
+    testdeflegesher testShiftOps(self):
         x = 1 << 1
         x = 1 >> 1
         x = 1 << 1 >> 1
 
-    {def} testAdditiveOps(self):
+    testdeflegesher testAdditiveOps(self):
         x = 1
         x = 1 + 1
         x = 1 - 1 - 1
         x = 1 - 1 + 1 - 1 + 1
 
-    {def} testMultiplicativeOps(self):
+    testdeflegesher testMultiplicativeOps(self):
         x = 1 * 1
         x = 1 / 1
         x = 1 % 1
         x = 1 / 1 * 1 % 1
 
-    {def} testUnaryOps(self):
+    testdeflegesher testUnaryOps(self):
         x = +1
         x = -1
         x = ~1
         x = ~1 ^ 1 & 1 | 1 & 1 ^ -1
         x = -1*1/1 + 1*1 - ---1*1
 
-    {def} testSelectors(self):
+    testdeflegesher testSelectors(self):
         ### trailer: '(' [testlist] ')' | '[' subscript ']' | '.' NAME
         ### subscript: expr | [expr] ':' [expr]
 
@@ -705,30 +705,30 @@ hello world
         L.sort()
         self.assertEquals(str(L), '[1, (1,), (1, 2), (1, 2, 3)]')
 
-    {def} testAtoms(self):
+    testdeflegesher testAtoms(self):
         ### atom: '(' [testlist] ')' | '[' [testlist] ']' | '{' [dictmaker] '}' | '`' testlist '`' | NAME | NUMBER | STRING
         ### dictmaker: test ':' test (',' test ':' test)* [',']
 
         x = (1)
-        x = (1 {or} 2 {or} 3)
-        x = (1 {or} 2 {or} 3, 2, 3)
+        x = (1 testorlegesher 2 testorlegesher 3)
+        x = (1 testorlegesher 2 testorlegesher 3, 2, 3)
 
         x = []
         x = [1]
-        x = [1 {or} 2 {or} 3]
-        x = [1 {or} 2 {or} 3, 2, 3]
+        x = [1 testorlegesher 2 testorlegesher 3]
+        x = [1 testorlegesher 2 testorlegesher 3, 2, 3]
         x = []
 
         x = {}
         x = {'one': 1}
         x = {'one': 1,}
-        x = {'one' {or} 'two': 1 {or} 2}
+        x = {'one' testorlegesher 'two': 1 testorlegesher 2}
         x = {'one': 1, 'two': 2}
         x = {'one': 1, 'two': 2,}
         x = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6}
 
         x = `x`
-        x = `1 {or} 2 {or} 3`
+        x = `1 testorlegesher 2 testorlegesher 3`
         self.assertEqual(`1,2`, '(1, 2)')
 
         x = x
@@ -739,63 +739,63 @@ hello world
     ### testlist: test (',' test)* [',']
     # These have been exercised enough above
 
-    {def} testClassdef(self):
+    testdeflegesher testClassdef(self):
         # 'class' NAME ['(' [testlist] ')'] ':' suite
-        {class} B: {pass}
-        {class} B2(): {pass}
-        {class} C1(B): {pass}
-        {class} C2(B): {pass}
-        {class} D(C1, C2, B): {pass}
-        {class} C:
-            {def} meth1(self): {pass}
-            {def} meth2(self, arg): {pass}
-            {def} meth3(self, a1, a2): {pass}
+        testclasslegesher B: testpasslegesher
+        testclasslegesher B2(): testpasslegesher
+        testclasslegesher C1(B): testpasslegesher
+        testclasslegesher C2(B): testpasslegesher
+        testclasslegesher D(C1, C2, B): testpasslegesher
+        testclasslegesher C:
+            testdeflegesher meth1(self): testpasslegesher
+            testdeflegesher meth2(self, arg): testpasslegesher
+            testdeflegesher meth3(self, a1, a2): testpasslegesher
         # decorator: '@' dotted_name [ '(' [arglist] ')' ] NEWLINE
         # decorators: decorator+
         # decorated: decorators (classdef | funcdef)
-        {def} class_decorator(x):
-            x.decorated = {True}
-            {return} x
+        testdeflegesher class_decorator(x):
+            x.decorated = testTruelegesher
+            testreturnlegesher x
         @class_decorator
-        {class} G:
-            {pass}
-        self.assertEqual(G.decorated, {True})
+        testclasslegesher G:
+            testpasslegesher
+        self.assertEqual(G.decorated, testTruelegesher)
 
-    {def} testListcomps(self):
+    testdeflegesher testListcomps(self):
         # list comprehension tests
         nums = [1, 2, 3, 4, 5]
         strs = ["Apple", "Banana", "Coconut"]
         spcs = ["  Apple", " Banana ", "Coco  nut  "]
 
-        self.assertEqual([s.strip() {for} s {in} spcs], ['Apple', 'Banana', 'Coco  nut'])
-        self.assertEqual([3 * x {for} x {in} nums], [3, 6, 9, 12, 15])
-        self.assertEqual([x {for} x {in} nums {if} x > 2], [3, 4, 5])
-        self.assertEqual([(i, s) {for} i {in} nums {for} s {in} strs],
+        self.assertEqual([s.strip() testforlegesher s testinlegesher spcs], ['Apple', 'Banana', 'Coco  nut'])
+        self.assertEqual([3 * x testforlegesher x testinlegesher nums], [3, 6, 9, 12, 15])
+        self.assertEqual([x testforlegesher x testinlegesher nums testiflegesher x > 2], [3, 4, 5])
+        self.assertEqual([(i, s) testforlegesher i testinlegesher nums testforlegesher s testinlegesher strs],
                          [(1, 'Apple'), (1, 'Banana'), (1, 'Coconut'),
                           (2, 'Apple'), (2, 'Banana'), (2, 'Coconut'),
                           (3, 'Apple'), (3, 'Banana'), (3, 'Coconut'),
                           (4, 'Apple'), (4, 'Banana'), (4, 'Coconut'),
                           (5, 'Apple'), (5, 'Banana'), (5, 'Coconut')])
-        self.assertEqual([(i, s) {for} i {in} nums {for} s {in} [f {for} f {in} strs {if} "n" {in} f]],
+        self.assertEqual([(i, s) testforlegesher i testinlegesher nums testforlegesher s testinlegesher [f testforlegesher f testinlegesher strs testiflegesher "n" testinlegesher f]],
                          [(1, 'Banana'), (1, 'Coconut'), (2, 'Banana'), (2, 'Coconut'),
                           (3, 'Banana'), (3, 'Coconut'), (4, 'Banana'), (4, 'Coconut'),
                           (5, 'Banana'), (5, 'Coconut')])
-        self.assertEqual([({lambda} a:[a**i {for} i {in} range(a+1)])(j) {for} j {in} range(5)],
+        self.assertEqual([(testlambdalegesher a:[a**i testforlegesher i testinlegesher range(a+1)])(j) testforlegesher j testinlegesher range(5)],
                          [[1], [1, 1], [1, 2, 4], [1, 3, 9, 27], [1, 4, 16, 64, 256]])
 
-        {def} test_in_func(l):
-            {return} [None < x < 3 {for} x {in} l {if} x > 2]
+        testdeflegesher test_in_func(l):
+            testreturnlegesher [None < x < 3 testforlegesher x testinlegesher l testiflegesher x > 2]
 
-        self.assertEqual(test_in_func(nums), [{False}, {False}, {False}])
+        self.assertEqual(test_in_func(nums), [testFalselegesher, testFalselegesher, testFalselegesher])
 
-        {def} test_nested_front():
-            self.assertEqual([[y {for} y {in} [x, x + 1]] {for} x {in} [1,3,5]],
+        testdeflegesher test_nested_front():
+            self.assertEqual([[y testforlegesher y testinlegesher [x, x + 1]] testforlegesher x testinlegesher [1,3,5]],
                              [[1, 2], [3, 4], [5, 6]])
 
         test_nested_front()
 
-        check_syntax_error(self, "[i, s {for} i {in} nums {for} s {in} strs]")
-        check_syntax_error(self, "[x {if} y]")
+        check_syntax_error(self, "[i, s testforlegesher i testinlegesher nums testforlegesher s testinlegesher strs]")
+        check_syntax_error(self, "[x testiflegesher y]")
 
         suppliers = [
           (1, "Boeing"),
@@ -815,125 +815,125 @@ hello world
 
         x = [
           (sname, pname)
-            {for} (sno, sname) {in} suppliers
-              {for} (pno, pname) {in} parts
-                {for} (sp_sno, sp_pno) {in} suppart
-                  {if} sno == sp_sno {and} pno == sp_pno
+            testforlegesher (sno, sname) testinlegesher suppliers
+              testforlegesher (pno, pname) testinlegesher parts
+                testforlegesher (sp_sno, sp_pno) testinlegesher suppart
+                  testiflegesher sno == sp_sno testandlegesher pno == sp_pno
         ]
 
         self.assertEqual(x, [('Boeing', 'Airliner'), ('Boeing', 'Engine'), ('Ford', 'Engine'),
                              ('Macdonalds', 'Cheeseburger')])
 
-    {def} testGenexps(self):
+    testdeflegesher testGenexps(self):
         # generator expression tests
-        g = ([x {for} x {in} range(10)] {for} x {in} range(1))
-        self.assertEqual(g.next(), [x {for} x {in} range(10)])
-        {try}:
+        g = ([x testforlegesher x testinlegesher range(10)] testforlegesher x testinlegesher range(1))
+        self.assertEqual(g.next(), [x testforlegesher x testinlegesher range(10)])
+        testtrylegesher:
             g.next()
             self.fail('should produce StopIteration exception')
-        {except} StopIteration:
-            {pass}
+        testexceptlegesher StopIteration:
+            testpasslegesher
 
         a = 1
-        {try}:
-            g = (a {for} d {in} a)
+        testtrylegesher:
+            g = (a testforlegesher d testinlegesher a)
             g.next()
             self.fail('should produce TypeError')
-        {except} TypeError:
-            {pass}
+        testexceptlegesher TypeError:
+            testpasslegesher
 
-        self.assertEqual(list((x, y) {for} x {in} 'abcd' {for} y {in} 'abcd'), [(x, y) {for} x {in} 'abcd' {for} y {in} 'abcd'])
-        self.assertEqual(list((x, y) {for} x {in} 'ab' {for} y {in} 'xy'), [(x, y) {for} x {in} 'ab' {for} y {in} 'xy'])
+        self.assertEqual(list((x, y) testforlegesher x testinlegesher 'abcd' testforlegesher y testinlegesher 'abcd'), [(x, y) testforlegesher x testinlegesher 'abcd' testforlegesher y testinlegesher 'abcd'])
+        self.assertEqual(list((x, y) testforlegesher x testinlegesher 'ab' testforlegesher y testinlegesher 'xy'), [(x, y) testforlegesher x testinlegesher 'ab' testforlegesher y testinlegesher 'xy'])
 
-        a = [x {for} x {in} range(10)]
-        b = (x {for} x {in} (y {for} y {in} a))
-        self.assertEqual(sum(b), sum([x {for} x {in} range(10)]))
+        a = [x testforlegesher x testinlegesher range(10)]
+        b = (x testforlegesher x testinlegesher (y testforlegesher y testinlegesher a))
+        self.assertEqual(sum(b), sum([x testforlegesher x testinlegesher range(10)]))
 
-        self.assertEqual(sum(x**2 {for} x {in} range(10)), sum([x**2 {for} x {in} range(10)]))
-        self.assertEqual(sum(x*x {for} x {in} range(10) {if} x%2), sum([x*x {for} x {in} range(10) {if} x%2]))
-        self.assertEqual(sum(x {for} x {in} (y {for} y {in} range(10))), sum([x {for} x {in} range(10)]))
-        self.assertEqual(sum(x {for} x {in} (y {for} y {in} (z {for} z {in} range(10)))), sum([x {for} x {in} range(10)]))
-        self.assertEqual(sum(x {for} x {in} [y {for} y {in} (z {for} z {in} range(10))]), sum([x {for} x {in} range(10)]))
-        self.assertEqual(sum(x {for} x {in} (y {for} y {in} (z {for} z {in} range(10) {if} {True})) {if} {True}), sum([x {for} x {in} range(10)]))
-        self.assertEqual(sum(x {for} x {in} (y {for} y {in} (z {for} z {in} range(10) {if} {True}) {if} {False}) {if} {True}), 0)
-        check_syntax_error(self, "foo(x {for} x {in} range(10), 100)")
-        check_syntax_error(self, "foo(100, x {for} x {in} range(10))")
+        self.assertEqual(sum(x**2 testforlegesher x testinlegesher range(10)), sum([x**2 testforlegesher x testinlegesher range(10)]))
+        self.assertEqual(sum(x*x testforlegesher x testinlegesher range(10) testiflegesher x%2), sum([x*x testforlegesher x testinlegesher range(10) testiflegesher x%2]))
+        self.assertEqual(sum(x testforlegesher x testinlegesher (y testforlegesher y testinlegesher range(10))), sum([x testforlegesher x testinlegesher range(10)]))
+        self.assertEqual(sum(x testforlegesher x testinlegesher (y testforlegesher y testinlegesher (z testforlegesher z testinlegesher range(10)))), sum([x testforlegesher x testinlegesher range(10)]))
+        self.assertEqual(sum(x testforlegesher x testinlegesher [y testforlegesher y testinlegesher (z testforlegesher z testinlegesher range(10))]), sum([x testforlegesher x testinlegesher range(10)]))
+        self.assertEqual(sum(x testforlegesher x testinlegesher (y testforlegesher y testinlegesher (z testforlegesher z testinlegesher range(10) testiflegesher testTruelegesher)) testiflegesher testTruelegesher), sum([x testforlegesher x testinlegesher range(10)]))
+        self.assertEqual(sum(x testforlegesher x testinlegesher (y testforlegesher y testinlegesher (z testforlegesher z testinlegesher range(10) testiflegesher testTruelegesher) testiflegesher testFalselegesher) testiflegesher testTruelegesher), 0)
+        check_syntax_error(self, "foo(x testforlegesher x testinlegesher range(10), 100)")
+        check_syntax_error(self, "foo(100, x testforlegesher x testinlegesher range(10))")
 
-    {def} testComprehensionSpecials(self):
+    testdeflegesher testComprehensionSpecials(self):
         # test for outmost iterable precomputation
-        x = 10; g = (i {for} i {in} range(x)); x = 5
+        x = 10; g = (i testforlegesher i testinlegesher range(x)); x = 5
         self.assertEqual(len(list(g)), 10)
 
         # This should hold, since we're only precomputing outmost iterable.
-        x = 10; t = {False}; g = ((i,j) {for} i {in} range(x) {if} t {for} j {in} range(x))
-        x = 5; t = {True};
-        self.assertEqual([(i,j) {for} i {in} range(10) {for} j {in} range(5)], list(g))
+        x = 10; t = testFalselegesher; g = ((i,j) testforlegesher i testinlegesher range(x) testiflegesher t testforlegesher j testinlegesher range(x))
+        x = 5; t = testTruelegesher;
+        self.assertEqual([(i,j) testforlegesher i testinlegesher range(10) testforlegesher j testinlegesher range(5)], list(g))
 
         # Grammar allows multiple adjacent 'if's in listcomps and genexps,
         # even though it's silly. Make sure it works (ifelse broke this.)
-        self.assertEqual([ x {for} x {in} range(10) {if} x % 2 {if} x % 3 ], [1, 5, 7])
-        self.assertEqual(list(x {for} x {in} range(10) {if} x % 2 {if} x % 3), [1, 5, 7])
+        self.assertEqual([ x testforlegesher x testinlegesher range(10) testiflegesher x % 2 testiflegesher x % 3 ], [1, 5, 7])
+        self.assertEqual(list(x testforlegesher x testinlegesher range(10) testiflegesher x % 2 testiflegesher x % 3), [1, 5, 7])
 
         # verify unpacking single element tuples in listcomp/genexp.
-        self.assertEqual([x {for} x, {in} [(4,), (5,), (6,)]], [4, 5, 6])
-        self.assertEqual(list(x {for} x, {in} [(7,), (8,), (9,)]), [7, 8, 9])
+        self.assertEqual([x testforlegesher x, testinlegesher [(4,), (5,), (6,)]], [4, 5, 6])
+        self.assertEqual(list(x testforlegesher x, testinlegesher [(7,), (8,), (9,)]), [7, 8, 9])
 
-    {def} test_with_statement(self):
-        {class} manager(object):
-            {def} __enter__(self):
-                {return} (1, 2)
-            {def} __exit__(self, *args):
-                {pass}
+    testdeflegesher test_with_statement(self):
+        testclasslegesher manager(object):
+            testdeflegesher __enter__(self):
+                testreturnlegesher (1, 2)
+            testdeflegesher __exit__(self, *args):
+                testpasslegesher
 
-        {with} manager():
-            {pass}
-        {with} manager() {as} x:
-            {pass}
-        {with} manager() {as} (x, y):
-            {pass}
-        {with} manager(), manager():
-            {pass}
-        {with} manager() {as} x, manager() {as} y:
-            {pass}
-        {with} manager() {as} x, manager():
-            {pass}
+        testwithlegesher manager():
+            testpasslegesher
+        testwithlegesher manager() testaslegesher x:
+            testpasslegesher
+        testwithlegesher manager() testaslegesher (x, y):
+            testpasslegesher
+        testwithlegesher manager(), manager():
+            testpasslegesher
+        testwithlegesher manager() testaslegesher x, manager() testaslegesher y:
+            testpasslegesher
+        testwithlegesher manager() testaslegesher x, manager():
+            testpasslegesher
 
-    {def} testIfElseExpr(self):
+    testdeflegesher testIfElseExpr(self):
         # Test ifelse expressions in various cases
-        {def} _checkeval(msg, ret):
+        testdeflegesher _checkeval(msg, ret):
             "helper to check that evaluation of expressions is done correctly"
-            {print} x
-            {return} ret
+            testprintlegesher x
+            testreturnlegesher ret
 
-        self.assertEqual([ x() {for} x {in} {lambda}: {True}, {lambda}: {False} {if} x() ], [{True}])
-        self.assertEqual([ x() {for} x {in} ({lambda}: {True}, {lambda}: {False}) {if} x() ], [{True}])
-        self.assertEqual([ x({False}) {for} x {in} ({lambda} x: {False} {if} x {else} {True}, {lambda} x: {True} {if} x {else} {False}) {if} x({False}) ], [{True}])
-        self.assertEqual((5 {if} 1 {else} _checkeval("check 1", 0)), 5)
-        self.assertEqual((_checkeval("check 2", 0) {if} 0 {else} 5), 5)
-        self.assertEqual((5 {and} 6 {if} 0 {else} 1), 1)
-        self.assertEqual(((5 {and} 6) {if} 0 {else} 1), 1)
-        self.assertEqual((5 {and} (6 {if} 1 {else} 1)), 6)
-        self.assertEqual((0 {or} _checkeval("check 3", 2) {if} 0 {else} 3), 3)
-        self.assertEqual((1 {or} _checkeval("check 4", 2) {if} 1 {else} _checkeval("check 5", 3)), 1)
-        self.assertEqual((0 {or} 5 {if} 1 {else} _checkeval("check 6", 3)), 5)
-        self.assertEqual(({not} 5 {if} 1 {else} 1), {False})
-        self.assertEqual(({not} 5 {if} 0 {else} 1), 1)
-        self.assertEqual((6 + 1 {if} 1 {else} 2), 7)
-        self.assertEqual((6 - 1 {if} 1 {else} 2), 5)
-        self.assertEqual((6 * 2 {if} 1 {else} 4), 12)
-        self.assertEqual((6 / 2 {if} 1 {else} 3), 3)
-        self.assertEqual((6 < 4 {if} 0 {else} 2), 2)
+        self.assertEqual([ x() testforlegesher x testinlegesher testlambdalegesher: testTruelegesher, testlambdalegesher: testFalselegesher testiflegesher x() ], [testTruelegesher])
+        self.assertEqual([ x() testforlegesher x testinlegesher (testlambdalegesher: testTruelegesher, testlambdalegesher: testFalselegesher) testiflegesher x() ], [testTruelegesher])
+        self.assertEqual([ x(testFalselegesher) testforlegesher x testinlegesher (testlambdalegesher x: testFalselegesher testiflegesher x testelselegesher testTruelegesher, testlambdalegesher x: testTruelegesher testiflegesher x testelselegesher testFalselegesher) testiflegesher x(testFalselegesher) ], [testTruelegesher])
+        self.assertEqual((5 testiflegesher 1 testelselegesher _checkeval("check 1", 0)), 5)
+        self.assertEqual((_checkeval("check 2", 0) testiflegesher 0 testelselegesher 5), 5)
+        self.assertEqual((5 testandlegesher 6 testiflegesher 0 testelselegesher 1), 1)
+        self.assertEqual(((5 testandlegesher 6) testiflegesher 0 testelselegesher 1), 1)
+        self.assertEqual((5 testandlegesher (6 testiflegesher 1 testelselegesher 1)), 6)
+        self.assertEqual((0 testorlegesher _checkeval("check 3", 2) testiflegesher 0 testelselegesher 3), 3)
+        self.assertEqual((1 testorlegesher _checkeval("check 4", 2) testiflegesher 1 testelselegesher _checkeval("check 5", 3)), 1)
+        self.assertEqual((0 testorlegesher 5 testiflegesher 1 testelselegesher _checkeval("check 6", 3)), 5)
+        self.assertEqual((testnotlegesher 5 testiflegesher 1 testelselegesher 1), testFalselegesher)
+        self.assertEqual((testnotlegesher 5 testiflegesher 0 testelselegesher 1), 1)
+        self.assertEqual((6 + 1 testiflegesher 1 testelselegesher 2), 7)
+        self.assertEqual((6 - 1 testiflegesher 1 testelselegesher 2), 5)
+        self.assertEqual((6 * 2 testiflegesher 1 testelselegesher 4), 12)
+        self.assertEqual((6 / 2 testiflegesher 1 testelselegesher 3), 3)
+        self.assertEqual((6 < 4 testiflegesher 0 testelselegesher 2), 2)
 
-    {def} testStringLiterals(self):
-        x = ''; y = ""; self.assert_(len(x) == 0 {and} x == y)
-        x = '\''; y = "'"; self.assert_(len(x) == 1 {and} x == y {and} ord(x) == 39)
-        x = '"'; y = "\""; self.assert_(len(x) == 1 {and} x == y {and} ord(x) == 34)
+    testdeflegesher testStringLiterals(self):
+        x = ''; y = ""; self.assert_(len(x) == 0 testandlegesher x == y)
+        x = '\''; y = "'"; self.assert_(len(x) == 1 testandlegesher x == y testandlegesher ord(x) == 39)
+        x = '"'; y = "\""; self.assert_(len(x) == 1 testandlegesher x == y testandlegesher ord(x) == 34)
         x = "doesn't \"shrink\" does it"
         y = 'doesn\'t "shrink" does it'
-        self.assert_(len(x) == 24 {and} x == y)
+        self.assert_(len(x) == 24 testandlegesher x == y)
         x = "does \"shrink\" doesn't it"
         y = 'does "shrink" doesn\'t it'
-        self.assert_(len(x) == 24 {and} x == y)
+        self.assert_(len(x) == 24 testandlegesher x == y)
         x = """
 The "quick"
 brown fox
@@ -966,8 +966,8 @@ the \'lazy\' dog.\n\
 
 
 
-{def} test_main():
+testdeflegesher test_main():
     run_unittest(TokenTests, GrammarTests)
 
-{if} __name__ == '__main__':
+testiflegesher __name__ == '__main__':
     test_main()
