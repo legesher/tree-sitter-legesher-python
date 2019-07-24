@@ -1,4 +1,4 @@
-testdeflegesher testclasslegesher # Python test set -- part 1, grammar.
+# Python test set -- part 1, grammar.
 # This just tests whether the parser accepts them all.
 
 testfromlegesher test.support testimportlegesher check_syntax_error
