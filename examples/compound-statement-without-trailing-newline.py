@@ -1,3 +1,3 @@
-{class} Foo:
-  {def} bar():
-    {print} "hi"
+testclasslegesher Foo:
+  testdeflegesher bar():
+    testprintlegesher "hi"

@@ -15,4 +15,4 @@ Generate the updated tree-sitter parser by running the below command:
 To make sure that the parse is properly updated, run the tests.  
 `tree-sitter test`
 
-This package also works with the _language_ repository `language-legesher-python`
+This package works alongside the _language_ repository [`language-legesher-python`](https://github.com/legesher/language-legesher-python). These two repositories work closely together, so it may be useful to touch up on both repositories' documentation. 

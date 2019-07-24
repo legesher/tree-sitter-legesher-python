@@ -2,9 +2,9 @@
 Import statements
 =====================================
 
-testimportlegesher a, b
-testimportlegesher b.c testaslegesher d
-testimportlegesher a.b.c
+{import} a, b
+{import} b.c {as} d
+{import} a.b.c
 
 ---
 
@@ -23,14 +23,14 @@ testimportlegesher a.b.c
 Import-from statements
 =====================================
 
-testfromlegesher a testimportlegesher  b
-testfromlegesher a testimportlegesher  *
-testfromlegesher a testimportlegesher  (b, c)
-testfromlegesher a.b testimportlegesher  c
-testfromlegesher . testimportlegesher  b
-testfromlegesher .. testimportlegesher  b
-testfromlegesher .a testimportlegesher  b
-testfromlegesher ..a testimportlegesher  b
+{from} a {import}  b
+{from} a {import}  *
+{from} a {import}  (b, c)
+{from} a.b {import}  c
+{from} . {import}  b
+{from} .. {import}  b
+{from} .a {import}  b
+{from} ..a {import}  b
 
 ---
 
@@ -69,8 +69,8 @@ testfromlegesher ..a testimportlegesher  b
 Future import statements
 =====================================
 
-testfromlegesher __future__ testimportlegesher  print_statement
-testfromlegesher __future__ testimportlegesher  python4
+{from} __future__ {import}  print_statement
+{from} __future__ {import}  python4
 
 ---
 
@@ -82,10 +82,10 @@ testfromlegesher __future__ testimportlegesher  python4
 Print statements
 =====================================
 
-testprintlegesher a
-testprintlegesher b, c
-testprintlegesher 0 testorlegesher 1, 1 testorlegesher 0,
-testprintlegesher 0 testorlegesher 1
+{print} a
+{print} b, c
+{print} 0 {or} 1, 1 {or} 0,
+{print} 0 {or} 1
 
 ---
 
@@ -102,8 +102,8 @@ testprintlegesher 0 testorlegesher 1
 Print statements with redirection
 =====================================
 
-testprintlegesher >> a
-testprintlegesher >> a, "b", "c"
+{print} >> a
+{print} >> a, "b", "c"
 
 ---
 
@@ -115,8 +115,8 @@ testprintlegesher >> a, "b", "c"
 Assert statements
 =====================================
 
-testassertlegesher a
-testassertlegesher b, c
+{assert} a
+{assert} b, c
 
 ---
 
@@ -145,7 +145,7 @@ b + c
 Delete statements
 =====================================
 
-testdellegesher a[1], b[2]
+{del} a[1], b[2]
 
 ---
 
@@ -158,10 +158,10 @@ testdellegesher a[1], b[2]
 Control-flow statements
 =====================================
 
-testwhilelegesher true:
-  testpasslegesher
-  testbreaklegesher
-  testcontinuelegesher
+{while} true:
+  {pass}
+  {break}
+  {continue}
 
 ---
 
@@ -175,9 +175,9 @@ testwhilelegesher true:
 Return statements
 =====================================
 
-testreturnlegesher
-testreturnlegesher a + b, c
-testreturnlegesher testnotlegesher b
+{return}
+{return} a + b, c
+{return} {not} b
 
 ---
 
@@ -192,7 +192,7 @@ testreturnlegesher testnotlegesher b
 If statements
 =====================================
 
-testiflegesher a:
+{if} a:
   b
   c
 
@@ -207,21 +207,21 @@ testiflegesher a:
 If else statements
 =====================================
 
-testiflegesher a:
+{if} a:
   b
-testeliflegesher c:
+{elif} c:
   d
-testelselegesher:
+{else}:
   f
 
-testiflegesher a:
+{if} a:
   b
-testelselegesher:
+{else}:
   f
 
-testiflegesher a: b
+{if} a: b
 
-testiflegesher a: b; c
+{if} a: b; c
 
 ---
 
@@ -246,11 +246,11 @@ testiflegesher a: b; c
 Nested if statements
 =====================================
 
-testiflegesher a:
-  testiflegesher b:
+{if} a:
+  {if} b:
     c
-  testelselegesher:
-    testiflegesher e:
+  {else}:
+    {if} e:
       f
 g
 
@@ -269,12 +269,12 @@ g
 While statements
 =====================================
 
-testwhilelegesher a:
+{while} a:
   b
 
-testwhilelegesher c:
+{while} c:
   d
-testelselegesher:
+{else}:
   e
   f
 
@@ -293,14 +293,14 @@ testelselegesher:
 For statements
 =====================================
 
-testforlegesher line, i testinlegesher lines:
-  testprintlegesher line
-  testforlegesher character, j testinlegesher line:
-    testprintlegesher character
-testelselegesher:
-  testprintlegesher x
+{for} line, i {in} lines:
+  {print} line
+  {for} character, j {in} line:
+    {print} character
+{else}:
+  {print} x
 
-testforlegesher x, testinlegesher [(1,), (2,), (3,)]:
+{for} x, {in} [(1,), (2,), (3,)]:
   x
 
 ---
@@ -325,24 +325,24 @@ testforlegesher x, testinlegesher [(1,), (2,), (3,)]:
 Try statements
 =====================================
 
-testtrylegesher:
+{try}:
   a
-testexceptlegesher b:
+{except} b:
   c
-testexceptlegesher d testaslegesher e:
+{except} d {as} e:
   f
-testexceptlegesher g, h:
+{except} g, h:
   i
-testexceptlegesher:
+{except}:
   j
 
-testtrylegesher:
+{try}:
   a
-testexceptlegesher b:
+{except} b:
   c
-testelselegesher:
+{else}:
   d
-testfinallylegesher:
+{finally}:
   e
 
 ---
@@ -371,7 +371,7 @@ testfinallylegesher:
 With statements
 =====================================
 
-testwithlegesher a testaslegesher b:
+{with} a {as} b:
   c
 
 ---
@@ -385,32 +385,32 @@ testwithlegesher a testaslegesher b:
 Async Function definitions
 =====================================
 
-testasynclegesher testdeflegesher a():
+{async} {def} a():
   b
 
-testasynclegesher testdeflegesher c(d):
+{async} {def} c(d):
   e
 
-testasynclegesher testdeflegesher g(g, h,):
+{async} {def} g(g, h,):
   i
 
-testasynclegesher testdeflegesher c(a: str):
+{async} {def} c(a: str):
   a
 
-testasynclegesher testdeflegesher c(a: b.c):
+{async} {def} c(a: b.c):
   a
 
-testasynclegesher testdeflegesher d(a: Sequence[T]) -> T:
+{async} {def} d(a: Sequence[T]) -> T:
   a
 
-testasynclegesher testdeflegesher i(a, b=c, *c, **d):
+{async} {def} i(a, b=c, *c, **d):
   a
 
-testasynclegesher testdeflegesher d(a: str) -> testNonelegesher:
-  testreturnlegesher testNonelegesher
+{async} {def} d(a: str) -> {None}:
+  {return} {None}
 
-testasynclegesher testdeflegesher d(a:str="default", b=c) -> testNonelegesher:
-  testreturnlegesher testNonelegesher
+{async} {def} d(a:str="default", b=c) -> {None}:
+  {return} {None}
 
 ---
 
@@ -464,44 +464,44 @@ testasynclegesher testdeflegesher d(a:str="default", b=c) -> testNonelegesher:
 Function definitions
 =====================================
 
-testdeflegesher a():
+{def} a():
   b
 
-testdeflegesher c(d):
+{def} c(d):
   e
 
-testdeflegesher g(g, h,):
+{def} g(g, h,):
   i
 
-testdeflegesher c(a: str):
+{def} c(a: str):
   a
 
-testdeflegesher c(a: b.c):
+{def} c(a: b.c):
   a
 
-testdeflegesher d(a: Sequence[T]) -> T:
+{def} d(a: Sequence[T]) -> T:
   a
 
-testdeflegesher i(a, b=c, *c, **d):
+{def} i(a, b=c, *c, **d):
   a
 
-testdeflegesher d(a: str) -> testNonelegesher:
-  testreturnlegesher testNonelegesher
+{def} d(a: str) -> {None}:
+  {return} {None}
 
-testdeflegesher e((a,b)):
-  testreturnlegesher (a,b)
+{def} e((a,b)):
+  {return} (a,b)
 
-testdeflegesher e(*list: str):
-  testpasslegesher
+{def} e(*list: str):
+  {pass}
 
-testdeflegesher e(**list: str):
-  testpasslegesher
+{def} e(**list: str):
+  {pass}
 
-testdeflegesher f():
-  testnonlocallegesher a
+{def} f():
+  {nonlocal} a
 
-testdeflegesher g(h, i, *, j, k=100, **kwarg):
-  testreturnlegesher h,i,j,k,kwarg
+{def} g(h, i, *, j, k=100, **kwarg):
+  {return} h,i,j,k,kwarg
 
 ---
 
@@ -580,18 +580,18 @@ testdeflegesher g(h, i, *, j, k=100, **kwarg):
 Class definitions
 ====================================================
 
-testclasslegesher A:
-  testdeflegesher b(self):
-    testreturnlegesher c
-testclasslegesher B():
-  testpasslegesher
-testclasslegesher B(method1):
-  testdeflegesher method1(self):
-    testreturnlegesher
-testclasslegesher C(method1, Sequence[T]):
-  testpasslegesher
-testclasslegesher D(Sequence[T, U]):
-  testpasslegesher
+{class} A:
+  {def} b(self):
+    {return} c
+{class} B():
+  {pass}
+{class} B(method1):
+  {def} method1(self):
+    {return}
+{class} C(method1, Sequence[T]):
+  {pass}
+{class} D(Sequence[T, U]):
+  {pass}
 
 ---
 
@@ -626,8 +626,8 @@ testclasslegesher D(Sequence[T, U]):
 Class definitions with superclasses
 ====================================================
 
-testclasslegesher A(B, C):
-  testdeflegesher d():
+{class} A(B, C):
+  {def} d():
     e
 
 ---
@@ -646,19 +646,19 @@ Decorated definitions
 ====================================================
 
 @a.b
-testclasslegesher C:
+{class} C:
   @f()
   @d(1)
   @e(2, 3)
-  @a(b=testTruelegesher)
+  @a(b={True})
   @a(*b)
   @a(**c)
-  @a(1, b=testTruelegesher, *b, **c)
-  testdeflegesher f():
+  @a(1, b={True}, *b, **c)
+  {def} f():
     g
 
   @f()
-  testasynclegesher testdeflegesher f():
+  {async} {def} f():
     g
 
 ---
@@ -710,9 +710,9 @@ testclasslegesher C:
 Raise statements
 ====================================================
 
-testraiselegesher
-testraiselegesher RuntimeError('NO')
-testraiselegesher RunTimeError('NO') testfromlegesher e
+{raise}
+{raise} RuntimeError('NO')
+{raise} RunTimeError('NO') {from} e
 
 ---
 
@@ -728,10 +728,10 @@ testraiselegesher RunTimeError('NO') testfromlegesher e
 Comments
 ====================================================
 
-testprintlegesher a
+{print} a
 # hi
-testprintlegesher b # bye
-testprintlegesher c
+{print} b # bye
+{print} c
 
 ---
 
@@ -746,7 +746,7 @@ testprintlegesher c
 Comments at different indentation levels
 ====================================================
 
-testiflegesher a:
+{if} a:
   # one
 # two
     # three
@@ -769,7 +769,7 @@ testiflegesher a:
 Comments after dedents
 ====================================================
 
-testiflegesher a:
+{if} a:
   b
 
 # one
@@ -788,7 +788,7 @@ c
 Newline tokens followed by comments
 ====================================================
 
-testprintlegesher "a"
+{print} "a"
   # We need to recognize the newline *preceding* this comment, because there's no newline after it
 ---
 
@@ -798,8 +798,8 @@ testprintlegesher "a"
 Global statements
 ====================================================
 
-testgloballegesher a
-testgloballegesher a, b
+{global} a
+{global} a, b
 
 ---
 
@@ -811,9 +811,9 @@ testgloballegesher a, b
 Exec statements
 ====================================================
 
-testexeclegesher '1+1'
-testexeclegesher 'x+=1' testinlegesher testNonelegesher
-testexeclegesher 'x+=1' testinlegesher a, b
+{exec} '1+1'
+{exec} 'x+=1' {in} {None}
+{exec} 'x+=1' {in} a, b
 
 ---
 
@@ -826,7 +826,7 @@ testexeclegesher 'x+=1' testinlegesher a, b
 Extra newlines
 ==================================================
 
-testiflegesher a:
+{if} a:
 
 
     b()
@@ -835,7 +835,7 @@ testiflegesher a:
     c()
 
 
-    testdeflegesher d():
+    {def} d():
 
 
         e()

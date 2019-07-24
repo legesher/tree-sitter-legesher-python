@@ -1,6 +1,6 @@
-{print} a
+testprintlegesher a
 
-{if} b:     
-    {if} c:
+testiflegesher b:
+    testiflegesher c:
         d
     e

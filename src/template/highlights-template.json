@@ -242,172 +242,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -666,172 +666,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -1096,172 +1096,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -1520,172 +1520,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -1889,7 +1889,7 @@
         {
           "type": "identifier",
           "named": true,
-          "text": "^(testabslegesher|testalllegesher|testanylegesher|testasciilegesher|testbinlegesher|testboollegesher|testbreakpointlegesher|testbytearraylegesher|testbyteslegesher|testcallablelegesher|testchrlegesher|testclassmethodlegesher|testcompilelegesher|testcomplexlegesher|testdelattrlegesher|testdictlegesher|testdirlegesher|testdivmodlegesher|testenumeratelegesher|testevallegesher|testexeclegesher|testfilterlegesher|testfloatlegesher|testformatlegesher|testfrozensetlegesher|testgetattrlegesher|testglobalslegesher|testhasattrlegesher|testhashlegesher|testhelplegesher|testhexlegesher|testidlegesher|testinputlegesher|testintlegesher|testisinstancelegesher|testissubclasslegesher|testiterlegesher|testlenlegesher|testlistlegesher|testlocalslegesher|testmaplegesher|testmaxlegesher|testmemoryviewlegesher|testminlegesher|testnextlegesher|testobjectlegesher|testoctlegesher|testopenlegesher|testordlegesher|testpowlegesher|testprintlegesher|testpropertylegesher|testrangelegesher|testreprlegesher|testreversedlegesher|testroundlegesher|testsetlegesher|testsetattrlegesher|testslicelegesher|testsortedlegesher|teststaticmethodlegesher|teststrlegesher|testsumlegesher|testsuperlegesher|testtuplelegesher|testtypelegesher|testvarslegesher|testziplegesher|test__import__legesher)$",
+          "text": "^({abs}|{all}|{any}|{ascii}|{bin}|{bool}|{breakpoint}|{bytearray}|{bytes}|{callable}|{chr}|{classmethod}|{compile}|{complex}|{delattr}|{dict}|{dir}|{divmod}|{enumerate}|{eval}|{exec}|{filter}|{float}|{format}|{frozenset}|{getattr}|{globals}|{hasattr}|{hash}|{help}|{hex}|{id}|{input}|{int}|{isinstance}|{issubclass}|{iter}|{len}|{list}|{locals}|{map}|{max}|{memoryview}|{min}|{next}|{object}|{oct}|{open}|{ord}|{pow}|{print}|{property}|{range}|{repr}|{reversed}|{round}|{set}|{setattr}|{slice}|{sorted}|{staticmethod}|{str}|{sum}|{super}|{tuple}|{type}|{vars}|{zip}|{__import__})$",
           "state_id": 23
         },
         {
@@ -1950,172 +1950,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -2374,172 +2374,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -2798,172 +2798,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -3222,172 +3222,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -3646,172 +3646,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -4070,172 +4070,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -4494,172 +4494,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -4918,172 +4918,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -5342,172 +5342,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -5766,172 +5766,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -6190,172 +6190,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -6619,172 +6619,172 @@
           "state_id": 25
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -7054,172 +7054,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -7478,172 +7478,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -7902,172 +7902,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -8326,172 +8326,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -8750,172 +8750,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -9180,172 +9180,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -9604,172 +9604,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -10028,172 +10028,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -10452,172 +10452,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -10876,172 +10876,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -11300,172 +11300,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -11724,172 +11724,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },
@@ -12148,172 +12148,172 @@
           "state_id": 18
         },
         {
-          "type": "testandlegesher",
+          "type": "{and}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testassertlegesher",
+          "type": "{assert}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testasynclegesher",
+          "type": "{async}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testaslegesher",
+          "type": "{as}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testawaitlegesher",
+          "type": "{await}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testbreaklegesher",
+          "type": "{break}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testclasslegesher",
+          "type": "{class}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testcontinuelegesher",
+          "type": "{continue}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdeflegesher",
+          "type": "{def}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testdellegesher",
+          "type": "{del}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testeliflegesher",
+          "type": "{elif}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testelselegesher",
+          "type": "{else}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexceptlegesher",
+          "type": "{except}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testexeclegesher",
+          "type": "{exec}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfinallylegesher",
+          "type": "{finally}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testforlegesher",
+          "type": "{for}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testfromlegesher",
+          "type": "{from}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testgloballegesher",
+          "type": "{global}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testiflegesher",
+          "type": "{if}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testimportlegesher",
+          "type": "{import}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testinlegesher",
+          "type": "{in}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testislegesher",
+          "type": "{is}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testlambdalegesher",
+          "type": "{lambda}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnonlocallegesher",
+          "type": "{nonlocal}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testnotlegesher",
+          "type": "{not}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testorlegesher",
+          "type": "{or}",
           "named": false,
           "state_id": 1
         },
         {
-          "type": "testpasslegesher",
+          "type": "{pass}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testprintlegesher",
+          "type": "{print}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testraiselegesher",
+          "type": "{raise}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testreturnlegesher",
+          "type": "{return}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testtrylegesher",
+          "type": "{try}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwhilelegesher",
+          "type": "{while}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testwithlegesher",
+          "type": "{with}",
           "named": false,
           "state_id": 19
         },
         {
-          "type": "testyieldlegesher",
+          "type": "{yield}",
           "named": false,
           "state_id": 19
         },

@@ -71,8 +71,8 @@ a.b.c
 Await expressions
 =====================================
 
-testawaitlegesher i(j, 5)
-testreturnlegesher testawaitlegesher i(j, 5)
+{await} i(j, 5)
+{return} {await} i(j, 5)
 
 ---
 
@@ -170,15 +170,15 @@ a(print)
 Print used as a parameter
 =====================================
 
-testdeflegesher a(print):
+{def} a(print):
   b
-testdeflegesher a(printer=print):
+{def} a(printer=print):
   c
-testdeflegesher a(*print):
+{def} a(*print):
   b
-testdeflegesher a(**print):
+{def} a(**print):
   b
-testdeflegesher print():
+{def} print():
   a
 
 ---
@@ -210,8 +210,8 @@ testdeflegesher print():
 Exec used as an identifier
 =====================================
 
-testexeclegesher("testprintlegesher \"'%s' has %i characters\" % (public_function(), len(public_function()))", {"__builtins__" : testNonelegesher}, safe_dict)
-testexeclegesher("""testexeclegesher _code_ testinlegesher _globs_, _locs_""")
+{exec}("{print} \"'%s' has %i characters\" % (public_function(), len(public_function()))", {"__builtins__" : {None}}, safe_dict)
+{exec}("""{exec} _code_ {in} _globs_, _locs_""")
 
 ---
 
@@ -339,8 +339,8 @@ a << b | c >> d & e
 Boolean operators
 =====================================
 
-a testorlegesher b testandlegesher c
-testnotlegesher d
+a {or} b {and} c
+{not} d
 
 ---
 
@@ -359,7 +359,7 @@ Comparison operators
 =====================================
 
 a < b <= c == d >= e > f
-testnotlegesher a == b testorlegesher c == d
+{not} a == b {or} c == d
 
 ---
 
@@ -464,10 +464,10 @@ a := x
 (y := f(x))
 foo(x=(y := f(x)))
 y0 = (y1 := f(x))
-testdeflegesher foo(answer=(p := 42)):
-  testreturnlegesher answer;
-testdeflegesher foo(answer: (p := 42) = 5):
-  testreturnlegesher answer;
+{def} foo(answer=(p := 42)):
+  {return} answer;
+{def} foo(answer: (p := 42) = 5):
+  {return} answer;
 foo(x := 3, cat='vector')
 (z := (y := (x := 0)))
 
@@ -538,12 +538,12 @@ foo(x := 3, cat='vector')
 Yield expressions
 ====================================================
 
-testdeflegesher example():
-  testyieldlegesher
-  testyieldlegesher 1
-  x = testyieldlegesher 2
-  testyieldlegesher testfromlegesher a
-  testyieldlegesher testfromlegesher (testyieldlegesher testfromlegesher (x testforlegesher x testinlegesher range(1, 10)))
+{def} example():
+  {yield}
+  {yield} 1
+  x = {yield} 2
+  {yield} {from} a
+  {yield} {from} ({yield} {from} (x {for} x {in} range(1, 10)))
 
 ---
 
@@ -570,10 +570,10 @@ testdeflegesher example():
 lambdas
 ====================================================
 
-testlambdalegesher b, c: d("e" % f)
-testlambdalegesher: testTruelegesher
-testlambdalegesher a, b = c, *d, **e: a
-testlambdalegesher (a,b): (a, b)
+{lambda} b, c: d("e" % f)
+{lambda}: {True}
+{lambda} a, b = c, *d, **e: a
+{lambda} (a,b): (a, b)
 
 ---
 
@@ -606,9 +606,9 @@ testlambdalegesher (a,b): (a, b)
 Conditional if expressions
 =====================================
 
-a = b testiflegesher c testelselegesher d
-something() testiflegesher a testelselegesher d
-slice(1,1,1) testiflegesher a testelselegesher d
+a = b {if} c {else} d
+something() {if} a {else} d
+slice(1,1,1) {if} a {else} d
 
 ---
 
@@ -629,9 +629,9 @@ slice(1,1,1) testiflegesher a testelselegesher d
 Async context managers and iterators
 ========================================
 
-testasynclegesher testwithlegesher a testaslegesher b:
-  testasynclegesher testforlegesher c testinlegesher d:
-     [e testasynclegesher testforlegesher f testinlegesher g]
+{async} {with} a {as} b:
+  {async} {for} c {in} d:
+     [e {async} {for} f {in} g]
 
 ---
 
