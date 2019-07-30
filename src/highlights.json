@@ -232,114 +232,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -354,12 +344,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -374,41 +364,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -656,114 +656,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -778,12 +768,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -798,41 +788,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -1086,114 +1086,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -1208,12 +1198,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -1228,41 +1218,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -1510,114 +1510,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -1632,12 +1622,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -1652,41 +1642,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -1889,7 +1889,7 @@
         {
           "type": "identifier",
           "named": true,
-          "text": "^(testabslegesher|testalllegesher|testanylegesher|testasciilegesher|testbinlegesher|testboollegesher|testbreakpointlegesher|testbytearraylegesher|testbyteslegesher|testcallablelegesher|testchrlegesher|testclassmethodlegesher|testcompilelegesher|testcomplexlegesher|testdelattrlegesher|testdictlegesher|testdirlegesher|testdivmodlegesher|testenumeratelegesher|testevallegesher|testexeclegesher|testfilterlegesher|testfloatlegesher|testformatlegesher|testfrozensetlegesher|testgetattrlegesher|testglobalslegesher|testhasattrlegesher|testhashlegesher|testhelplegesher|testhexlegesher|testidlegesher|testinputlegesher|testintlegesher|testisinstancelegesher|testissubclasslegesher|testiterlegesher|testlenlegesher|testlistlegesher|testlocalslegesher|testmaplegesher|testmaxlegesher|testmemoryviewlegesher|testminlegesher|testnextlegesher|testobjectlegesher|testoctlegesher|testopenlegesher|testordlegesher|testpowlegesher|testprintlegesher|testpropertylegesher|testrangelegesher|testreprlegesher|testreversedlegesher|testroundlegesher|testsetlegesher|testsetattrlegesher|testslicelegesher|testsortedlegesher|teststaticmethodlegesher|teststrlegesher|testsumlegesher|testsuperlegesher|testtuplelegesher|testtypelegesher|testvarslegesher|testziplegesher|test__import__legesher)$",
+          "text": "^(abs|all|any|ascii|bin|bool|breakpoint|bytearray|bytes|callable|chr|classmethod|compile|complex|delattr|dict|dir|divmod|enumerate|eval|exec|filter|float|format|frozenset|getattr|globals|hasattr|hash|help|hex|id|input|int|isinstance|issubclass|iter|len|list|locals|map|max|memoryview|min|next|object|oct|open|ord|pow|print|property|range|repr|reversed|round|set|setattr|slice|sorted|staticmethod|str|sum|super|tuple|type|vars|zip|__import__)$",
           "state_id": 23
         },
         {
@@ -1940,114 +1940,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -2062,12 +2052,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -2082,41 +2072,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -2364,114 +2364,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -2486,12 +2476,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -2506,41 +2496,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -2788,114 +2788,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -2910,12 +2900,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -2930,41 +2920,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -3212,114 +3212,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -3334,12 +3324,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -3354,41 +3344,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -3636,114 +3636,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -3758,12 +3748,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -3778,41 +3768,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -4060,114 +4060,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -4182,12 +4172,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -4202,41 +4192,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -4484,114 +4484,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -4606,12 +4596,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -4626,41 +4616,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -4908,114 +4908,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -5030,12 +5020,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -5050,41 +5040,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -5332,114 +5332,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -5454,12 +5444,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -5474,41 +5464,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -5756,114 +5756,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -5878,12 +5868,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -5898,41 +5888,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -6180,114 +6180,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -6302,12 +6292,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -6322,41 +6312,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -6604,119 +6604,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
-          "type": "{",
-          "named": false,
-          "state_id": 25
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -6731,12 +6716,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -6751,42 +6736,57 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
+        },
+        {
+          "type": "{",
+          "named": false,
+          "state_id": 25
         },
         {
           "type": "|",
@@ -7044,114 +7044,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -7166,12 +7156,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -7186,41 +7176,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -7468,114 +7468,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -7590,12 +7580,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -7610,41 +7600,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -7662,430 +7662,6 @@
     },
     {
       "id": 18,
-      "property_set_id": 0,
-      "transitions": [
-        {
-          "type": "!=",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "%",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "%=",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "&",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "*",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "**",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "**=",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "*=",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "+",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "+=",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "-",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "-=",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "/",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "//",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "//=",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "/=",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "<",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "<<",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "<=",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "<>",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "=",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "==",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": ">",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": ">=",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": ">>",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "^",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "attribute",
-          "named": true,
-          "state_id": 2
-        },
-        {
-          "type": "call",
-          "named": true,
-          "state_id": 3
-        },
-        {
-          "type": "call_identifier",
-          "named": true,
-          "state_id": 4
-        },
-        {
-          "type": "comment",
-          "named": true,
-          "state_id": 5
-        },
-        {
-          "type": "decorator",
-          "named": true,
-          "state_id": 6
-        },
-        {
-          "type": "default_parameter",
-          "named": true,
-          "state_id": 7
-        },
-        {
-          "type": "escape_sequence",
-          "named": true,
-          "state_id": 8
-        },
-        {
-          "type": "false",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "float",
-          "named": true,
-          "state_id": 10
-        },
-        {
-          "type": "function_definition",
-          "named": true,
-          "state_id": 11
-        },
-        {
-          "type": "identifier",
-          "named": true,
-          "text": "^[A-Z][A-Z_]*$",
-          "state_id": 27
-        },
-        {
-          "type": "identifier",
-          "named": true,
-          "text": "^[A-Z]",
-          "state_id": 27
-        },
-        {
-          "type": "identifier",
-          "named": true,
-          "state_id": 27
-        },
-        {
-          "type": "integer",
-          "named": true,
-          "state_id": 10
-        },
-        {
-          "type": "interpolation",
-          "named": true,
-          "state_id": 15
-        },
-        {
-          "type": "keyword_argument",
-          "named": true,
-          "state_id": 16
-        },
-        {
-          "type": "none",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "parameters",
-          "named": true,
-          "state_id": 7
-        },
-        {
-          "type": "string",
-          "named": true,
-          "state_id": 17
-        },
-        {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
-          "type": "testandlegesher",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "testassertlegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testasynclegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testawaitlegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testbreaklegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testclasslegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testcontinuelegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testdeflegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testdellegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testeliflegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testelselegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testexceptlegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testexeclegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testfinallylegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testforlegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testfromlegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testgloballegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testiflegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testimportlegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testinlegesher",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "testislegesher",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "testlambdalegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testnonlocallegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testnotlegesher",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "testorlegesher",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "testpasslegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testprintlegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testraiselegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testreturnlegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testtrylegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testwhilelegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testwithlegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testyieldlegesher",
-          "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "|",
-          "named": false,
-          "state_id": 1
-        },
-        {
-          "type": "~",
-          "named": false,
-          "state_id": 1
-        }
-      ],
-      "default_next_state_id": 0
-    },
-    {
-      "id": 19,
       "property_set_id": 13,
       "transitions": [
         {
@@ -8316,114 +7892,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -8438,12 +8004,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -8458,41 +8024,475 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
+          "state_id": 19
+        },
+        {
+          "type": "|",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "~",
+          "named": false,
+          "state_id": 1
+        }
+      ],
+      "default_next_state_id": 0
+    },
+    {
+      "id": 19,
+      "property_set_id": 0,
+      "transitions": [
+        {
+          "type": "!=",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "%",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "%=",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "&",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "*",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "**",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "**=",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "*=",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "+",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "+=",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "-",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "-=",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "/",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "//",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "//=",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "/=",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "<",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "<<",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "<=",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "<>",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "=",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "==",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": ">",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": ">=",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": ">>",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "^",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "attribute",
+          "named": true,
+          "state_id": 2
+        },
+        {
+          "type": "call",
+          "named": true,
+          "state_id": 3
+        },
+        {
+          "type": "call_identifier",
+          "named": true,
+          "state_id": 4
+        },
+        {
+          "type": "comment",
+          "named": true,
+          "state_id": 5
+        },
+        {
+          "type": "decorator",
+          "named": true,
+          "state_id": 6
+        },
+        {
+          "type": "default_parameter",
+          "named": true,
+          "state_id": 7
+        },
+        {
+          "type": "escape_sequence",
+          "named": true,
+          "state_id": 8
+        },
+        {
+          "type": "false",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "float",
+          "named": true,
+          "state_id": 10
+        },
+        {
+          "type": "function_definition",
+          "named": true,
+          "state_id": 11
+        },
+        {
+          "type": "identifier",
+          "named": true,
+          "text": "^[A-Z][A-Z_]*$",
+          "state_id": 27
+        },
+        {
+          "type": "identifier",
+          "named": true,
+          "text": "^[A-Z]",
+          "state_id": 27
+        },
+        {
+          "type": "identifier",
+          "named": true,
+          "state_id": 27
+        },
+        {
+          "type": "integer",
+          "named": true,
+          "state_id": 10
+        },
+        {
+          "type": "interpolation",
+          "named": true,
+          "state_id": 15
+        },
+        {
+          "type": "keyword_argument",
+          "named": true,
+          "state_id": 16
+        },
+        {
+          "type": "none",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "parameters",
+          "named": true,
+          "state_id": 7
+        },
+        {
+          "type": "string",
+          "named": true,
+          "state_id": 17
+        },
+        {
+          "type": "testandlegesher",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testassertlegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testasynclegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testawaitlegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testbreaklegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testclasslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testcontinuelegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testdeflegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testdellegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testeliflegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testelselegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testexceptlegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testexeclegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testfinallylegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testforlegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testfromlegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testgloballegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testiflegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testimportlegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testinlegesher",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "testislegesher",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "testlambdalegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testnonlocallegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testnotlegesher",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "testorlegesher",
+          "named": false,
+          "state_id": 1
+        },
+        {
+          "type": "testpasslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testprintlegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testraiselegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testreturnlegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testtrylegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testwhilelegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testwithlegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "testyieldlegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -8740,114 +8740,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -8862,12 +8852,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -8882,41 +8872,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -9170,114 +9170,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -9292,12 +9282,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -9312,41 +9302,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -9594,114 +9594,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -9716,12 +9706,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -9736,41 +9726,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -10018,114 +10018,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -10140,12 +10130,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -10160,41 +10150,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -10442,114 +10442,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -10564,12 +10554,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -10584,41 +10574,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -10866,114 +10866,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -10988,12 +10978,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -11008,41 +10998,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -11290,114 +11290,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -11412,12 +11402,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -11432,41 +11422,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -11714,114 +11714,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -11836,12 +11826,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -11856,41 +11846,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
@@ -12138,114 +12138,104 @@
           "state_id": 17
         },
         {
-          "type": "true",
-          "named": true,
-          "state_id": 9
-        },
-        {
-          "type": "type",
-          "named": true,
-          "state_id": 18
-        },
-        {
           "type": "testandlegesher",
           "named": false,
           "state_id": 1
         },
         {
+          "type": "testaslegesher",
+          "named": false,
+          "state_id": 18
+        },
+        {
           "type": "testassertlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testasynclegesher",
           "named": false,
-          "state_id": 19
-        },
-        {
-          "type": "testaslegesher",
-          "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testawaitlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testbreaklegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testclasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testcontinuelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdeflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testdellegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testeliflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testelselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexceptlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testexeclegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfinallylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testforlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testfromlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testgloballegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testiflegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testimportlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testinlegesher",
@@ -12260,12 +12250,12 @@
         {
           "type": "testlambdalegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnonlocallegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testnotlegesher",
@@ -12280,41 +12270,51 @@
         {
           "type": "testpasslegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testprintlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testraiselegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testreturnlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testtrylegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwhilelegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testwithlegesher",
           "named": false,
-          "state_id": 19
+          "state_id": 18
         },
         {
           "type": "testyieldlegesher",
           "named": false,
+          "state_id": 18
+        },
+        {
+          "type": "true",
+          "named": true,
+          "state_id": 9
+        },
+        {
+          "type": "type",
+          "named": true,
           "state_id": 19
         },
         {
