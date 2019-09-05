@@ -6,6 +6,8 @@ cd "$(dirname "$0")/.."
 
 # Clone example repo and check out a known sha
 repo=examples/numpy
+
+# if file doesn't exist and is not a directory, create a new repo
 if [ ! -d "$repo" ]; then
   git clone https://github.com/numpy/numpy "$repo"
 else

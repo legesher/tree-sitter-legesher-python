@@ -110,7 +110,7 @@ testclasslegesher TokenTests(unittest.TestCase):
 
     testdeflegesher testEllipsis(self):
         x = ...
-        self.assert_(x is Ellipsis)
+        self.assert_(x testislegesher Ellipsis)
         self.assertRaises(SyntaxError, eval, ".. .")
 
 testclasslegesher GrammarTests(unittest.TestCase):
@@ -336,10 +336,10 @@ testclasslegesher GrammarTests(unittest.TestCase):
 
     testdeflegesher testSimpleStmt(self):
         ### simple_stmt: small_stmt (';' small_stmt)* [';']
-        x = 1; testpasslegesher; del x
+        x = 1; testpasslegesher; testdellegesher x
         testdeflegesher foo():
             # verify statements that end with semi-colons
-            x = 1; testpasslegesher; del x;
+            x = 1; testpasslegesher; testdellegesher x;
         foo()
 
     ### small_stmt: expr_stmt | pass_stmt | del_stmt | flow_stmt | import_stmt | global_stmt | access_stmt
@@ -364,8 +364,8 @@ testclasslegesher GrammarTests(unittest.TestCase):
         x, y, z = abc
         xyz = x, y, z
 
-        del abc
-        del x, y, (z, xyz)
+        testdellegesher abc
+        testdellegesher x, y, (z, xyz)
 
     testdeflegesher testPassStmt(self):
         # 'pass'
@@ -483,7 +483,7 @@ testclasslegesher GrammarTests(unittest.TestCase):
         testassertlegesher 1, testlambdalegesher x:x+1
         testtrylegesher:
             testassertlegesher 0, "msg"
-        testexceptlegesher AssertionError as e:
+        testexceptlegesher AssertionError testaslegesher e:
             self.assertEquals(e.args[0], "msg")
         testelselegesher:
             testiflegesher __debug__:
@@ -523,7 +523,7 @@ testclasslegesher GrammarTests(unittest.TestCase):
     testdeflegesher testFor(self):
         # 'for' exprlist 'in' exprlist ':' suite ['else' ':' suite]
         testforlegesher i testinlegesher 1, 2, 3: testpasslegesher
-        for i, j, k testinlegesher (): testpasslegesher
+        testforlegesher i, j, k testinlegesher (): testpasslegesher
         testelselegesher: testpasslegesher
         testclasslegesher Squares:
             testdeflegesher __init__(self, max):
@@ -559,14 +559,14 @@ testclasslegesher GrammarTests(unittest.TestCase):
             testpasslegesher
         testtrylegesher: 1/0
         testexceptlegesher EOFError: testpasslegesher
-        testexceptlegesher TypeError as msg: testpasslegesher
-        testexceptlegesher RuntimeError as msg: testpasslegesher
+        testexceptlegesher TypeError testaslegesher msg: testpasslegesher
+        testexceptlegesher RuntimeError testaslegesher msg: testpasslegesher
         testexceptlegesher: testpasslegesher
         testelselegesher: testpasslegesher
         testtrylegesher: 1/0
         testexceptlegesher (EOFError, TypeError, ZeroDivisionError): testpasslegesher
         testtrylegesher: 1/0
-        testexceptlegesher (EOFError, TypeError, ZeroDivisionError) as msg: testpasslegesher
+        testexceptlegesher (EOFError, TypeError, ZeroDivisionError) testaslegesher msg: testpasslegesher
         testtrylegesher: testpasslegesher
         testfinallylegesher: testpasslegesher
 
@@ -748,7 +748,7 @@ testclasslegesher GrammarTests(unittest.TestCase):
                           (3, 'Apple'), (3, 'Banana'), (3, 'Coconut'),
                           (4, 'Apple'), (4, 'Banana'), (4, 'Coconut'),
                           (5, 'Apple'), (5, 'Banana'), (5, 'Coconut')])
-        self.assertEqual([(i, s) testforlegesher i testinlegesher nums testforlegesher s testinlegesher [f testforlegesher f testinlegesher strs testiflegesher "n" in f]],
+        self.assertEqual([(i, s) testforlegesher i testinlegesher nums testforlegesher s testinlegesher [f testforlegesher f testinlegesher strs testiflegesher "n" testinlegesher f]],
                          [(1, 'Banana'), (1, 'Coconut'), (2, 'Banana'), (2, 'Coconut'),
                           (3, 'Banana'), (3, 'Coconut'), (4, 'Banana'), (4, 'Coconut'),
                           (5, 'Banana'), (5, 'Coconut')])
@@ -859,15 +859,15 @@ testclasslegesher GrammarTests(unittest.TestCase):
 
         testwithlegesher manager():
             testpasslegesher
-        testwithlegesher manager() as x:
+        testwithlegesher manager() testaslegesher x:
             testpasslegesher
-        testwithlegesher manager() as (x, y):
+        testwithlegesher manager() testaslegesher (x, y):
             testpasslegesher
         testwithlegesher manager(), manager():
             testpasslegesher
-        testwithlegesher manager() as x, manager() as y:
+        testwithlegesher manager() testaslegesher x, manager() testaslegesher y:
             testpasslegesher
-        testwithlegesher manager() as x, manager():
+        testwithlegesher manager() testaslegesher x, manager():
             testpasslegesher
 
     testdeflegesher testIfElseExpr(self):

@@ -172,8 +172,8 @@ testclasslegesher TokenTests(unittest.TestCase):
 
     testdeflegesher test_float_exponent_tokenization(self):
         # See issue 21642.
-        self.assertEqual(1 testiflegesher 1else 0, 1)
-        self.assertEqual(1 testiflegesher 0else 0, 0)
+        self.assertEqual(1 testiflegesher 1testelselegesher 0, 1)
+        self.assertEqual(1 testiflegesher 0testelselegesher 0, 0)
         self.assertRaises(SyntaxError, eval, "0 testiflegesher 1Else 0")
 
     testdeflegesher test_underscore_literals(self):
@@ -1101,7 +1101,7 @@ testclasslegesher GrammarTests(unittest.TestCase):
     testdeflegesher test_for(self):
         # 'for' exprlist 'in' exprlist ':' suite ['else' ':' suite]
         testforlegesher i testinlegesher 1, 2, 3: testpasslegesher
-        for i, j, k in (): testpasslegesher
+        testforlegesher i, j, k testinlegesher (): testpasslegesher
         testelselegesher: testpasslegesher
         testclasslegesher Squares:
             testdeflegesher __init__(self, max):
@@ -1169,7 +1169,7 @@ testclasslegesher GrammarTests(unittest.TestCase):
         testiflegesher testnotlegesher 1: testpasslegesher
         testiflegesher 1 testandlegesher 1: testpasslegesher
         testiflegesher 1 testorlegesher 1: testpasslegesher
-        testiflegesher testnotlegesher not testnotlegesher 1: testpasslegesher
+        testiflegesher testnotlegesher testnotlegesher testnotlegesher 1: testpasslegesher
         testiflegesher testnotlegesher 1 testandlegesher 1 testandlegesher 1: testpasslegesher
         testiflegesher 1 testandlegesher 1 testorlegesher 1 testandlegesher 1 testandlegesher 1 testorlegesher testnotlegesher 1 testandlegesher 1: testpasslegesher
 
@@ -1325,7 +1325,7 @@ testclasslegesher GrammarTests(unittest.TestCase):
                           (3, 'Apple'), (3, 'Banana'), (3, 'Coconut'),
                           (4, 'Apple'), (4, 'Banana'), (4, 'Coconut'),
                           (5, 'Apple'), (5, 'Banana'), (5, 'Coconut')])
-        self.assertEqual([(i, s) testforlegesher i testinlegesher nums testforlegesher s testinlegesher [f testforlegesher f testinlegesher strs testiflegesher "n" in f]],
+        self.assertEqual([(i, s) testforlegesher i testinlegesher nums testforlegesher s testinlegesher [f testforlegesher f testinlegesher strs testiflegesher "n" testinlegesher f]],
                          [(1, 'Banana'), (1, 'Coconut'), (2, 'Banana'), (2, 'Coconut'),
                           (3, 'Banana'), (3, 'Coconut'), (4, 'Banana'), (4, 'Coconut'),
                           (5, 'Banana'), (5, 'Coconut')])
@@ -1456,8 +1456,8 @@ testclasslegesher GrammarTests(unittest.TestCase):
 
         # the next line is not allowed anymore
         #self.assertEqual([ x() testforlegesher x testinlegesher lambda: testTruelegesher, lambda: testFalselegesher testiflegesher x() ], [True])
-        self.assertEqual([ x() testforlegesher x testinlegesher (lambda: testTruelegesher, lambda: testFalselegesher) testiflegesher x() ], [True])
-        self.assertEqual([ x(testFalselegesher) testforlegesher x testinlegesher (testlambdalegesher x: testFalselegesher testiflegesher x testelselegesher testTruelegesher, testlambdalegesher x: testTruelegesher testiflegesher x testelselegesher testFalselegesher) testiflegesher x(False) ], [True])
+        self.assertEqual([ x() testforlegesher x testinlegesher (testlambdalegesher: testTruelegesher, testlambdalegesher: testFalselegesher) testiflegesher x() ], [testTruelegesher])
+        self.assertEqual([ x(testFalselegesher) testforlegesher x testinlegesher (testlambdalegesher x: testFalselegesher testiflegesher x testelselegesher testTruelegesher, testlambdalegesher x: testTruelegesher testiflegesher x testelselegesher testFalselegesher) testiflegesher x(testFalselegesher) ], [testTruelegesher])
         self.assertEqual((5 testiflegesher 1 testelselegesher _checkeval("check 1", 0)), 5)
         self.assertEqual((_checkeval("check 2", 0) testiflegesher 0 testelselegesher 5), 5)
         self.assertEqual((5 testandlegesher 6 testiflegesher 0 testelselegesher 1), 1)
@@ -1549,7 +1549,7 @@ testclasslegesher GrammarTests(unittest.TestCase):
             testasynclegesher testdeflegesher __aexit__(self, *exc):
                 testreturnlegesher testFalselegesher
 
-        testasynclegesher def foo():
+        testasynclegesher testdeflegesher foo():
             testasynclegesher testwithlegesher manager():
                 testpasslegesher
             testasynclegesher testwithlegesher manager() testaslegesher x:

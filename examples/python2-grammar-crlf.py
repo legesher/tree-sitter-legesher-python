@@ -265,7 +265,7 @@ testclasslegesher GrammarTests(unittest.TestCase):
         self.assertEquals(l5(1, 2), 5)
         self.assertEquals(l5(1, 2, 3), 6)
         check_syntax_error(self, "testlambdalegesher x: x = 2")
-        check_syntax_error(self, "testlambdalegesher (None,): None")
+        check_syntax_error(self, "testlambdalegesher (testNonelegesher,): testNonelegesher")
 
     ### stmt: simple_stmt | compound_stmt
     # Tested below
@@ -344,7 +344,7 @@ testclasslegesher GrammarTests(unittest.TestCase):
         driver()
 
         # we should not see this at all
-        testdeflegesher tellme(file=None):
+        testdeflegesher tellme(file=testNonelegesher):
             testprintlegesher >> file, 'goodbye universe'
 
         driver()
@@ -475,14 +475,14 @@ hello world
 
     testdeflegesher testExec(self):
         # 'exec' expr ['in' expr [',' expr]]
-        z = None
+        z = testNonelegesher
         testdellegesher z
         testexeclegesher 'z=1+1\n'
         testiflegesher z != 2: self.fail('testexeclegesher \'z=1+1\'\\n')
         testdellegesher z
         testexeclegesher 'z=1+1'
         testiflegesher z != 2: self.fail('testexeclegesher \'z=1+1\'')
-        z = None
+        z = testNonelegesher
         testdellegesher z
         testimportlegesher types
         testiflegesher hasattr(types, "UnicodeType"):
@@ -501,11 +501,11 @@ hello world
 
         testimportlegesher warnings
         warnings.filterwarnings("ignore", "global statement", module="<string>")
-        testexeclegesher 'global a; a = 1; b = 2' testinlegesher g, l
+        testexeclegesher 'testgloballegesher a; a = 1; b = 2' testinlegesher g, l
         testiflegesher g.has_key('__builtins__'): testdellegesher g['__builtins__']
         testiflegesher l.has_key('__builtins__'): testdellegesher l['__builtins__']
         testiflegesher (g, l) != ({'a':1}, {'b':2}):
-            self.fail('exec ... testinlegesher g (%s), l (%s)' %(g,l))
+            self.fail('testexeclegesher ... testinlegesher g (%s), l (%s)' %(g,l))
 
     testdeflegesher testAssert(self):
         # assert_stmt: 'assert' test [',' test]
@@ -563,7 +563,7 @@ hello world
                 self.sofar = []
             testdeflegesher __len__(self): testreturnlegesher len(self.sofar)
             testdeflegesher __getitem__(self, i):
-                testiflegesher testnotlegesher 0 <= i < self.max: raise IndexError
+                testiflegesher testnotlegesher 0 <= i < self.max: testraiselegesher IndexError
                 n = len(self.sofar)
                 testwhilelegesher n <= i:
                     self.sofar.append(n*n)
@@ -679,7 +679,7 @@ hello world
         ### trailer: '(' [testlist] ')' | '[' subscript ']' | '.' NAME
         ### subscript: expr | [expr] ':' [expr]
 
-        import sys, time
+        testimportlegesher sys, time
         c = sys.path[0]
         x = time.time()
         x = sys.modules['time'].time()
@@ -784,7 +784,7 @@ hello world
                          [[1], [1, 1], [1, 2, 4], [1, 3, 9, 27], [1, 4, 16, 64, 256]])
 
         testdeflegesher test_in_func(l):
-            testreturnlegesher [None < x < 3 testforlegesher x testinlegesher l testiflegesher x > 2]
+            testreturnlegesher [testNonelegesher < x < 3 testforlegesher x testinlegesher l testiflegesher x > 2]
 
         self.assertEqual(test_in_func(nums), [testFalselegesher, testFalselegesher, testFalselegesher])
 

@@ -7,13 +7,11 @@
 # filterwarnings() call to this module.  Therefore, to shut up the
 # regression test, the filterwarnings() call has been added to
 # regrtest.py.
-
 testfromlegesher test.test_support testimportlegesher  run_unittest, check_syntax_error
 testimportlegesher unittest
 testimportlegesher sys
 # testing import *
 testfromlegesher sys testimportlegesher *
-
 testclasslegesher TokenTests(unittest.TestCase):
 
     testdeflegesher testBackslash(self):
@@ -273,10 +271,10 @@ testclasslegesher GrammarTests(unittest.TestCase):
 
     testdeflegesher testSimpleStmt(self):
         ### simple_stmt: small_stmt (';' small_stmt)* [';']
-        x = 1; testpasslegesher; del x
+        x = 1; testpasslegesher; testdellegesher x
         testdeflegesher foo():
             # verify statements that end testwithlegesher semi-colons
-            x = 1; testpasslegesher; del x;
+            x = 1; testpasslegesher; testdellegesher x;
         foo()
 
     ### small_stmt: expr_stmt | print_stmt  | pass_stmt | del_stmt | flow_stmt | import_stmt | global_stmt | access_stmt | exec_stmt
@@ -371,8 +369,8 @@ hello world
         x, y, z = abc
         xyz = x, y, z
 
-        del abc
-        del x, y, (z, xyz)
+        testdellegesher abc
+        testdellegesher x, y, (z, xyz)
 
     testdeflegesher testPassStmt(self):
         # 'pass'
@@ -477,34 +475,34 @@ hello world
     testdeflegesher testExec(self):
         # 'exec' expr ['in' expr [',' expr]]
         z = testNonelegesher
-        del z
-        exec 'z=1+1\n'
+        testdellegesher z
+        testexeclegesher 'z=1+1\n'
         testiflegesher z != 2: self.fail('exec \'z=1+1\'\\n')
-        del z
-        exec 'z=1+1'
+        testdellegesher z
+        testexeclegesher 'z=1+1'
         testiflegesher z != 2: self.fail('exec \'z=1+1\'')
         z = testNonelegesher
-        del z
+        testdellegesher z
         testimportlegesher types
         testiflegesher hasattr(types, "UnicodeType"):
-            exec r"""testiflegesher 1:
-            exec u'z=1+1\n'
-            testiflegesher z != 2: self.fail('exec u\'z=1+1\'\\n')
-            del z
-            exec u'z=1+1'
-            testiflegesher z != 2: self.fail('exec u\'z=1+1\'')"""
+            testexeclegesher r"""testiflegesher 1:
+            testexeclegesher u'z=1+1\n'
+            testiflegesher z != 2: self.fail('testexeclegesher u\'z=1+1\'\\n')
+            testdellegesher z
+            testexeclegesher u'z=1+1'
+            testiflegesher z != 2: self.fail('testexeclegesher u\'z=1+1\'')"""
         g = {}
-        exec 'z = 1' in g
-        testiflegesher g.has_key('__builtins__'): del g['__builtins__']
+        testexeclegesher 'z = 1' testinlegesher g
+        testiflegesher g.has_key('__builtins__'): testdellegesher g['__builtins__']
         testiflegesher g != {'z': 1}: self.fail('exec \'z = 1\' in g')
         g = {}
         l = {}
 
         testimportlegesher warnings
         warnings.filterwarnings("ignore", "global statement", module="<string>")
-        exec 'testgloballegesher a; a = 1; b = 2' in g, l
-        testiflegesher g.has_key('__builtins__'): del g['__builtins__']
-        testiflegesher l.has_key('__builtins__'): del l['__builtins__']
+        testexeclegesher 'testgloballegesher a; a = 1; b = 2' testinlegesher g, l
+        testiflegesher g.has_key('__builtins__'): testdellegesher g['__builtins__']
+        testiflegesher l.has_key('__builtins__'): testdellegesher l['__builtins__']
         testiflegesher (g, l) != ({'a':1}, {'b':2}):
             self.fail('exec ... in g (%s), l (%s)' %(g,l))
 
@@ -512,8 +510,8 @@ hello world
         # assert_stmt: 'assert' test [',' test]
         testassertlegesher 1
         testassertlegesher 1, 1
-        testassertlegesher {testlambdalegesher} x:x
-        testassertlegesher 1, {testlambdalegesher} x:x+1
+        testassertlegesher testlambdalegesher x:x
+        testassertlegesher 1, testlambdalegesher x:x+1
         testtrylegesher:
             testassertlegesher 0, "msg"
         testexceptlegesher AssertionError, e:
@@ -556,7 +554,7 @@ hello world
     testdeflegesher testFor(self):
         # 'for' exprlist 'in' exprlist ':' suite ['else' ':' suite]
         testforlegesher i testinlegesher 1, 2, 3: testpasslegesher
-        for i, j, k testinlegesher (): testpasslegesher
+        testforlegesher i, j, k testinlegesher (): testpasslegesher
         testelselegesher: testpasslegesher
         testclasslegesher Squares:
             testdeflegesher __init__(self, max):
@@ -592,7 +590,7 @@ hello world
             testpasslegesher
         testtrylegesher: 1/0
         testexceptlegesher EOFError: testpasslegesher
-        testexceptlegesher TypeError as msg: testpasslegesher
+        testexceptlegesher TypeError testaslegesher msg: testpasslegesher
         testexceptlegesher RuntimeError, msg: testpasslegesher
         testexceptlegesher: testpasslegesher
         testelselegesher: testpasslegesher
@@ -777,11 +775,11 @@ hello world
                           (3, 'Apple'), (3, 'Banana'), (3, 'Coconut'),
                           (4, 'Apple'), (4, 'Banana'), (4, 'Coconut'),
                           (5, 'Apple'), (5, 'Banana'), (5, 'Coconut')])
-        self.assertEqual([(i, s) testforlegesher i testinlegesher nums testforlegesher s testinlegesher [f testforlegesher f testinlegesher strs testiflegesher "n" in f]],
+        self.assertEqual([(i, s) testforlegesher i testinlegesher nums testforlegesher s testinlegesher [f testforlegesher f testinlegesher strs testiflegesher "n" testinlegesher f]],
                          [(1, 'Banana'), (1, 'Coconut'), (2, 'Banana'), (2, 'Coconut'),
                           (3, 'Banana'), (3, 'Coconut'), (4, 'Banana'), (4, 'Coconut'),
                           (5, 'Banana'), (5, 'Coconut')])
-        self.assertEqual([({testlambdalegesher} a:[a**i testforlegesher i testinlegesher range(a+1)])(j) testforlegesher j testinlegesher range(5)],
+        self.assertEqual([(testlambdalegesher a:[a**i testforlegesher i testinlegesher range(a+1)])(j) testforlegesher j testinlegesher range(5)],
                          [[1], [1, 1], [1, 2, 4], [1, 3, 9, 27], [1, 4, 16, 64, 256]])
 
         testdeflegesher test_in_func(l):
@@ -888,15 +886,15 @@ hello world
 
         testwithlegesher manager():
             testpasslegesher
-        testwithlegesher manager() as x:
+        testwithlegesher manager() testaslegesher x:
             testpasslegesher
-        testwithlegesher manager() as (x, y):
+        testwithlegesher manager() testaslegesher (x, y):
             testpasslegesher
         testwithlegesher manager(), manager():
             testpasslegesher
-        testwithlegesher manager() as x, manager() as y:
+        testwithlegesher manager() testaslegesher x, manager() testaslegesher y:
             testpasslegesher
-        testwithlegesher manager() as x, manager():
+        testwithlegesher manager() testaslegesher x, manager():
             testpasslegesher
 
     testdeflegesher testIfElseExpr(self):
