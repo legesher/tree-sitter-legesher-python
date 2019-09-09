@@ -1,7 +1,7 @@
 {
   "targets": [
     {
-      "target_name": "tree_sitter_legesher_python_binding",
+      "target_name": "tree_sitter_python_legesher_binding",
       "include_dirs": [
         "<!(node -e \"require('nan')\")",
         "src"
