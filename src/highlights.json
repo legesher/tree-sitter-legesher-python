@@ -680,14 +680,14 @@
           "type": "identifier",
           "named": true,
           "index": 2,
-          "text": "^[A-Z][A-Z_]*$",
+          "text": "^[A-Z]",
           "state_id": 19
         },
         {
           "type": "identifier",
           "named": true,
           "index": 2,
-          "text": "^[A-Z]",
+          "text": "^[A-Z][A-Z_]*$",
           "state_id": 19
         },
         {
@@ -731,14 +731,14 @@
           "type": "identifier",
           "named": true,
           "index": 2,
-          "text": "^[A-Z]",
+          "text": "^[A-Z][A-Z_]*$",
           "state_id": 21
         },
         {
           "type": "identifier",
           "named": true,
           "index": 2,
-          "text": "^[A-Z][A-Z_]*$",
+          "text": "^[A-Z]",
           "state_id": 21
         },
         {
