@@ -315,6 +315,7 @@ examples/numpy/numpy/fft/info.py
 examples/numpy/numpy/distutils/_shell_utils.py
 examples/numpy/numpy/distutils/tests/test_shell_utils.py
 examples/numpy/numpy/fft/pocketfft.py
+examples/numpy/numpy/fft/_pocketfft.py
 examples/numpy/numpy/fft/tests/test_pocketfft.py
 examples/numpy/numpy/f2py/tests/test_compile_function.py
 examples/numpy/numpy/core/_asarray.py
@@ -325,6 +326,7 @@ examples/numpy/numpy/core/overrides.py
 examples/numpy/numpy/core/_exceptions.py
 examples/numpy/numpy/core/_type_aliases.py
 examples/numpy/numpy/core/_string_helpers.py
+examples/numpy/numpy/core/tests/test__exceptions.py
 examples/numpy/numpy/core/tests/test_umath_accuracy.py
 examples/numpy/numpy/core/tests/test_overrides.py
 examples/numpy/numpy/core/tests/test_scalar_methods.py
@@ -332,7 +334,7 @@ examples/numpy/numpy/random/examples/numba/extending_distributions.py
 examples/numpy/numpy/random/examples/numba/extending.py
 examples/numpy/numpy/random/examples/cython/setup.py
 examples/numpy/numpy/random/_pickle.py
-examples/numpy/numpy/random/tests/test_generator_mt19937_regressions.py 
+examples/numpy/numpy/random/tests/test_generator_mt19937_regressions.py
 examples/numpy/numpy/random/tests/test_randomstate.py
 examples/numpy/numpy/random/tests/test_generator_mt19937.py
 examples/numpy/numpy/random/tests/test_seed_sequence.py
