@@ -91,7 +91,7 @@ def main():
 # Contributing
 ❤️Legesher relies on the passionate members of its community (both developer and non-developer alike) to keep delivering impactful tools to people all over the world.
 
-Before contributing, be sure to consult the [contribution guidelines](https://github.com/legesher/tree-sitter-legesher-python/blob/master/CONTRIBUTING.md) and [language conventions](https://github.com/legesher/tree-sitter-legesher-python/blob/master/.github/language-conventions.md).
+Before contributing, be sure to consult Legesher's [contribution guidelines](https://github.com/legesher/legesher/blob/master/CONTRIBUTING.md) and [language conventions](https://github.com/legesher/legesher/blob/master/.github/language-conventions.md). As a member of our community, you must abide by our [Code Of Conduct](https://github.com/legesher/legesher/blob/master/CODE_OF_CONDUCT.md).
 
 ## Installation
 **1️⃣ Fork the legesher/tree-sitter-legesher-python repository**  
