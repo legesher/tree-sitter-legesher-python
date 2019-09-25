@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-legesher-python",
-  "version": "0.15.1",
+  "version": "0.0.0-development",
   "description": "Legesher's python grammar for tree-sitter",
   "main": "index.js",
   "keywords": [
@@ -15,13 +15,15 @@
     "nan": "^2.4.0"
   },
   "devDependencies": {
+    "semantic-release": "^15.13.24",
     "tree-sitter-cli": "^0.15.5",
     "tree-sitter-highlight-schema": "^0.1.1"
   },
   "scripts": {
     "build": "tree-sitter generate && node-gyp build",
     "test": "tree-sitter test && script/parse-examples",
-    "test-windows": "tree-sitter test"
+    "test-windows": "tree-sitter test",
+    "semantic-release": "semantic-release"
   },
   "repository": "https://github.com/legesher/tree-sitter-legesher-python",
   "bugs": "https://github.com/legesher/tree-sitter-legesher-python/issues",
