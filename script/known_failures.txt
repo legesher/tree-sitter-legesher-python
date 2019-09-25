@@ -16,6 +16,7 @@ examples/numpy/tools/changelog.py
 examples/numpy/tools/test-installed-numpy.py
 examples/numpy/tools/commitstats.py
 examples/numpy/tools/c_coverage/c_coverage_report.py
+examples/numpy/tools/ci/test_all_newsfragments_used.py
 examples/numpy/tools/find_deprecated_escaped_characters.py
 examples/numpy/tools/allocation_tracking/track_allocations.py
 examples/numpy/tools/allocation_tracking/setup.py
