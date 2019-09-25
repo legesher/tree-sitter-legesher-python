@@ -6,9 +6,10 @@
   "keywords": [
     "parser",
     "lexer",
+    "tree-sitter",
     "legesher"
   ],
-  "author": "Madison Edgar <withmadico@gmail.com>",
+  "author": "Madison Edgar <withmadico@gmail.com> https://withmadi.co",
   "license": "MIT",
   "dependencies": {
     "nan": "^2.4.0"
@@ -23,6 +24,7 @@
     "test-windows": "tree-sitter test"
   },
   "repository": "https://github.com/legesher/tree-sitter-legesher-python",
+  "bugs": "https://github.com/legesher/tree-sitter-legesher-python/issues",
   "tree-sitter": [
     {
       "scope": "source.python.legesher",
