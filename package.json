@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-legesher-python",
-  "version": "0.0.0-development",
+  "version": "0.15.2",
   "description": "Legesher's python grammar for tree-sitter",
   "main": "index.js",
   "keywords": [
