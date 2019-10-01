@@ -28,8 +28,8 @@
         <img src="https://img.shields.io/badge/sponsors-4-black?style=flat-square&color=f58977&labelColor=black" /></a>
     <a href="https://instagram.com/withmadico" alt="Sponsors on Github">
         <img src="https://img.shields.io/badge/sponsor-@withmadico-black?style=flat-square&color=f58977&labelColor=black" /></a>
-
 </p>
+                                                                                                                         
 <!-- SOCIAL BADGES -->
 <p align="center">
     <a href="https://github.com/legesher">
