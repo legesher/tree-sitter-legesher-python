@@ -8,7 +8,7 @@
 <!-- DEVELOPMENT BADGES -->
 <p align="center" style="margin-bottom: 5px; margin-top: 5px;">
     <a href="https://travis-ci.com/legesher/tree-sitter-legesher-python">
-        <img src="https://img.shields.io/travis/com/legesher/tree-sitter-legesher-python?style=flat-square&labelColor=black" alt="macOS Build Status"></a>
+        <img src="https://img.shields.io/travis/com/legesher/tree-sitter-legesher-python/?style=flat-square&labelColor=black&logo=travis&logoColor=white alt="macOS Build Status"></a>
     <a href="https://ci.appveyor.com/project/madiedgar/tree-sitter-legesher-python">
         <img src="https://img.shields.io/appveyor/ci/madiedgar/tree-sitter-legesher-python?style=flat-square&labelColor=black" alt="Windows Build Status"></a>
     <a href="https://david-dm.org/legesher/tree-sitter-legesher-python">
