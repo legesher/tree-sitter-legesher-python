@@ -162,6 +162,7 @@ Legesher Developer Tools might be useful to you if:
 - you are a non-native english speaker
 - you are new to programming
 - you work on a team with non-native english speakers
+- you are a developer
 
 | Project | Purpose |
 |---------|---------|
@@ -171,7 +172,7 @@ Legesher Developer Tools might be useful to you if:
 | [`legesher-dot-io`](https://github.com/legesher/legesher-dot-io) | Legesher's public [website](https://legesher.io) |
 | [`legesher-docs`](https://github.com/legesher/legesher-docs) | Legesher's documentation hub. Will be transitioning to a documentation host soon. |
 | [`legesher`](https://github.com/legesher/legesher) | Git integration to collaborate with code and others in other languages |
-
+| [`legesher-pride`](https://github.com/legesher/legesher-pride) | A non-programmer's dream to contributing to open source by sharing what they know and learning what's new |
 ## The Community
 A message from our founder:
 >It is truly a blessing to be surrounded by a community of passionate, driven individuals who love sharing their gifts to creating better products together. Your contribution means the world to me, and keeps me motivated to continue creating. This wouldn't be possible without you. From the bottom of my heart, THANK YOU!
