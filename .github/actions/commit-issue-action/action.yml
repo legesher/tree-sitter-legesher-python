@@ -17,7 +17,7 @@ outputs:
     description: 'The html url of the created issue'
 runs:
   using: 'docker'
-  image: './.github/actions/commit-issue-action/Dockerfile'
+  image: 'Dockerfile'
   args:
     - ${{ inputs.sourceRepo }}
     - ${{ inputs.targetRepo }}

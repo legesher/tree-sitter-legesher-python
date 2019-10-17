@@ -1,3 +1,4 @@
+name: Commit Issue Workflow
 on:
   schedule:
     - cron: '0 * * * *' #runs every hour
@@ -6,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to create an issue if a commit was made
     steps:
+      - uses: actions/checkout@v1
       - name: Commit issue action step
         id: issue
         env:
