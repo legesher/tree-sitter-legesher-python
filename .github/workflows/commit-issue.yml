@@ -16,7 +16,7 @@ jobs:
         with:
           sourceRepo: 'tree-sitter/tree-sitter-python'
           targetRepo: 'legesher/tree-sitter-legesher-python'
-          issueLabels: 'Type: Maintenance, Status: Available, Status: Review Needed'
+          issueLabels: ':construction: Opportunity: Maintenance, Status: Available, Status: Review Needed'
       - name: Get the issue url if commits found
         if: success() && steps.issue.outputs.issue_url != ''
         run: |

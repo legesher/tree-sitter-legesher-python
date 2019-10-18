@@ -345,6 +345,7 @@ examples/numpy/numpy/random/tests/test_direct.py
 examples/numpy/numpy/tests/test_public_api.py
 examples/numpy/doc/neps/nep-0016-benchmark.py
 examples/numpy/doc/source/reference/random/performance.py
+examples/numpy/benchmarks/benchmarks/bench_avx.py
 examples/numpy/benchmarks/benchmarks/bench_records.py
 examples/numpy/benchmarks/benchmarks/bench_import.py
 examples/numpy/benchmarks/benchmarks/bench_overrides.py
