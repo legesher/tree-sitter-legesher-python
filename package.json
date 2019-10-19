@@ -15,6 +15,7 @@
     "nan": "^2.4.0"
   },
   "devDependencies": {
+    "all-contributors-cli": "^6.9.2",
     "semantic-release": "^15.13.24",
     "tree-sitter-cli": "^0.15.5",
     "tree-sitter-highlight-schema": "^0.1.1"

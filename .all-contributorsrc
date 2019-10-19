@@ -1,0 +1,87 @@
+{
+  "projectName": "tree-sitter-legesher-python",
+  "projectOwner": "madiedgar",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "types": {
+    "marketing": {
+      "symbol": "💌",
+      "description": "Marketing - People who help in marketing the repo/project"
+    }
+  },
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "atom",
+  "contributors": [
+    {
+      "login": "madiedgar",
+      "name": "Madison (Pfaff) Edgar",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/7844510?v=4",
+      "profile": "http://withmadi.co",
+      "contributions": [
+        "code",
+        "bug",
+        "projectManagement"
+      ]
+    },
+    {
+      "login": "wescran",
+      "name": "Wesley Cranston",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/36459418?v=4",
+      "profile": "https://github.com/wescran",
+      "contributions": [
+        "code",
+        "marketing"
+      ]
+    },
+    {
+      "login": "dolphincodes",
+      "name": "dolphincodes",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/31311145?v=4",
+      "profile": "https://github.com/dolphincodes",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "LeonardoFurtado",
+      "name": "Leonardo Furtado",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22118060?v=4",
+      "profile": "https://github.com/LeonardoFurtado",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Eshan-Agarwal",
+      "name": "Eshan Agarwal",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/47007275?v=4",
+      "profile": "https://github.com/Eshan-Agarwal",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "MythreyaK",
+      "name": "Mythreya Kuricheti",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/26112391?v=4",
+      "profile": "http://mythreya.dev",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "jonathan-alvaro",
+      "name": "Jonathan Alvaro",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/13015661?v=4",
+      "profile": "https://github.com/jonathan-alvaro",
+      "contributions": [
+        "marketing"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
