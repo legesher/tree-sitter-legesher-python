@@ -71,6 +71,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "jonathan-alvaro",
+      "name": "Jonathan Alvaro",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/13015661?v=4",
+      "profile": "https://github.com/jonathan-alvaro",
+      "contributions": [
+        "marketing"
+      ]
     }
   ],
   "contributorsPerLine": 7

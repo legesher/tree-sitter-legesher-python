@@ -205,6 +205,7 @@ Meet our [community](https://github.com/legesher/legesher/tree/master/community)
     <td align="center"><a href="https://github.com/LeonardoFurtado"><img src="https://avatars3.githubusercontent.com/u/22118060?v=4" width="100px;" alt="Leonardo Furtado"/><br /><sub><b>Leonardo Furtado</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/commits?author=LeonardoFurtado" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Eshan-Agarwal"><img src="https://avatars0.githubusercontent.com/u/47007275?v=4" width="100px;" alt="Eshan Agarwal"/><br /><sub><b>Eshan Agarwal</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/commits?author=Eshan-Agarwal" title="Documentation">📖</a></td>
     <td align="center"><a href="http://mythreya.dev"><img src="https://avatars1.githubusercontent.com/u/26112391?v=4" width="100px;" alt="Mythreya Kuricheti"/><br /><sub><b>Mythreya Kuricheti</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/issues?q=author%3AMythreyaK" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/jonathan-alvaro"><img src="https://avatars2.githubusercontent.com/u/13015661?v=4" width="100px;" alt="Jonathan Alvaro"/><br /><sub><b>Jonathan Alvaro</b></sub></a><br /><a href="#marketing-jonathan-alvaro" title="Marketing - People who help in marketing the repo/project">💌</a></td>
   </tr>
 </table>
 
