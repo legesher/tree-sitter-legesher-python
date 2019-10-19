@@ -20,6 +20,15 @@
         "bug",
         "projectManagement"
       ]
+    },
+    {
+      "login": "wescran",
+      "name": "Wesley Cranston",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/36459418?v=4",
+      "profile": "https://github.com/wescran",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
