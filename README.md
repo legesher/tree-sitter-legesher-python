@@ -204,12 +204,12 @@ Meet our [community](https://github.com/legesher/legesher/tree/master/community)
     <td align="center"><a href="https://github.com/dolphincodes"><img src="https://avatars0.githubusercontent.com/u/31311145?v=4" width="100px;" alt="dolphincodes"/><br /><sub><b>dolphincodes</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/commits?author=dolphincodes" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/LeonardoFurtado"><img src="https://avatars3.githubusercontent.com/u/22118060?v=4" width="100px;" alt="Leonardo Furtado"/><br /><sub><b>Leonardo Furtado</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/commits?author=LeonardoFurtado" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Eshan-Agarwal"><img src="https://avatars0.githubusercontent.com/u/47007275?v=4" width="100px;" alt="Eshan Agarwal"/><br /><sub><b>Eshan Agarwal</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/commits?author=Eshan-Agarwal" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://mythreya.dev"><img src="https://avatars1.githubusercontent.com/u/26112391?v=4" width="100px;" alt="Mythreya Kuricheti"/><br /><sub><b>Mythreya Kuricheti</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/issues?q=author%3AMythreyaK" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 _This project follows the [all-contributors](https://allcontributors.org/) specification. Contributions of any kind are welcome and recognized. ✨_
