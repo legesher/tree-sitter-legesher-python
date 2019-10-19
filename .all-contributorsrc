@@ -6,6 +6,13 @@
   "files": [
     "README.md"
   ],
+  "types": {
+    "marketing":
+    {
+      "symbol": "💌",
+      "description": "Marketing - People who help in marketing the repo/project",
+    }
+  },
   "imageSize": 100,
   "commit": true,
   "commitConvention": "atom",
