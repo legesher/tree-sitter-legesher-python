@@ -1,5 +1,5 @@
 <img src="/lib/images/README-EggPeggy.png" align="center"/>
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 
 
 <h1 align="center">Legesher's Tree-Sitter-Python</h1>
@@ -193,6 +193,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/wescran"><img src="https://avatars2.githubusercontent.com/u/36459418?v=4" width="100px;" alt="Wesley Cranston"/><br /><sub><b>Wesley Cranston</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/commits?author=wescran" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/dolphincodes"><img src="https://avatars0.githubusercontent.com/u/31311145?v=4" width="100px;" alt="dolphincodes"/><br /><sub><b>dolphincodes</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/commits?author=dolphincodes" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/LeonardoFurtado"><img src="https://avatars3.githubusercontent.com/u/22118060?v=4" width="100px;" alt="Leonardo Furtado"/><br /><sub><b>Leonardo Furtado</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/commits?author=LeonardoFurtado" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Eshan-Agarwal"><img src="https://avatars0.githubusercontent.com/u/47007275?v=4" width="100px;" alt="Eshan Agarwal"/><br /><sub><b>Eshan Agarwal</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/commits?author=Eshan-Agarwal" title="Documentation">📖</a></td>
   </tr>
 </table>
 
