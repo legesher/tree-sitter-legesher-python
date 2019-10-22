@@ -1,6 +1,6 @@
 {
   "projectName": "tree-sitter-legesher-python",
-  "projectOwner": "madiedgar",
+  "projectOwner": "legesher",
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
@@ -80,6 +80,15 @@
       "profile": "https://github.com/jonathan-alvaro",
       "contributions": [
         "marketing"
+      ]
+    },
+    {
+      "login": "zeesh-ali",
+      "name": "Zeeshan Ali",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/26367273?v=4",
+      "profile": "https://github.com/zeesh-ali",
+      "contributions": [
+        "doc"
       ]
     }
   ],
