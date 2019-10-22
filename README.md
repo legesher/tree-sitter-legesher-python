@@ -195,22 +195,22 @@ A message from our founder:
 Meet our [community](https://github.com/legesher/legesher/tree/master/community) (full of contributors, backers, sponsors, and supporters) that give a little piece of their heart to this project. Thank you so much. ([emoji key](https://allcontributors.org/docs/en/emoji-key))
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
+<!-- prettier-ignore -->
 <table>
   <tr>
-    <td align="center"><a href="http://withmadi.co"><img src="https://avatars0.githubusercontent.com/u/7844510?v=4" width="100px;" alt="Madison (Pfaff) Edgar"/><br /><sub><b>Madison (Pfaff) Edgar</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/commits?author=madiedgar" title="Code">💻</a> <a href="https://github.com/madiedgar/tree-sitter-legesher-python/issues?q=author%3Amadiedgar" title="Bug reports">🐛</a> <a href="#projectManagement-madiedgar" title="Project Management">📆</a></td>
-    <td align="center"><a href="https://github.com/wescran"><img src="https://avatars2.githubusercontent.com/u/36459418?v=4" width="100px;" alt="Wesley Cranston"/><br /><sub><b>Wesley Cranston</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/commits?author=wescran" title="Code">💻</a> <a href="#marketing-wescran" title="Marketing - People who help in marketing the repo/project">💌</a></td>
-    <td align="center"><a href="https://github.com/dolphincodes"><img src="https://avatars0.githubusercontent.com/u/31311145?v=4" width="100px;" alt="dolphincodes"/><br /><sub><b>dolphincodes</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/commits?author=dolphincodes" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/LeonardoFurtado"><img src="https://avatars3.githubusercontent.com/u/22118060?v=4" width="100px;" alt="Leonardo Furtado"/><br /><sub><b>Leonardo Furtado</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/commits?author=LeonardoFurtado" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/Eshan-Agarwal"><img src="https://avatars0.githubusercontent.com/u/47007275?v=4" width="100px;" alt="Eshan Agarwal"/><br /><sub><b>Eshan Agarwal</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/commits?author=Eshan-Agarwal" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://mythreya.dev"><img src="https://avatars1.githubusercontent.com/u/26112391?v=4" width="100px;" alt="Mythreya Kuricheti"/><br /><sub><b>Mythreya Kuricheti</b></sub></a><br /><a href="https://github.com/madiedgar/tree-sitter-legesher-python/issues?q=author%3AMythreyaK" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="http://withmadi.co"><img src="https://avatars0.githubusercontent.com/u/7844510?v=4" width="100px;" alt="Madison (Pfaff) Edgar"/><br /><sub><b>Madison (Pfaff) Edgar</b></sub></a><br /><a href="https://github.com/legesher/tree-sitter-legesher-python/commits?author=madiedgar" title="Code">💻</a> <a href="https://github.com/legesher/tree-sitter-legesher-python/issues?q=author%3Amadiedgar" title="Bug reports">🐛</a> <a href="#projectManagement-madiedgar" title="Project Management">📆</a></td>
+    <td align="center"><a href="https://github.com/wescran"><img src="https://avatars2.githubusercontent.com/u/36459418?v=4" width="100px;" alt="Wesley Cranston"/><br /><sub><b>Wesley Cranston</b></sub></a><br /><a href="https://github.com/legesher/tree-sitter-legesher-python/commits?author=wescran" title="Code">💻</a> <a href="#marketing-wescran" title="Marketing - People who help in marketing the repo/project">💌</a></td>
+    <td align="center"><a href="https://github.com/dolphincodes"><img src="https://avatars0.githubusercontent.com/u/31311145?v=4" width="100px;" alt="dolphincodes"/><br /><sub><b>dolphincodes</b></sub></a><br /><a href="https://github.com/legesher/tree-sitter-legesher-python/commits?author=dolphincodes" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/LeonardoFurtado"><img src="https://avatars3.githubusercontent.com/u/22118060?v=4" width="100px;" alt="Leonardo Furtado"/><br /><sub><b>Leonardo Furtado</b></sub></a><br /><a href="https://github.com/legesher/tree-sitter-legesher-python/commits?author=LeonardoFurtado" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Eshan-Agarwal"><img src="https://avatars0.githubusercontent.com/u/47007275?v=4" width="100px;" alt="Eshan Agarwal"/><br /><sub><b>Eshan Agarwal</b></sub></a><br /><a href="https://github.com/legesher/tree-sitter-legesher-python/commits?author=Eshan-Agarwal" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://mythreya.dev"><img src="https://avatars1.githubusercontent.com/u/26112391?v=4" width="100px;" alt="Mythreya Kuricheti"/><br /><sub><b>Mythreya Kuricheti</b></sub></a><br /><a href="https://github.com/legesher/tree-sitter-legesher-python/issues?q=author%3AMythreyaK" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/jonathan-alvaro"><img src="https://avatars2.githubusercontent.com/u/13015661?v=4" width="100px;" alt="Jonathan Alvaro"/><br /><sub><b>Jonathan Alvaro</b></sub></a><br /><a href="#marketing-jonathan-alvaro" title="Marketing - People who help in marketing the repo/project">💌</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/zeesh-ali"><img src="https://avatars1.githubusercontent.com/u/26367273?v=4" width="100px;" alt="Zeeshan Ali"/><br /><sub><b>Zeeshan Ali</b></sub></a><br /><a href="https://github.com/legesher/tree-sitter-legesher-python/commits?author=zeesh-ali" title="Documentation">📖</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 _This project follows the [all-contributors](https://allcontributors.org/) specification. Contributions of any kind are welcome and recognized. ✨_
