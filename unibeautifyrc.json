@@ -1,0 +1,24 @@
+{
+  "JavaScript": {
+    "beautifiers": [
+      "Prettier",
+      "Pretty Diff",
+      "JS-Beautify",
+      "ESLint"
+    ],
+    "align_assignments": true,
+    "arrow_parens": "always",
+    "brace_style": "collapse-preserve-inline",
+    "break_chained_methods": true,
+    "end_with_semicolon": true,
+    "indent_chained_methods": true,
+    "indent_size": 0,
+    "multiline_ternary": "always",
+    "unindent_chained_methods": true,
+    "comma_first": false,
+    "end_with_comma": false,
+    "end_with_newline": true,
+    "pragma_insert": true,
+    "remove_trailing_whitespace": true
+  }
+}
