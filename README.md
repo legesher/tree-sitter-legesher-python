@@ -171,14 +171,14 @@ This repository is a forked extension of [tree-sitter's](http://tree-sitter.gith
 
 Legesher Developer Tools might be useful to you if:
 
-- you are a non-native english speaker
-- you are new to programming
-- you work on a team with non-native english speakers
-- you are a developer
+- You are a non-native english speaker
+- You are new to programming
+- You work on a team with non-native english speakers
+- You are a developer
 
 | Project                                                                                  | Purpose                                                                                                   |
 | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [`tree-sitter-legesher-python`](https://github.com/legesher/tree-sitter-legesher-python) | Tree-sitter python grammar used by text editors allowing Legesher's languages to be implemented           |
+| [`tree-sitter-legesher-python`](https://github.com/legesher/tree-sitter-legesher-python) | Tree-sitter python grammar used by text editors allowing Legesher's languages to be implemented.           |
 | [`language-legesher-python`](https://github.com/legesher/language-legesher-python)       | Atom's programming language binding to allow syntax highlighting, code folding etc. to a specific grammar |
 | [`legesher-translations`](https://github.com/legesher/legesher-translations)             | Host and API of all the language translations for written languages for code keywords / concepts          |
 | [`legesher-dot-io`](https://github.com/legesher/legesher-dot-io)                         | Legesher's public [website](https://legesher.io)                                                          |
@@ -190,7 +190,7 @@ Legesher Developer Tools might be useful to you if:
 
 A message from our founder:
 
-> It is truly a blessing to be surrounded by a community of passionate, driven individuals who love sharing their gifts to creating better products together. Your contribution means the world to me, and keeps me motivated to continue creating. This wouldn't be possible without you. From the bottom of my heart, THANK YOU!
+> It is truly a blessing to be surrounded by a community of passionate, driven individuals who love sharing their gifts for creating better products together. Your contribution means the world to me and keeps me motivated to continue creating. This wouldn't be possible without you. From the bottom of my heart, THANK YOU!
 
 Meet our [community](https://github.com/legesher/legesher/tree/master/community) (full of contributors, backers, sponsors, and supporters) that give a little piece of their heart to this project. Thank you so much. ([emoji key](https://allcontributors.org/docs/en/emoji-key))
 
