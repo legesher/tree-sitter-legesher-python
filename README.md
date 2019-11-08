@@ -195,7 +195,8 @@ A message from our founder:
 Meet our [community](https://github.com/legesher/legesher/tree/master/community) (full of contributors, backers, sponsors, and supporters) that give a little piece of their heart to this project. Thank you so much. ([emoji key](https://allcontributors.org/docs/en/emoji-key))
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 <table>
   <tr>
     <td align="center"><a href="http://withmadi.co"><img src="https://avatars0.githubusercontent.com/u/7844510?v=4" width="100px;" alt="Madison (Pfaff) Edgar"/><br /><sub><b>Madison (Pfaff) Edgar</b></sub></a><br /><a href="https://github.com/legesher/tree-sitter-legesher-python/commits?author=madiedgar" title="Code">💻</a> <a href="https://github.com/legesher/tree-sitter-legesher-python/issues?q=author%3Amadiedgar" title="Bug reports">🐛</a> <a href="#projectManagement-madiedgar" title="Project Management">📆</a></td>
@@ -208,9 +209,12 @@ Meet our [community](https://github.com/legesher/legesher/tree/master/community)
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/zeesh-ali"><img src="https://avatars1.githubusercontent.com/u/26367273?v=4" width="100px;" alt="Zeeshan Ali"/><br /><sub><b>Zeeshan Ali</b></sub></a><br /><a href="https://github.com/legesher/tree-sitter-legesher-python/commits?author=zeesh-ali" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/andres-posadas"><img src="https://avatars2.githubusercontent.com/u/50717533?v=4" width="100px;" alt="andres-posadas"/><br /><sub><b>andres-posadas</b></sub></a><br /><a href="https://github.com/legesher/tree-sitter-legesher-python/commits?author=andres-posadas" title="Documentation">📖</a></td>
   </tr>
 </table>
 
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 _This project follows the [all-contributors](https://allcontributors.org/) specification. Contributions of any kind are welcome and recognized. ✨_
