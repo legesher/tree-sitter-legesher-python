@@ -211,6 +211,7 @@ Meet our [community](https://github.com/legesher/legesher/tree/master/community)
     <td align="center"><a href="https://github.com/zeesh-ali"><img src="https://avatars1.githubusercontent.com/u/26367273?v=4" width="100px;" alt="Zeeshan Ali"/><br /><sub><b>Zeeshan Ali</b></sub></a><br /><a href="https://github.com/legesher/tree-sitter-legesher-python/commits?author=zeesh-ali" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/andres-posadas"><img src="https://avatars2.githubusercontent.com/u/50717533?v=4" width="100px;" alt="andres-posadas"/><br /><sub><b>andres-posadas</b></sub></a><br /><a href="https://github.com/legesher/tree-sitter-legesher-python/commits?author=andres-posadas" title="Documentation">📖</a></td>
     <td align="center"><a href="https://blenderbell.artstation.com/"><img src="https://avatars3.githubusercontent.com/u/32410407?v=4" width="100px;" alt="calra123"/><br /><sub><b>calra123</b></sub></a><br /><a href="https://github.com/legesher/tree-sitter-legesher-python/commits?author=calra123" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/AjaiDubey"><img src="https://avatars3.githubusercontent.com/u/44136561?v=4" width="100px;" alt="Ajai Dubey"/><br /><sub><b>Ajai Dubey</b></sub></a><br /><a href="#ideas-AjaiDubey" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
