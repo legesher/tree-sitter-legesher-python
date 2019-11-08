@@ -328,6 +328,7 @@ examples/numpy/numpy/core/_exceptions.py
 examples/numpy/numpy/core/_type_aliases.py
 examples/numpy/numpy/core/_string_helpers.py
 examples/numpy/numpy/core/tests/test__exceptions.py
+examples/numpy/numpy/core/tests/test_issue14735.py
 examples/numpy/numpy/core/tests/test_umath_accuracy.py
 examples/numpy/numpy/core/tests/test_overrides.py
 examples/numpy/numpy/core/tests/test_scalar_methods.py
