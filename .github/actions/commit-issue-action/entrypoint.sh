@@ -10,7 +10,7 @@ create_issue()
   done
   title="New commit to $INPUT_SOURCEREPO"
   body="There was a new commit/commits to $INPUT_SOURCEREPO, please check the newly updated codebase. Here are the recent commits: $urls"
-  labels=$INPUT_LABELS
+  labels=$INPUT_ISSUELABELS
   json=$(jq -nc --arg l "$labels" --arg t "$title" --arg b "$body" '$l | split(", ") | {title: $t, body: $b, labels: .}')
   issue=$(curl -sS -X POST "$API/repos/$INPUT_TARGETREPO/issues" -H "authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" -d "$json")
   created=$?
@@ -19,7 +19,7 @@ create_issue()
     exit $created
   else
     echo "Issue created in $INPUT_TARGETREPO"
-    issueURL=$(echo $issue | tr '\n' ' ' | jq -r '.html_url')
+    issueURL=$(jq -n "$issue" | jq -r '.html_url')
     return 0
   fi
 }
@@ -35,7 +35,7 @@ check_commits()
   if [ "$(echo $commits)" = "[ ]" ]; then
     return 1
   else
-    commiturls=$(echo $commits | tr '\n' ' ' | jq -r ".[] | .html_url")
+    commiturls=$(jq -n "$commits" | jq -r ".[] | .html_url")
     return 0
   fi
 }
@@ -54,7 +54,7 @@ main()
       exit 0
     fi
   else
-    echo "No recent commits found."
+    echo "No recent commits found. Response code was $found"
     exit 0
   fi
 }
