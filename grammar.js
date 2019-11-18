@@ -24,7 +24,7 @@ const PREC = {
 module.exports = grammar({
   name: "python_legesher",
 
-  extras: $ => [$.comment, /[\s\uFEFF\u2060\u200B]|\\\r?\n/],
+  extras: $ => [$.comment, /[\s\f\uFEFF\u2060\u200B]|\\\r?\n/],
 
   supertypes: $ => [
     $._simple_statement,
