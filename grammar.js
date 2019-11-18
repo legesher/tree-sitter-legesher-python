@@ -302,7 +302,7 @@ module.exports = grammar({
         $.typed_parameter,
         $.default_parameter,
         $.typed_default_parameter,
-        $.list_splat,
+        choice($.list_splat, alias("*", $.list_splat)),
         $.dictionary_splat
       ),
 
@@ -325,9 +325,9 @@ module.exports = grammar({
         )
       ),
 
-    list_splat: $ => seq("*", optional($._expression)),
+    list_splat: $ => seq("*", $._expression),
 
-    dictionary_splat: $ => seq("*", "*", $._expression),
+    dictionary_splat: $ => seq("**", $._expression),
 
     global_statement: $ => seq("testgloballegesher", commaSep1($.identifier)),
 
@@ -350,6 +350,16 @@ module.exports = grammar({
         field("body", $._suite)
       ),
 
+    parenthesized_list_splat: $ =>
+      seq(
+        "(",
+        choice(
+          alias($.parenthesized_list_splat, $.parenthesized_expression),
+          $.list_splat
+        ),
+        ")"
+      ),
+
     argument_list: $ =>
       seq(
         "(",
@@ -359,6 +369,7 @@ module.exports = grammar({
               $._expression,
               $.list_splat,
               $.dictionary_splat,
+              alias($.parenthesized_list_splat, $.parenthesized_expression),
               $.keyword_argument
             )
           )
