@@ -343,6 +343,7 @@ examples/numpy/numpy/random/tests/test_seed_sequence.py
 examples/numpy/numpy/random/tests/test_smoke.py
 examples/numpy/numpy/random/tests/test_randomstate_regression.py
 examples/numpy/numpy/random/tests/test_direct.py
+examples/numpy/numpy/random/tests/test_extending.py
 examples/numpy/numpy/tests/test_public_api.py
 examples/numpy/doc/neps/nep-0016-benchmark.py
 examples/numpy/doc/source/reference/random/performance.py
