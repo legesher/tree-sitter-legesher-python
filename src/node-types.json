@@ -2476,10 +2476,6 @@
     "named": true
   },
   {
-    "type": "list_splat",
-    "named": true
-  },
-  {
     "type": "none",
     "named": true
   },

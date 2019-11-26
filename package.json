@@ -26,7 +26,7 @@
     "js-beautify": "^1.10.2",
     "prettier": "^1.18.2",
     "prettydiff2": "^2.2.8",
-    "tree-sitter-cli": "^0.15.12",
+    "tree-sitter-cli": "^0.15.14",
     "tree-sitter-highlight-schema": "^0.1.1",
     "unibeautify-cli": "^0.2.1"
   },
