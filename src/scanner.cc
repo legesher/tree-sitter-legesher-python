@@ -3,6 +3,7 @@
 #include <cwctype>
 #include <cstring>
 #include <cassert>
+#include <stdio.h>
 
 namespace {
 
@@ -27,6 +28,7 @@ struct Delimiter {
     Raw = 1 << 3,
     Format = 1 << 4,
     Triple = 1 << 5,
+    Bytes = 1 << 6,
   };
 
   Delimiter() : flags(0) {}
@@ -41,6 +43,10 @@ struct Delimiter {
 
   bool is_triple() const {
     return flags & Triple;
+  }
+
+  bool is_bytes() const {
+    return flags & Bytes;
   }
 
   int32_t end_character() const {
@@ -60,6 +66,10 @@ struct Delimiter {
 
   void set_triple() {
     flags |= Triple;
+  }
+
+  void set_bytes() {
+    flags |= Bytes;
   }
 
   void set_end_character(int32_t character) {
@@ -153,6 +163,17 @@ struct Scanner {
         } else if (lexer->lookahead == '\\') {
           if (delimiter.is_raw()) {
             lexer->advance(lexer, false);
+        } else if (delimiter.is_bytes()) {
+            lexer->mark_end(lexer);
+            lexer->advance(lexer, false);
+            if (lexer->lookahead == 'N' || lexer->lookahead == 'u' || lexer->lookahead == 'U') {
+              // In bytes string, \N{...}, \uXXXX and \UXXXXXXXX are not escape sequences
+              // https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals
+              lexer->advance(lexer, false);
+            } else {
+                lexer->result_symbol = STRING_CONTENT;
+                return has_content;
+            }
           } else {
             lexer->mark_end(lexer);
             lexer->result_symbol = STRING_CONTENT;
@@ -226,6 +247,9 @@ struct Scanner {
         } else {
           return false;
         }
+      } else if (lexer->lookahead == '\f') {
+        indent_length = 0;
+        skip(lexer);
       } else if (lexer->lookahead == 0) {
         if (valid_symbols[DEDENT] && indent_length_stack.size() > 1) {
           indent_length_stack.pop_back();
@@ -272,11 +296,9 @@ struct Scanner {
           delimiter.set_format();
         } else if (lexer->lookahead == 'r' || lexer->lookahead == 'R') {
           delimiter.set_raw();
-        } else if (
-          lexer->lookahead != 'b' &&
-          lexer->lookahead != 'B' &&
-          lexer->lookahead != 'u' &&
-          lexer->lookahead != 'U') {
+        } else if (lexer->lookahead == 'b' || lexer->lookahead == 'B') {
+          delimiter.set_bytes();
+        } else if (lexer->lookahead != 'u' && lexer->lookahead != 'U') {
           break;
         }
         has_flags = true;

@@ -322,6 +322,10 @@
         {
           "type": "list_splat",
           "named": true
+        },
+        {
+          "type": "parenthesized_expression",
+          "named": true
         }
       ]
     }
@@ -392,20 +396,27 @@
   {
     "type": "attribute",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_primary_expression",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        }
-      ]
+    "fields": {
+      "attribute": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "object": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "_primary_expression",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -419,6 +430,64 @@
           {
             "type": "expression_list",
             "named": true
+          }
+        ]
+      },
+      "operator": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "%=",
+            "named": false
+          },
+          {
+            "type": "&=",
+            "named": false
+          },
+          {
+            "type": "**=",
+            "named": false
+          },
+          {
+            "type": "*=",
+            "named": false
+          },
+          {
+            "type": "+=",
+            "named": false
+          },
+          {
+            "type": "-=",
+            "named": false
+          },
+          {
+            "type": "//=",
+            "named": false
+          },
+          {
+            "type": "/=",
+            "named": false
+          },
+          {
+            "type": "<<=",
+            "named": false
+          },
+          {
+            "type": ">>=",
+            "named": false
+          },
+          {
+            "type": "@=",
+            "named": false
+          },
+          {
+            "type": "^=",
+            "named": false
+          },
+          {
+            "type": "|=",
+            "named": false
           }
         ]
       },
@@ -569,7 +638,7 @@
     "named": true,
     "fields": {
       "left": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
           {
@@ -594,7 +663,7 @@
       },
       "right": {
         "multiple": false,
-        "required": false,
+        "required": true,
         "types": [
           {
             "type": "_expression",
@@ -1222,7 +1291,7 @@
     "fields": {
       "name": {
         "multiple": true,
-        "required": false,
+        "required": true,
         "types": [
           {
             "type": "aliased_import",
@@ -1370,8 +1439,8 @@
       }
     },
     "children": {
-      "multiple": true,
-      "required": true,
+      "multiple": false,
+      "required": false,
       "types": [
         {
           "type": "wildcard_import",
@@ -1391,7 +1460,7 @@
     "fields": {
       "name": {
         "multiple": true,
-        "required": false,
+        "required": true,
         "types": [
           {
             "type": "aliased_import",
@@ -1693,6 +1762,14 @@
           "named": true
         },
         {
+          "type": "list_splat",
+          "named": true
+        },
+        {
+          "type": "parenthesized_expression",
+          "named": true
+        },
+        {
           "type": "yield",
           "named": true
         }
@@ -1720,7 +1797,7 @@
       }
     },
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "types": [
         {
@@ -2207,19 +2284,23 @@
     }
   },
   {
-    "type": "testimportlegesher",
+    "type": "!=",
     "named": false
   },
   {
-    "type": ".",
+    "type": "%",
     "named": false
   },
   {
-    "type": "testfromlegesher",
+    "type": "%=",
     "named": false
   },
   {
-    "type": "__future__",
+    "type": "&",
+    "named": false
+  },
+  {
+    "type": "&=",
     "named": false
   },
   {
@@ -2231,167 +2312,7 @@
     "named": false
   },
   {
-    "type": ",",
-    "named": false
-  },
-  {
-    "type": "testaslegesher",
-    "named": false
-  },
-  {
     "type": "*",
-    "named": false
-  },
-  {
-    "type": "testprintlegesher",
-    "named": false
-  },
-  {
-    "type": ">>",
-    "named": false
-  },
-  {
-    "type": "testassertlegesher",
-    "named": false
-  },
-  {
-    "type": ":=",
-    "named": false
-  },
-  {
-    "type": "testreturnlegesher",
-    "named": false
-  },
-  {
-    "type": "testdellegesher",
-    "named": false
-  },
-  {
-    "type": "testraiselegesher",
-    "named": false
-  },
-  {
-    "type": "testpasslegesher",
-    "named": false
-  },
-  {
-    "type": "testbreaklegesher",
-    "named": false
-  },
-  {
-    "type": "testcontinuelegesher",
-    "named": false
-  },
-  {
-    "type": "testiflegesher",
-    "named": false
-  },
-  {
-    "type": ":",
-    "named": false
-  },
-  {
-    "type": "testeliflegesher",
-    "named": false
-  },
-  {
-    "type": "testelselegesher",
-    "named": false
-  },
-  {
-    "type": "testasynclegesher",
-    "named": false
-  },
-  {
-    "type": "testforlegesher",
-    "named": false
-  },
-  {
-    "type": "testinlegesher",
-    "named": false
-  },
-  {
-    "type": "testwhilelegesher",
-    "named": false
-  },
-  {
-    "type": "testtrylegesher",
-    "named": false
-  },
-  {
-    "type": "testexceptlegesher",
-    "named": false
-  },
-  {
-    "type": "testfinallylegesher",
-    "named": false
-  },
-  {
-    "type": "testwithlegesher",
-    "named": false
-  },
-  {
-    "type": "testdeflegesher",
-    "named": false
-  },
-  {
-    "type": "->",
-    "named": false
-  },
-  {
-    "type": "=",
-    "named": false
-  },
-  {
-    "type": "testgloballegesher",
-    "named": false
-  },
-  {
-    "type": "testnonlocallegesher",
-    "named": false
-  },
-  {
-    "type": "testexeclegesher",
-    "named": false
-  },
-  {
-    "type": "testclasslegesher",
-    "named": false
-  },
-  {
-    "type": "@",
-    "named": false
-  },
-  {
-    "type": "testnotlegesher",
-    "named": false
-  },
-  {
-    "type": "testandlegesher",
-    "named": false
-  },
-  {
-    "type": "testorlegesher",
-    "named": false
-  },
-  {
-    "type": "+",
-    "named": false
-  },
-  {
-    "type": "-",
-    "named": false
-  },
-  {
-    "type": "/",
-    "named": false
-  },
-  {
-    "type": "%",
-    "named": false
-  },
-  {
-    "type": "//",
     "named": false
   },
   {
@@ -2399,67 +2320,7 @@
     "named": false
   },
   {
-    "type": "|",
-    "named": false
-  },
-  {
-    "type": "&",
-    "named": false
-  },
-  {
-    "type": "^",
-    "named": false
-  },
-  {
-    "type": "<<",
-    "named": false
-  },
-  {
-    "type": "~",
-    "named": false
-  },
-  {
-    "type": "<",
-    "named": false
-  },
-  {
-    "type": "<=",
-    "named": false
-  },
-  {
-    "type": "==",
-    "named": false
-  },
-  {
-    "type": "!=",
-    "named": false
-  },
-  {
-    "type": ">=",
-    "named": false
-  },
-  {
-    "type": ">",
-    "named": false
-  },
-  {
-    "type": "<>",
-    "named": false
-  },
-  {
-    "type": "testislegesher",
-    "named": false
-  },
-  {
-    "type": "testlambdalegesher",
-    "named": false
-  },
-  {
-    "type": "+=",
-    "named": false
-  },
-  {
-    "type": "-=",
+    "type": "**=",
     "named": false
   },
   {
@@ -2467,11 +2328,39 @@
     "named": false
   },
   {
-    "type": "/=",
+    "type": "+",
     "named": false
   },
   {
-    "type": "@=",
+    "type": "+=",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": "-=",
+    "named": false
+  },
+  {
+    "type": "->",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": "/",
+    "named": false
+  },
+  {
+    "type": "//",
     "named": false
   },
   {
@@ -2479,15 +2368,23 @@
     "named": false
   },
   {
-    "type": "%=",
+    "type": "/=",
     "named": false
   },
   {
-    "type": "**=",
+    "type": ":",
     "named": false
   },
   {
-    "type": ">>=",
+    "type": ":=",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "<<",
     "named": false
   },
   {
@@ -2495,19 +2392,43 @@
     "named": false
   },
   {
-    "type": "&=",
+    "type": "<=",
     "named": false
   },
   {
-    "type": "^=",
+    "type": "<>",
     "named": false
   },
   {
-    "type": "|=",
+    "type": "=",
     "named": false
   },
   {
-    "type": "testyieldlegesher",
+    "type": "==",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": ">=",
+    "named": false
+  },
+  {
+    "type": ">>",
+    "named": false
+  },
+  {
+    "type": ">>=",
+    "named": false
+  },
+  {
+    "type": "@",
+    "named": false
+  },
+  {
+    "type": "@=",
     "named": false
   },
   {
@@ -2519,27 +2440,27 @@
     "named": false
   },
   {
+    "type": "^",
+    "named": false
+  },
+  {
+    "type": "^=",
+    "named": false
+  },
+  {
+    "type": "__future__",
+    "named": false
+  },
+  {
     "type": "ellipsis",
     "named": true
-  },
-  {
-    "type": "{",
-    "named": false
-  },
-  {
-    "type": "}",
-    "named": false
   },
   {
     "type": "escape_sequence",
     "named": true
   },
   {
-    "type": "type_conversion",
-    "named": true
-  },
-  {
-    "type": "integer",
+    "type": "false",
     "named": true
   },
   {
@@ -2551,11 +2472,7 @@
     "named": true
   },
   {
-    "type": "true",
-    "named": true
-  },
-  {
-    "type": "false",
+    "type": "integer",
     "named": true
   },
   {
@@ -2563,11 +2480,167 @@
     "named": true
   },
   {
+    "type": "testandlegesher",
+    "named": false
+  },
+  {
+    "type": "testaslegesher",
+    "named": false
+  },
+  {
+    "type": "testassertlegesher",
+    "named": false
+  },
+  {
+    "type": "testasynclegesher",
+    "named": false
+  },
+  {
     "type": "testawaitlegesher",
     "named": false
   },
   {
-    "type": "comment",
+    "type": "testbreaklegesher",
+    "named": false
+  },
+  {
+    "type": "testclasslegesher",
+    "named": false
+  },
+  {
+    "type": "testcontinuelegesher",
+    "named": false
+  },
+  {
+    "type": "testdeflegesher",
+    "named": false
+  },
+  {
+    "type": "testdellegesher",
+    "named": false
+  },
+  {
+    "type": "testeliflegesher",
+    "named": false
+  },
+  {
+    "type": "testelselegesher",
+    "named": false
+  },
+  {
+    "type": "testexceptlegesher",
+    "named": false
+  },
+  {
+    "type": "testexeclegesher",
+    "named": false
+  },
+  {
+    "type": "testfinallylegesher",
+    "named": false
+  },
+  {
+    "type": "testforlegesher",
+    "named": false
+  },
+  {
+    "type": "testfromlegesher",
+    "named": false
+  },
+  {
+    "type": "testgloballegesher",
+    "named": false
+  },
+  {
+    "type": "testiflegesher",
+    "named": false
+  },
+  {
+    "type": "testimportlegesher",
+    "named": false
+  },
+  {
+    "type": "testinlegesher",
+    "named": false
+  },
+  {
+    "type": "testislegesher",
+    "named": false
+  },
+  {
+    "type": "testlambdalegesher",
+    "named": false
+  },
+  {
+    "type": "testnonlocallegesher",
+    "named": false
+  },
+  {
+    "type": "testnotlegesher",
+    "named": false
+  },
+  {
+    "type": "testorlegesher",
+    "named": false
+  },
+  {
+    "type": "testpasslegesher",
+    "named": false
+  },
+  {
+    "type": "testprintlegesher",
+    "named": false
+  },
+  {
+    "type": "testraiselegesher",
+    "named": false
+  },
+  {
+    "type": "testreturnlegesher",
+    "named": false
+  },
+  {
+    "type": "testtrylegesher",
+    "named": false
+  },
+  {
+    "type": "testwhilelegesher",
+    "named": false
+  },
+  {
+    "type": "testwithlegesher",
+    "named": false
+  },
+  {
+    "type": "testyieldlegesher",
+    "named": false
+  },
+  {
+    "type": "true",
     "named": true
+  },
+  {
+    "type": "type_conversion",
+    "named": true
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "|",
+    "named": false
+  },
+  {
+    "type": "|=",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  },
+  {
+    "type": "~",
+    "named": false
   }
 ]
