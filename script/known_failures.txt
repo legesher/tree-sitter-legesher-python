@@ -375,6 +375,7 @@ examples/numpy/numpy/random/mtrand/generate_mtrand_c.py
 examples/numpy/numpy/random/info.py
 examples/numpy/numpy/random/_examples/numba/extending_distributions.py
 examples/numpy/numpy/random/_examples/numba/extending.py
+examples/numpy/numpy/random/_examples/cffi/extending.py
 examples/numpy/numpy/random/_examples/cython/setup.py
 examples/numpy/numpy/matrixlib/tests/test_matrix_linalg.py
 examples/numpy/numpy/matrixlib/tests/test_defmatrix.py
