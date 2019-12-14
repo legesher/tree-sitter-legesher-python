@@ -2,8 +2,8 @@
   "name": "tree-sitter-legesher-python",
   "version": "0.15.2",
   "details": {
-    "tree-sitter-python-version": "0.15.1",
-    "latest-commit": "75c13794ef7273df6f48c0758bcab0138856c6e1"
+    "tree-sitter-python-version": "0.16.0",
+    "latest-commit": "118cf40115e13e95ed3ac4c0e05c0534e07bc0fa"
   },
   "description": "Legesher's python grammar for tree-sitter",
   "main": "index.js",
@@ -30,8 +30,7 @@
     "js-beautify": "^1.10.2",
     "prettier": "^1.18.2",
     "prettydiff2": "^2.2.8",
-    "tree-sitter-cli": "^0.15.14",
-    "tree-sitter-highlight-schema": "^0.1.1",
+    "tree-sitter-cli": "^0.16.1",
     "unibeautify-cli": "^0.2.1"
   },
   "scripts": {
