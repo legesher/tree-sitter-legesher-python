@@ -319,6 +319,7 @@ examples/numpy/numpy/fft/pocketfft.py
 examples/numpy/numpy/fft/_pocketfft.py
 examples/numpy/numpy/fft/tests/test_pocketfft.py
 examples/numpy/numpy/f2py/tests/test_compile_function.py
+examples/numpy/numpy/f2py/tests/test_crackfortran.py
 examples/numpy/numpy/core/_asarray.py
 examples/numpy/numpy/core/_dtype_ctypes.py
 examples/numpy/numpy/core/_ufunc_config.py
@@ -376,6 +377,7 @@ examples/numpy/numpy/random/info.py
 examples/numpy/numpy/random/_examples/numba/extending_distributions.py
 examples/numpy/numpy/random/_examples/numba/extending.py
 examples/numpy/numpy/random/_examples/cffi/extending.py
+examples/numpy/numpy/random/_examples/cffi/parse.py
 examples/numpy/numpy/random/_examples/cython/setup.py
 examples/numpy/numpy/matrixlib/tests/test_matrix_linalg.py
 examples/numpy/numpy/matrixlib/tests/test_defmatrix.py
