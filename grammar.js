@@ -608,10 +608,13 @@ module.exports = grammar({
       ),
 
     attribute: $ =>
-      seq(
-        field("object", $._primary_expression),
-        ".",
-        field("attribute", $.identifier)
+      prec(
+        PREC.call,
+        seq(
+          field("object", $._primary_expression),
+          ".",
+          field("attribute", $.identifier)
+        )
       ),
 
     subscript: $ =>
