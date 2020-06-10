@@ -622,12 +622,15 @@ module.exports = grammar({
       ),
 
     subscript: $ =>
-      seq(
-        field("value", $._primary_expression),
-        "[",
-        field("subscript", commaSep1(choice($._expression, $.slice))),
-        optional(","),
-        "]"
+      prec(
+        PREC.call,
+        seq(
+          field("value", $._primary_expression),
+          "[",
+          field("subscript", commaSep1(choice($._expression, $.slice))),
+          optional(","),
+          "]"
+        )
       ),
 
     slice: $ =>
