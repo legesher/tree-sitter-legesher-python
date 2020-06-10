@@ -3,7 +3,7 @@
   "version": "0.15.2",
   "details": {
     "tree-sitter-python-version": "0.16.1",
-    "latest-commit": "0603b5e978318afe77458ad85d5ee05a90f4fdb3"
+    "latest-commit": "44aaa294c39049435d8746323d991c89aee4599d"
   },
   "description": "Legesher's python grammar for tree-sitter",
   "main": "index.js",
