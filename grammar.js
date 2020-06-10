@@ -393,7 +393,11 @@ module.exports = grammar({
       ),
 
     _suite: $ =>
-      choice(alias($._simple_statements, $.block), seq($._indent, $.block)),
+      choice(
+        alias($._simple_statements, $.block),
+        seq($._indent, $.block),
+        alias($._newline, $.block)
+      ),
 
     block: $ => seq(repeat($._statement), $._dedent),
 
