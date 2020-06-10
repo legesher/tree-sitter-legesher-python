@@ -79,6 +79,7 @@
 ">>" @operator
 "|" @operator
 "~" @operator
+"->" @operator
 "testandlegesher" @operator
 "testinlegesher" @operator
 "testislegesher" @operator
