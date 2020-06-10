@@ -340,6 +340,30 @@ Power Operator Precedence
         (integer)))))
 
 =====================================
+Operator precedence
+=====================================
+
+a() + b[c] * c.d.e
+
+---
+
+(module
+  (expression_statement
+    (binary_operator
+      left: (call
+        function: (identifier)
+        arguments: (argument_list))
+      right: (binary_operator
+        left: (subscript
+          value: (identifier)
+          subscript: (identifier))
+        right: (attribute
+          object: (attribute
+            object: (identifier)
+            attribute: (identifier))
+          attribute: (identifier))))))
+
+=====================================
 Bitwise operators
 =====================================
 

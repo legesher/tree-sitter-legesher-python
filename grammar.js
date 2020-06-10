@@ -393,7 +393,11 @@ module.exports = grammar({
       ),
 
     _suite: $ =>
-      choice(alias($._simple_statements, $.block), seq($._indent, $.block)),
+      choice(
+        alias($._simple_statements, $.block),
+        seq($._indent, $.block),
+        alias($._newline, $.block)
+      ),
 
     block: $ => seq(repeat($._statement), $._dedent),
 
@@ -608,19 +612,25 @@ module.exports = grammar({
       ),
 
     attribute: $ =>
-      seq(
-        field("object", $._primary_expression),
-        ".",
-        field("attribute", $.identifier)
+      prec(
+        PREC.call,
+        seq(
+          field("object", $._primary_expression),
+          ".",
+          field("attribute", $.identifier)
+        )
       ),
 
     subscript: $ =>
-      seq(
-        field("value", $._primary_expression),
-        "[",
-        field("subscript", commaSep1(choice($._expression, $.slice))),
-        optional(","),
-        "]"
+      prec(
+        PREC.call,
+        seq(
+          field("value", $._primary_expression),
+          "[",
+          field("subscript", commaSep1(choice($._expression, $.slice))),
+          optional(","),
+          "]"
+        )
       ),
 
     slice: $ =>
