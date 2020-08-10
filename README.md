@@ -57,6 +57,8 @@
 </p>
 <!-- SOCIAL MEDIA -->
 
+*Read this in other languages: [English](README.md), [简体中文](README.zh-cn.md).*
+
 # Introduction
 
 **`tree-sitter-legesher-python`** 🌳 is the written language interchangeable version of the tree-sitter grammar for the python language used by text editors such as **Atom**. This npm package is used by [`language-legesher-python`](https://github.com/legesher/language-legesher-python) to enable you to code in the language you natively use.
