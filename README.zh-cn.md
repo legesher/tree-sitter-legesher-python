@@ -85,9 +85,6 @@ _📢 查看是否有你的母语在我们软件里[Legesher translation reposit
 **5️⃣ 开启蛋壳 `language-legesher-python`**  
 去会你的Packages选项，确保'language-legesher-python'是否已经开启。
 
-**6️⃣ Write A "Hello World" Program In Your Language**  
-Now, you can start coding in Python using any written language currently available within Legesher's translation library! The syntax highlighting should match as if you were coding Python in English!
-
 **6️⃣ 编个简单的 "Hello World" 程序用你的编码语言**  
 尝试用Python在蛋壳的翻译知识库里吧！编码编辑软件的句法会有根据的。
 
@@ -96,11 +93,11 @@ def main():
     print "Hello World"
 ```
 
-# Contributing
+# 贡献
 
-❤️Legesher relies on the passionate members of its community (both developer and non-developer alike) to keep delivering impactful tools to people all over the world.
+❤️蛋壳的发展是靠来自各地的计算机与非计算机有所贡献的，把蛋壳软件继续往全球推广。
 
-Before contributing, be sure to consult Legesher's [contribution guidelines](https://github.com/legesher/legesher/blob/master/CONTRIBUTING.md) and [language conventions](https://github.com/legesher/legesher/blob/master/LANGUAGE_CONVENTIONS.md). As a member of our community, you must abide by our [Code Of Conduct](https://github.com/legesher/legesher/blob/master/CODE_OF_CONDUCT.md).
+还没贡献前，请确保你有以蛋壳之[贡献指南手册](https://github.com/legesher/legesher/blob/master/CONTRIBUTING.md)与[语言惯例](https://github.com/legesher/legesher/blob/master/LANGUAGE_CONVENTIONS.md)。身为一位蛋壳的会员，你应去遵守我们的[行为守则](https://github.com/legesher/legesher/blob/master/CODE_OF_CONDUCT.md)。
 
 ## Installation
 
