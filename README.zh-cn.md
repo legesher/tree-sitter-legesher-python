@@ -164,24 +164,24 @@ tree-sitter test
 
 这个资料库是来自于[tree-sitter's](http://tree-sitter.github.io) `tree-sitter-python`。这包装的发展是有跟 _language_ 资料库[`language-legesher-python`](https://github.com/legesher/language-legesher-python)有关系。这俩资料库的发展步伐是大同小异，因此在发展方面是建议在这俩资料库下手了解。
 
-**The Python **
+**Python语言**
 
-- [Python 2 Grammar](https://docs.python.org/2/reference/grammar.html)
-- [Python 3 Grammar](https://docs.python.org/3/reference/grammar.html)
+- [Python 2 语法](https://docs.python.org/2/reference/grammar.html)
+- [Python 3 语法](https://docs.python.org/3/reference/grammar.html)
 - [Tree Sitter](https://github.com/tree-sitter/tree-sitter)
 
-# Legesher Projects
+# 蛋壳项目
 
-Legesher Developer Tools might be useful to you if:
+蛋壳工程道具应该会帮到你，若你是：
 
-- you are a non-native english speaker
-- you are new to programming
-- you work on a team with non-native english speakers
-- you are a developer
+- 当你是一位非英语母语者
+- 新手计算机
+- 与跟非英语母语者一起合作
+- 你是个专业计算机
 
 | Project                                                                                  | Purpose                                                                                                   |
 | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [`tree-sitter-legesher-python`](https://github.com/legesher/tree-sitter-legesher-python) | Tree-sitter python grammar used by text editors allowing Legesher's languages to be implemented           |
+| [`tree-sitter-legesher-python`](https://github.com/legesher/tree-sitter-legesher-python) | Tree-sitter python grammar used by text editors allowing Legesher's languages to be implemented            |
 | [`language-legesher-python`](https://github.com/legesher/language-legesher-python)       | Atom's programming language binding to allow syntax highlighting, code folding etc. to a specific grammar |
 | [`legesher-translations`](https://github.com/legesher/legesher-translations)             | Host and API of all the language translations for written languages for code keywords / concepts          |
 | [`legesher-dot-io`](https://github.com/legesher/legesher-dot-io)                         | Legesher's public [website](https://legesher.io)                                                          |
@@ -189,13 +189,13 @@ Legesher Developer Tools might be useful to you if:
 | [`legesher`](https://github.com/legesher/legesher)                                       | Git integration to collaborate with code and others in other languages                                    |
 | [`legesher-pride`](https://github.com/legesher/legesher-pride)                           | A non-programmer's dream to contributing to open source by sharing what they know and learning what's new |
 
-## The Community
+## 社团
 
-A message from our founder:
+来自创办人的信息：
 
-> It is truly a blessing to be surrounded by a community of passionate, driven individuals who love sharing their gifts to creating better products together. Your contribution means the world to me, and keeps me motivated to continue creating. This wouldn't be possible without you. From the bottom of my heart, THANK YOU!
+> 这是我的荣幸，能拥有一个积极，有上进心的社团，愿意把自己的知识分享以及展现在这个平台上。你的贡献是真心感触到我，你们会是我继续发展蛋壳的主要动力。没你们的无私风险，蛋壳不会有今天的成就。因此，再次感谢你们的付出！
 
-Meet our [community](https://github.com/legesher/legesher/tree/master/community) (full of contributors, backers, sponsors, and supporters) that give a little piece of their heart to this project. Thank you so much. ([emoji key](https://allcontributors.org/docs/en/emoji-key))
+介绍我们的[社团](https://github.com/legesher/legesher/tree/master/community) (都是贡献者, 支持者和赞助者) 给予他们的时间和精力为这份项目作出巨大的贡献。真的非常感谢你们。([emoji key](https://allcontributors.org/docs/en/emoji-key))
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
