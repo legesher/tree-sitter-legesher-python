@@ -99,72 +99,72 @@ def main():
 
 还没贡献前，请确保你有以蛋壳之[贡献指南手册](https://github.com/legesher/legesher/blob/master/CONTRIBUTING.md)与[语言惯例](https://github.com/legesher/legesher/blob/master/LANGUAGE_CONVENTIONS.md)。身为一位蛋壳的会员，你应去遵守我们的[行为守则](https://github.com/legesher/legesher/blob/master/CODE_OF_CONDUCT.md)。
 
-## Installation
+## 安装步骤
 
-**1️⃣ Fork the legesher/tree-sitter-legesher-python repository**  
-Follow these instructions on [how to fork a repository](https://help.github.com/en/articles/fork-a-repo)
+**1️⃣ Fork legesher/tree-sitter-legesher-python 资料库**  
+[如何Fork这个资料库](https://help.github.com/en/articles/fork-a-repo)，跟着以上这个步骤。
 
-**2️⃣ Cloning the repository**  
-Once you have set up your fork of the `legesher/tree-sitter-legesher-python` repository, you'll want to clone it to your local machine. This is so you can make and test all of your personal edits before adding it to the master version of `legesher/tree-sitter-legesher-python`.
+**2️⃣ 资料库复制**  
+当你成功fork下`legesher/tree-sitter-legesher-python`的资料库，你需要复制资料库在你的主机。因为这样你可以拥有更改的自由并且在你本身主机里测试自己改过的组件，确保了更改的质量就能推上master版本的`legesher/tree-sitter-legesher-python`。
 
-Navigate to the location on your computer where you want to host your code. Once in the appropriate folder, run the following command to clone the repository to your local machine.
+在还没复制资料库，确定你的文档位置（最好是你能方便进入的），并且在主机的command prompt打一下这句：
 
 ```
 git clone git@github.com:your-username/tree-sitter-legesher-python.git
 ```
 
-**3️⃣ Bootstrapping the repository**  
-You'll then want to navigate within the folder that was just created that contains all of the content of the forked repository. There you'll want to run the installation script to get the updated version of all the dependencies.
+**3️⃣ 解包资料库**  
+使用你主机的command prompt进入你下载完毕的资料库，并且写以下这句来完毕你的软件安装。
 
 ```
 cd tree-sitter-legesher-python
 npm install
 ```
 
-## Development
+## 发展
 
-We love your desire to give back, and want to make the process as welcoming to newcomers and experts as possible. We're working on developing more intuitive tutorials for individuals of all skill levels and expertise, so if you think the community would value from being walked through the steps you're going through please share! ❤️
+无论是初级计算机或者专业地计算机，你渴望的贡献我们都是很欢迎地接纳。我们如今主要发展在推广在于不同等级计算机的教学视频。因此若你觉得我们的贡献是对社会有所帮助，请不妨关注我们的团体并且分享出去！❤️
 
-### Test Changes
+### 测试的改动
 
-When you start making changes to the code on your local branch, you'll need to test those changes. Before your code can be accepted into the master branch, it will have to pass all of the tests within `/examples/*`. To check the updates made to the grammar, run the following commands:
+当你开始在你的主机资料库有更动，你需要做测试检查编码的质量。你的更动需要通过`/examples/*`的测试才能被接纳进去master版本的资料库。写以下这句来检查句法的更新：
 
-**1️⃣ Save Current Changes**  
-When you get to a point when you want to test the functionality of the code, make sure all your changes are saved. ❗They don't necessarily have to be _committed_ changes in order to test them.
+**1️⃣ 储存最新的更新**  
+当你想要测试组件的功能，请确保你储存你的更新资料❗ 它们不需要 _committed_ 来测试它们。
 
-**2️⃣ Generate the updated tree-sitter parser**  
-You'll need to generate a new tree-sitter grammar whenever you make changes in this repository. Running this command will usually update files within the `/src/*` folder.
+**2️⃣ 生产最新tree-sitter解释器**  
+你会需要生产新的tree-sitter句法当你的资料库有所更动。通常`/src/*`这句句法会使用在主机的command prompt的文件位置。
 
 ```
 tree-sitter generate
 ```
 
-**3️⃣ Configure the grammar**  
-This command makes sure the binding information for the grammar is properly set up and configured.
+**3️⃣ 配置那个语法**  
+这个指令是确保语法资料的配置是正常的。
 
 ```
 node-gyp configure
 ```
 
-**4️⃣ Build the grammar**
-Using the newly configured bindings, we can now build the new grammar with your changes.
+**4️⃣ 建立语法**
+当你的配置得到了绑定，我们就能使用一下的句子来建立新的语法
 
 ```
 node-gyp build
 ```
 
-**5️⃣ Test changes**  
-To make sure that the grammar is properly updated, run the tests. If you add elements that do not have tests to prove whether they work correctly or not, please include them in your pull request.
+**5️⃣ 测试运作功能**
+我们应该去测试组件来确保他的正常运作。若你加上的新元素是否能正常运作，请把他们包括在pull request内。
 
 ```
 tree-sitter test
 ```
 
-### References
+### 参考资料
 
-This repository is a forked extension of [tree-sitter's](http://tree-sitter.github.io) `tree-sitter-python`. This package works alongside the _language_ repository [`language-legesher-python`](https://github.com/legesher/language-legesher-python). These two repositories work closely together, so it may be useful to touch up on both repositories' documentation.
+这个资料库是来自于[tree-sitter's](http://tree-sitter.github.io) `tree-sitter-python`。这包装的发展是有跟 _language_ 资料库[`language-legesher-python`](https://github.com/legesher/language-legesher-python)有关系。这俩资料库的发展步伐是大同小异，因此在发展方面是建议在这俩资料库下手了解。
 
-**The Python Language**
+**The Python **
 
 - [Python 2 Grammar](https://docs.python.org/2/reference/grammar.html)
 - [Python 3 Grammar](https://docs.python.org/3/reference/grammar.html)
