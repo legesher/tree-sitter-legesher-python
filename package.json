@@ -30,7 +30,7 @@
     "js-beautify": "^1.11.0",
     "prettier": "^1.18.2",
     "prettydiff2": "^2.2.8",
-    "tree-sitter-cli": "^0.16.8",
+    "tree-sitter-cli": "^0.16.9",
     "unibeautify-cli": "^0.2.1"
   },
   "scripts": {
