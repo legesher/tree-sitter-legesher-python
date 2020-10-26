@@ -7,12 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to create an issue if a commit was made
     steps:
-      - uses: actions/checkout@v1
       - name: Commit issue action step
         id: issue
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        uses: ./.github/actions/commit-issue-action
+        uses: wescran/commit-issue-action@v2 
         with:
           sourceRepo: 'tree-sitter/tree-sitter-python'
           targetRepo: 'legesher/tree-sitter-legesher-python'
