@@ -11,7 +11,7 @@ jobs:
         id: issue
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        uses: wescran/commit-issue-action@v2.0.0
+        uses: wescran/commit-issue-action@v2.1.0
         with:
           sourceRepo: 'tree-sitter/tree-sitter-python'
           targetRepo: 'legesher/tree-sitter-legesher-python'
