@@ -27,6 +27,8 @@ module.exports = grammar({
 
   extras: $ => [$.comment, /[\s\f\uFEFF\u2060\u200B]|\\\r?\n/],
 
+  conflicts: $ => [[$._primary_expression, $.left_hand_side]],
+
   supertypes: $ => [
     $._simple_statement,
     $._compound_statement,
@@ -351,14 +353,18 @@ module.exports = grammar({
         field("body", $._suite)
       ),
 
-      parenthesized_list_splat: $ => prec(PREC.parenthesized_list_splat, seq(
-        "(",
-        choice(
-          alias($.parenthesized_list_splat, $.parenthesized_expression),
-          $.list_splat
-        ),
-        ")"
-      )),
+    parenthesized_list_splat: $ =>
+      prec(
+        PREC.parenthesized_list_splat,
+        seq(
+          "(",
+          choice(
+            alias($.parenthesized_list_splat, $.parenthesized_expression),
+            $.list_splat
+          ),
+          ")"
+        )
+      ),
 
     argument_list: $ =>
       seq(
@@ -562,7 +568,7 @@ module.exports = grammar({
 
     assignment: $ =>
       seq(
-        field("left", $.expression_list),
+        field("left", $.left_hand_side),
         choice(
           seq("=", field("right", $._right_hand_side)),
           seq(":", field("type", $.type)),
@@ -577,7 +583,7 @@ module.exports = grammar({
 
     augmented_assignment: $ =>
       seq(
-        field("left", $.expression_list),
+        field("left", $.left_hand_side),
         field(
           "operator",
           choice(
@@ -597,6 +603,16 @@ module.exports = grammar({
           )
         ),
         field("right", $._right_hand_side)
+      ),
+
+    left_hand_side: $ =>
+      prec.right(
+        seq(
+          commaSep1(
+            choice($.identifier, $.subscript, $.attribute, $.list, $.tuple)
+          ),
+          optional(",")
+        )
       ),
 
     _right_hand_side: $ =>
@@ -673,12 +689,7 @@ module.exports = grammar({
 
     // Literals
 
-    list: $ =>
-      seq(
-        "[",
-        optional($._collection_elements),
-        "]"
-      ),
+    list: $ => seq("[", optional($._collection_elements), "]"),
 
     _comprehension_clauses: $ =>
       seq($.for_in_clause, repeat(choice($.for_in_clause, $.if_clause))),
@@ -717,19 +728,20 @@ module.exports = grammar({
         seq("(", choice($._expression, $.yield), ")")
       ),
 
-    _collection_elements: $ => seq(
-      commaSep1(choice(
-        $._expression, $.yield, $.list_splat, $.parenthesized_list_splat
-      )),
-      optional(',')
-    ),
-
-    tuple: $ =>
+    _collection_elements: $ =>
       seq(
-        "(",
-        optional($._collection_elements),
-        ")"
+        commaSep1(
+          choice(
+            $._expression,
+            $.yield,
+            $.list_splat,
+            $.parenthesized_list_splat
+          )
+        ),
+        optional(",")
       ),
+
+    tuple: $ => seq("(", optional($._collection_elements), ")"),
 
     generator_expression: $ =>
       seq("(", field("body", $._expression), $._comprehension_clauses, ")"),

@@ -3,7 +3,7 @@
   "version": "0.15.3",
   "details": {
     "tree-sitter-python-version": "0.16.1",
-    "latest-commit": "58f57240834d6b88624e32ad0ab9531d55fb7a5d"
+    "latest-commit": "30f538aa1f932a2864c102694761d3127a61dc68"
   },
   "description": "Legesher's python grammar for tree-sitter",
   "main": "index.js",
@@ -16,7 +16,7 @@
   "author": "Madison Edgar <withmadico@gmail.com> https://withmadi.co",
   "license": "MIT",
   "dependencies": {
-    "nan": "^2.14.1"
+    "nan": "^2.14.2"
   },
   "devDependencies": {
     "@unibeautify/beautifier-eslint": "^0.6.0",
@@ -24,10 +24,10 @@
     "@unibeautify/beautifier-prettier": "^0.9.0",
     "@unibeautify/beautifier-prettydiff": "^0.6.0",
     "@unibeautify/cli": "^0.5.1",
-    "all-contributors-cli": "^6.16.0",
+    "all-contributors-cli": "^6.19.0",
     "eslint": "^5.16.0",
-    "eslint-plugin-react": "^7.20.0",
-    "js-beautify": "^1.11.0",
+    "eslint-plugin-react": "^7.21.5",
+    "js-beautify": "^1.13.0",
     "prettier": "^1.18.2",
     "prettydiff2": "^2.2.8",
     "tree-sitter-cli": "^0.16.9",
