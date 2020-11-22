@@ -14,7 +14,8 @@
 //!     def double(x):
 //!         return x * 2
 //! "#;
-//! let mut parser = tree_sitter_python::parser();
+//! let mut parser = = Parser::new();
+//! parser.set_language(tree_sitter_python::language()).expect("Error loading Python grammar");
 //! let parsed = parser.parse(code, None);
 //! # assert!(parsed.is_some());
 //! ```
@@ -25,21 +26,9 @@
 //! [tree-sitter]: https://tree-sitter.github.io/
 
 use tree_sitter::Language;
-use tree_sitter::Parser;
 
 extern "C" {
     fn tree_sitter_python() -> Language;
-}
-
-/// Returns a new tree-sitter [Parser][] preconfigured to parse Python code.
-///
-/// [Parser]: https://docs.rs/tree-sitter/*/tree_sitter/struct.Parser.html
-pub fn parser() -> Parser {
-    let mut parser = Parser::new();
-    parser
-        .set_language(language())
-        .expect("Error installing Python grammar");
-    parser
 }
 
 /// Returns the tree-sitter [Language][] for this grammar.
@@ -61,6 +50,9 @@ pub const NODE_TYPES: &'static str = include_str!("../../src/node-types.json");
 mod tests {
     #[test]
     fn can_load_grammar() {
-        let _parser = super::parser();
+        let _parser = tree_sitter::Parser::new();
+        parser
+            .set_language(super::language())
+            .expect("Error loading Python grammar");
     }
 }
