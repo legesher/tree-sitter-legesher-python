@@ -28,7 +28,10 @@ module.exports = grammar({
   extras: $ => [$.comment, /[\s\f\uFEFF\u2060\u200B]|\\\r?\n/],
 
   conflicts: $ => [
-    [$.primary_expression, $.left_hand_side]
+    [$.primary_expression, $.pattern],
+    [$.primary_expression, $.list_splat_pattern],
+    [$.tuple, $.tuple_pattern],
+    [$.list, $.list_pattern],
   ],
 
   supertypes: $ => [
@@ -36,7 +39,8 @@ module.exports = grammar({
     $._compound_statement,
     $.expression,
     $.primary_expression,
-    $._parameter
+    $.pattern,
+    $.parameter,
   ],
 
   externals: $ => [
@@ -51,9 +55,8 @@ module.exports = grammar({
   inline: $ => [
     $._simple_statement,
     $._compound_statement,
-    $.keyword_identifier,
     $._suite,
-    $._parameter
+    $.keyword_identifier,
   ],
 
   word: $ => $.identifier,
@@ -182,7 +185,7 @@ module.exports = grammar({
     break_statement: $ => prec.left("testbreaklegesher"),
     continue_statement: $ => prec.left("testcontinuelegesher"),
 
-    // Compount statements
+    // Compound statements
 
     _compound_statement: $ =>
       choice(
@@ -220,7 +223,7 @@ module.exports = grammar({
       seq(
         optional("testasynclegesher"),
         "testforlegesher",
-        field("left", $.variables),
+        field("left", $.left_hand_side),
         "testinlegesher",
         field("right", $.expression_list),
         ":",
@@ -279,7 +282,7 @@ module.exports = grammar({
     with_item: $ =>
       seq(
         field("value", $.expression),
-        optional(seq("testaslegesher", field("alias", $.expression)))
+        optional(seq("testaslegesher", field("alias", $.pattern)))
       ),
 
     function_definition: $ =>
@@ -297,19 +300,44 @@ module.exports = grammar({
 
     lambda_parameters: $ => $._parameters,
 
-    _parameters: $ => seq(commaSep1($._parameter), optional(",")),
+    _parameters: $ => seq(commaSep1($.parameter), optional(",")),
 
-    _parameter: $ =>
+    _patterns: $ => seq(commaSep1($.pattern), optional(',')),
+
+    parameter: $ =>
       choice(
         $.identifier,
         $.keyword_identifier,
-        $.tuple,
         $.typed_parameter,
         $.default_parameter,
         $.typed_default_parameter,
-        choice($.list_splat, alias("*", $.list_splat)),
-        $.dictionary_splat
+        $.list_splat_pattern,
+        $.tuple_pattern,
+        alias("*", $.list_splat_pattern),
+        $.dictionary_splat_pattern
       ),
+
+    pattern: $ => choice(
+      $.identifier,
+      $.keyword_identifier,
+      $.subscript,
+      $.attribute,
+      $.list_splat_pattern,
+      $.tuple_pattern,
+      $.list_pattern
+    ),
+
+    tuple_pattern: $ => seq(
+      '(',
+      optional($._patterns),
+      ')'
+    ),
+
+    list_pattern: $ => seq(
+      '[',
+      optional($._patterns),
+      ']'
+    ),
 
     default_parameter: $ =>
       seq(
@@ -329,6 +357,16 @@ module.exports = grammar({
           field("value", $.expression)
         )
       ),
+
+    list_splat_pattern: $ => seq(
+      '*',
+      choice($.identifier, $.keyword_identifier, $.subscript, $.attribute)
+    ),
+
+    dictionary_splat_pattern: $ => seq(
+      '**',
+      choice($.identifier, $.keyword_identifier, $.subscript, $.attribute)
+    ),
 
     list_splat: $ => seq("*", $.expression),
 
@@ -408,8 +446,6 @@ module.exports = grammar({
       ),
 
     block: $ => seq(repeat($._statement), $._dedent),
-
-    variables: $ => seq(commaSep1($.primary_expression), optional(",")),
 
     expression_list: $ =>
       prec.right(seq(commaSep1($.expression), optional(","))),
@@ -607,15 +643,7 @@ module.exports = grammar({
         field("right", $._right_hand_side)
       ),
 
-    left_hand_side: $ =>
-      prec.right(
-        seq(
-          commaSep1(
-            choice($.identifier, $.subscript, $.attribute, $.list, $.tuple)
-          ),
-          optional(",")
-        )
-      ),
+    left_hand_side: $ => $._patterns,
 
     _right_hand_side: $ =>
       choice($.expression_list, $.assignment, $.augmented_assignment, $.yield),
@@ -674,7 +702,7 @@ module.exports = grammar({
       prec(
         PREC.typed_parameter,
         seq(
-          choice($.identifier, $.list_splat, $.dictionary_splat),
+          choice($.identifier, $.list_splat_pattern, $.dictionary_splat_pattern),
           ":",
           field("type", $.type)
         )
@@ -752,7 +780,7 @@ module.exports = grammar({
       seq(
         optional("testasynclegesher"),
         "testforlegesher",
-        field("left", $.variables),
+        field("left", $.left_hand_side),
         "testinlegesher",
         field("right", commaSep1($._expression_within_for_in_clause)),
         optional(",")
