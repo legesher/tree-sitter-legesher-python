@@ -3,7 +3,7 @@
 This crate provides a Python grammar for the [tree-sitter][] parsing library.
 To use this crate, add it to the `[dependencies]` section of your `Cargo.toml`
 file. (Note that you will probably also need to depend on the
-the parsed result in any useful way.) [`tree-sitter`][tree-sitter crate] crate to use the parsed result in any useful
+[`tree-sitter`][tree-sitter crate] crate to use the parsed result in any useful
 way.)
 
 ```toml
@@ -12,9 +12,9 @@ tree-sitter = "0.17"
 tree-sitter-python = "0.16"
 ```
 
-Typically, you will use the [parser func][] function to create a tree-sitter
-[Parser][] that is configured to use this grammar, and then use the parser to
-parse some code:
+Typically, you will use the [parser][parser func][] function to create a
+tree-sitter [Parser][] that is configured to use this grammar, and then use the
+parser to parse some code:
 
 ```rust
 let code = indoc! {"
