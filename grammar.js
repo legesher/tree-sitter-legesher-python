@@ -27,12 +27,20 @@ module.exports = grammar({
 
   extras: $ => [$.comment, /[\s\f\uFEFF\u2060\u200B]|\\\r?\n/],
 
+  conflicts: $ => [
+    [$.primary_expression, $.pattern],
+    [$.primary_expression, $.list_splat_pattern],
+    [$.tuple, $.tuple_pattern],
+    [$.list, $.list_pattern],
+  ],
+
   supertypes: $ => [
     $._simple_statement,
     $._compound_statement,
-    $._expression,
-    $._primary_expression,
-    $._parameter
+    $.expression,
+    $.primary_expression,
+    $.pattern,
+    $.parameter,
   ],
 
   externals: $ => [
@@ -47,9 +55,10 @@ module.exports = grammar({
   inline: $ => [
     $._simple_statement,
     $._compound_statement,
-    $.keyword_identifier,
     $._suite,
-    $._parameter
+    $._expressions,
+    $._left_hand_side,
+    $.keyword_identifier,
   ],
 
   word: $ => $.identifier,
@@ -132,7 +141,7 @@ module.exports = grammar({
           seq(
             "testprintlegesher",
             $.chevron,
-            repeat(seq(",", field("argument", $._expression))),
+            repeat(seq(",", field("argument", $.expression))),
             optional(",")
           )
         ),
@@ -140,45 +149,48 @@ module.exports = grammar({
           -1,
           seq(
             "testprintlegesher",
-            commaSep1(field("argument", $._expression)),
+            commaSep1(field("argument", $.expression)),
             optional(",")
           )
         )
       ),
 
-    chevron: $ => seq(">>", $._expression),
+    chevron: $ => seq(">>", $.expression),
 
-    assert_statement: $ => seq("testassertlegesher", commaSep1($._expression)),
+    assert_statement: $ => seq("testassertlegesher", commaSep1($.expression)),
 
     expression_statement: $ =>
       choice(
-        $._expression,
-        seq(commaSep1($._expression), optional(",")),
+        $.expression,
+        seq(commaSep1($.expression), optional(",")),
         $.assignment,
         $.augmented_assignment,
         $.yield
       ),
 
     named_expression: $ =>
-      seq(field("name", $.identifier), ":=", field("value", $._expression)),
+      seq(field("name", $.identifier), ":=", field("value", $.expression)),
 
     return_statement: $ =>
-      seq("testreturnlegesher", optional($.expression_list)),
+      seq("testreturnlegesher", optional($._expressions)),
 
-    delete_statement: $ => seq("testdellegesher", $.expression_list),
+    delete_statement: $ => seq("testdellegesher", $._expressions),
+
+    _expressions: $ => choice(
+      $.expression, $.expression_list),
 
     raise_statement: $ =>
       seq(
         "testraiselegesher",
-        optional($.expression_list),
-        optional(seq("testfromlegesher", field("cause", $._expression)))
+        optional($._expressions),
+        optional(seq("testfromlegesher", field("cause", $.expression)))
       ),
 
     pass_statement: $ => prec.left("testpasslegesher"),
     break_statement: $ => prec.left("testbreaklegesher"),
     continue_statement: $ => prec.left("testcontinuelegesher"),
 
-    // Compount statements
+    // Compound statements
 
     _compound_statement: $ =>
       choice(
@@ -195,7 +207,7 @@ module.exports = grammar({
     if_statement: $ =>
       seq(
         "testiflegesher",
-        field("condition", $._expression),
+        field("condition", $.expression),
         ":",
         field("consequence", $._suite),
         repeat(field("alternative", $.elif_clause)),
@@ -205,7 +217,7 @@ module.exports = grammar({
     elif_clause: $ =>
       seq(
         "testeliflegesher",
-        field("condition", $._expression),
+        field("condition", $.expression),
         ":",
         field("consequence", $._suite)
       ),
@@ -216,9 +228,9 @@ module.exports = grammar({
       seq(
         optional("testasynclegesher"),
         "testforlegesher",
-        field("left", $.variables),
+        field("left", $._left_hand_side),
         "testinlegesher",
-        field("right", $.expression_list),
+        field("right", $._expressions),
         ":",
         field("body", $._suite),
         field("alternative", optional($.else_clause))
@@ -227,7 +239,7 @@ module.exports = grammar({
     while_statement: $ =>
       seq(
         "testwhilelegesher",
-        field("condition", $._expression),
+        field("condition", $.expression),
         ":",
         field("body", $._suite),
         optional(field("alternative", $.else_clause))
@@ -253,8 +265,8 @@ module.exports = grammar({
         "testexceptlegesher",
         optional(
           seq(
-            $._expression,
-            optional(seq(choice("testaslegesher", ","), $._expression))
+            $.expression,
+            optional(seq(choice("testaslegesher", ","), $.expression))
           )
         ),
         ":",
@@ -274,8 +286,8 @@ module.exports = grammar({
 
     with_item: $ =>
       seq(
-        field("value", $._expression),
-        optional(seq("testaslegesher", field("alias", $._expression)))
+        field("value", $.expression),
+        optional(seq("testaslegesher", field("alias", $.pattern)))
       ),
 
     function_definition: $ =>
@@ -289,46 +301,17 @@ module.exports = grammar({
         field("body", $._suite)
       ),
 
-    parameters: $ => seq("(", optional($._parameters), ")"),
+    parameters: $ => seq(
+      '(',
+      optional($._parameters),
+      ')'
+    ),
 
     lambda_parameters: $ => $._parameters,
 
-    _parameters: $ => seq(commaSep1($._parameter), optional(",")),
+    list_splat: $ => seq("*", $.expression),
 
-    _parameter: $ =>
-      choice(
-        $.identifier,
-        $.keyword_identifier,
-        $.tuple,
-        $.typed_parameter,
-        $.default_parameter,
-        $.typed_default_parameter,
-        choice($.list_splat, alias("*", $.list_splat)),
-        $.dictionary_splat
-      ),
-
-    default_parameter: $ =>
-      seq(
-        field("name", choice($.identifier, $.keyword_identifier)),
-        "=",
-        field("value", $._expression)
-      ),
-
-    typed_default_parameter: $ =>
-      prec(
-        PREC.typed_parameter,
-        seq(
-          field("name", choice($.identifier, $.keyword_identifier)),
-          ":",
-          field("type", $.type),
-          "=",
-          field("value", $._expression)
-        )
-      ),
-
-    list_splat: $ => seq("*", $._expression),
-
-    dictionary_splat: $ => seq("**", $._expression),
+    dictionary_splat: $ => seq("**", $.expression),
 
     global_statement: $ => seq("testgloballegesher", commaSep1($.identifier)),
 
@@ -339,7 +322,7 @@ module.exports = grammar({
       seq(
         "testexeclegesher",
         field("code", $.string),
-        optional(seq("testinlegesher", commaSep1($._expression)))
+        optional(seq("testinlegesher", commaSep1($.expression)))
       ),
 
     class_definition: $ =>
@@ -351,14 +334,18 @@ module.exports = grammar({
         field("body", $._suite)
       ),
 
-      parenthesized_list_splat: $ => prec(PREC.parenthesized_list_splat, seq(
-        "(",
-        choice(
-          alias($.parenthesized_list_splat, $.parenthesized_expression),
-          $.list_splat
-        ),
-        ")"
-      )),
+    parenthesized_list_splat: $ =>
+      prec(
+        PREC.parenthesized_list_splat,
+        seq(
+          "(",
+          choice(
+            alias($.parenthesized_list_splat, $.parenthesized_expression),
+            $.list_splat
+          ),
+          ")"
+        )
+      ),
 
     argument_list: $ =>
       seq(
@@ -366,7 +353,7 @@ module.exports = grammar({
         optional(
           commaSep1(
             choice(
-              $._expression,
+              $.expression,
               $.list_splat,
               $.dictionary_splat,
               alias($.parenthesized_list_splat, $.parenthesized_expression),
@@ -401,30 +388,110 @@ module.exports = grammar({
 
     block: $ => seq(repeat($._statement), $._dedent),
 
-    variables: $ => seq(commaSep1($._primary_expression), optional(",")),
-
-    expression_list: $ =>
-      prec.right(seq(commaSep1($._expression), optional(","))),
+    expression_list: $ => prec.right(seq(
+      $.expression,
+      choice(
+        ',',
+        seq(
+          repeat1(seq(
+            ',',
+            $.expression
+          )),
+          optional(',')
+        ),
+      ))),
 
     dotted_name: $ => sep1($.identifier, "."),
 
-    // Expressions
-    _expression_within_for_in_clause: $ =>
-      choice($._expression, alias($.lambda_within_for_in_clause, $.lambda)),
+    // Patterns
 
-    _expression: $ =>
+    _parameters: $ => seq(
+      commaSep1($.parameter),
+      optional(',')
+    ),
+
+    _patterns: $ => seq(
+      commaSep1($.pattern),
+      optional(',')
+    ),
+
+    parameter: $ => choice(
+      $.identifier,
+      $.keyword_identifier,
+      $.typed_parameter,
+      $.default_parameter,
+      $.typed_default_parameter,
+      $.list_splat_pattern,
+      $.tuple_pattern,
+      alias('*', $.list_splat_pattern),
+      $.dictionary_splat_pattern
+    ),
+
+    pattern: $ => choice(
+      $.identifier,
+      $.keyword_identifier,
+      $.subscript,
+      $.attribute,
+      $.list_splat_pattern,
+      $.tuple_pattern,
+      $.list_pattern
+    ),
+
+    tuple_pattern: $ => seq(
+      '(',
+      optional($._patterns),
+      ')'
+    ),
+
+    list_pattern: $ => seq(
+      '[',
+      optional($._patterns),
+      ']'
+    ),
+
+    default_parameter: $ => seq(
+      field('name', choice($.identifier, $.keyword_identifier)),
+      '=',
+      field('value', $.expression)
+    ),
+
+    typed_default_parameter: $ => prec(PREC.typed_parameter, seq(
+      field('name', choice($.identifier, $.keyword_identifier)),
+      ':',
+      field('type', $.type),
+      '=',
+      field('value', $.expression)
+    )),
+
+    list_splat_pattern: $ => seq(
+      '*',
+      choice($.identifier, $.keyword_identifier, $.subscript, $.attribute)
+    ),
+
+    dictionary_splat_pattern: $ => seq(
+      '**',
+      choice($.identifier, $.keyword_identifier, $.subscript, $.attribute)
+    ),
+
+
+    // Expressions
+
+    _expression_within_for_in_clause: $ =>
+      choice($.expression, alias($.lambda_within_for_in_clause, $.lambda)),
+
+    expression: $ =>
       choice(
         $.comparison_operator,
         $.not_operator,
         $.boolean_operator,
         $.await,
         $.lambda,
-        $._primary_expression,
+        $.primary_expression,
         $.conditional_expression,
         $.named_expression
       ),
 
-    _primary_expression: $ =>
+    primary_expression: $ =>
       choice(
         $.binary_operator,
         $.identifier,
@@ -453,24 +520,24 @@ module.exports = grammar({
       ),
 
     not_operator: $ =>
-      prec(PREC.not, seq("testnotlegesher", field("argument", $._expression))),
+      prec(PREC.not, seq("testnotlegesher", field("argument", $.expression))),
 
     boolean_operator: $ =>
       choice(
         prec.left(
           PREC.and,
           seq(
-            field("left", $._expression),
+            field("left", $.expression),
             field("operator", "testandlegesher"),
-            field("right", $._expression)
+            field("right", $.expression)
           )
         ),
         prec.left(
           PREC.or,
           seq(
-            field("left", $._expression),
+            field("left", $.expression),
             field("operator", "testorlegesher"),
-            field("right", $._expression)
+            field("right", $.expression)
           )
         )
       ),
@@ -497,9 +564,9 @@ module.exports = grammar({
           fn(
             precedence,
             seq(
-              field("left", $._primary_expression),
+              field("left", $.primary_expression),
               field("operator", operator),
-              field("right", $._primary_expression)
+              field("right", $.primary_expression)
             )
           )
         )
@@ -511,7 +578,7 @@ module.exports = grammar({
         PREC.unary,
         seq(
           field("operator", choice("+", "-", "~")),
-          field("argument", $._primary_expression)
+          field("argument", $.primary_expression)
         )
       ),
 
@@ -519,7 +586,7 @@ module.exports = grammar({
       prec.left(
         PREC.compare,
         seq(
-          $._primary_expression,
+          $.primary_expression,
           repeat1(
             seq(
               choice(
@@ -535,7 +602,7 @@ module.exports = grammar({
                 "testislegesher",
                 seq("testislegesher", "testnotlegesher")
               ),
-              $._primary_expression
+              $.primary_expression
             )
           )
         )
@@ -548,7 +615,7 @@ module.exports = grammar({
           "testlambdalegesher",
           field("parameters", optional($.lambda_parameters)),
           ":",
-          field("body", $._expression)
+          field("body", $.expression)
         )
       ),
 
@@ -562,7 +629,7 @@ module.exports = grammar({
 
     assignment: $ =>
       seq(
-        field("left", $.expression_list),
+        field("left", $._left_hand_side),
         choice(
           seq("=", field("right", $._right_hand_side)),
           seq(":", field("type", $.type)),
@@ -577,7 +644,7 @@ module.exports = grammar({
 
     augmented_assignment: $ =>
       seq(
-        field("left", $.expression_list),
+        field("left", $._left_hand_side),
         field(
           "operator",
           choice(
@@ -599,23 +666,42 @@ module.exports = grammar({
         field("right", $._right_hand_side)
       ),
 
+    _left_hand_side: $ => choice(
+      $.pattern,
+      $.pattern_list
+    ),
+
+    pattern_list: $ => seq(
+      $.pattern,
+      choice(
+        ',',
+        seq(
+          repeat1(seq(
+            ',',
+            $.pattern
+          )),
+          optional(',')
+        )
+      )
+    ),
+
     _right_hand_side: $ =>
-      choice($.expression_list, $.assignment, $.augmented_assignment, $.yield),
+      choice($.expression, $.expression_list, $.assignment, $.augmented_assignment, $.yield),
 
     yield: $ =>
-      seq(
+      prec.right(seq(
         "testyieldlegesher",
         choice(
-          seq("testfromlegesher", $._expression),
-          optional($.expression_list)
+          seq("testfromlegesher", $.expression),
+          optional($._expressions)
         )
-      ),
+      )),
 
     attribute: $ =>
       prec(
         PREC.call,
         seq(
-          field("object", $._primary_expression),
+          field("object", $.primary_expression),
           ".",
           field("attribute", $.identifier)
         )
@@ -625,9 +711,9 @@ module.exports = grammar({
       prec(
         PREC.call,
         seq(
-          field("value", $._primary_expression),
+          field("value", $.primary_expression),
           "[",
-          field("subscript", commaSep1(choice($._expression, $.slice))),
+          commaSep1(field('subscript', choice($.expression, $.slice))),
           optional(","),
           "]"
         )
@@ -635,10 +721,10 @@ module.exports = grammar({
 
     slice: $ =>
       seq(
-        optional($._expression),
+        optional($.expression),
         ":",
-        optional($._expression),
-        optional(seq(":", optional($._expression)))
+        optional($.expression),
+        optional(seq(":", optional($.expression)))
       ),
 
     ellipsis: $ => "...",
@@ -647,7 +733,7 @@ module.exports = grammar({
       prec(
         PREC.call,
         seq(
-          field("function", $._primary_expression),
+          field("function", $.primary_expression),
           field("arguments", choice($.generator_expression, $.argument_list))
         )
       ),
@@ -656,35 +742,28 @@ module.exports = grammar({
       prec(
         PREC.typed_parameter,
         seq(
-          choice($.identifier, $.list_splat, $.dictionary_splat),
+          choice($.identifier, $.list_splat_pattern, $.dictionary_splat_pattern),
           ":",
           field("type", $.type)
         )
       ),
 
-    type: $ => $._expression,
+    type: $ => $.expression,
 
     keyword_argument: $ =>
       seq(
         field("name", choice($.identifier, $.keyword_identifier)),
         "=",
-        field("value", $._expression)
+        field("value", $.expression)
       ),
 
     // Literals
 
-    list: $ =>
-      seq(
-        "[",
-        optional($._collection_elements),
-        "]"
-      ),
+    list: $ => seq("[", optional($._collection_elements), "]"),
 
-    _comprehension_clauses: $ =>
-      seq($.for_in_clause, repeat(choice($.for_in_clause, $.if_clause))),
+    set: $ => seq('{', $._collection_elements, '}'),
 
-    list_comprehension: $ =>
-      seq("[", field("body", $._expression), $._comprehension_clauses, "]"),
+    tuple: $ => seq('(', optional($._collection_elements), ')'),
 
     dictionary: $ =>
       seq(
@@ -694,67 +773,76 @@ module.exports = grammar({
         "}"
       ),
 
-    dictionary_comprehension: $ =>
-      seq("{", field("body", $.pair), $._comprehension_clauses, "}"),
-
     pair: $ =>
-      seq(field("key", $._expression), ":", field("value", $._expression)),
+      seq(field("key", $.expression), ":", field("value", $.expression)),
 
-    set: $ =>
-      seq(
-        "{",
-        commaSep1(choice($._expression, $.list_splat)),
-        optional(","),
-        "}"
-      ),
+    list_comprehension: $ => seq(
+      '[',
+      field('body', $.expression),
+      $._comprehension_clauses,
+      ']'
+    ),
+
+    dictionary_comprehension: $ => seq('{', field('body', $.pair), $._comprehension_clauses, '}'),
 
     set_comprehension: $ =>
-      seq("{", field("body", $._expression), $._comprehension_clauses, "}"),
+      seq("{", field("body", $.expression), $._comprehension_clauses, "}"),
+
+    generator_expression: $ => seq(
+      '(',
+      field('body', $.expression),
+      $._comprehension_clauses,
+      ')'
+    ),
+
+    _comprehension_clauses: $ => seq(
+      $.for_in_clause,
+      repeat(choice(
+        $.for_in_clause,
+        $.if_clause
+      ))
+    ),
 
     parenthesized_expression: $ =>
       prec(
         PREC.parenthesized_expression,
-        seq("(", choice($._expression, $.yield), ")")
+        seq("(", choice($.expression, $.yield), ")")
       ),
 
-    _collection_elements: $ => seq(
-      commaSep1(choice(
-        $._expression, $.yield, $.list_splat, $.parenthesized_list_splat
-      )),
-      optional(',')
-    ),
-
-    tuple: $ =>
+    _collection_elements: $ =>
       seq(
-        "(",
-        optional($._collection_elements),
-        ")"
+        commaSep1(
+          choice(
+            $.expression,
+            $.yield,
+            $.list_splat,
+            $.parenthesized_list_splat
+          )
+        ),
+        optional(",")
       ),
-
-    generator_expression: $ =>
-      seq("(", field("body", $._expression), $._comprehension_clauses, ")"),
 
     for_in_clause: $ =>
       seq(
         optional("testasynclegesher"),
         "testforlegesher",
-        field("left", $.variables),
+        field("left", $._left_hand_side),
         "testinlegesher",
         field("right", commaSep1($._expression_within_for_in_clause)),
         optional(",")
       ),
 
-    if_clause: $ => seq("testiflegesher", $._expression),
+    if_clause: $ => seq("testiflegesher", $.expression),
 
     conditional_expression: $ =>
       prec.right(
         PREC.conditional,
         seq(
-          $._expression,
+          $.expression,
           "testiflegesher",
-          $._expression,
+          $.expression,
           "testelselegesher",
-          $._expression
+          $.expression
         )
       ),
 
@@ -777,7 +865,7 @@ module.exports = grammar({
     interpolation: $ =>
       seq(
         "{",
-        $._expression,
+        $.expression,
         optional($.type_conversion),
         optional($.format_specifier),
         "}"
@@ -806,7 +894,7 @@ module.exports = grammar({
     format_specifier: $ =>
       seq(":", repeat(choice(/[^{}\n]+/, $.format_expression))),
 
-    format_expression: $ => seq("{", $._expression, "}"),
+    format_expression: $ => seq("{", $.expression, "}"),
 
     type_conversion: $ => /![a-z]/,
 
@@ -851,7 +939,7 @@ module.exports = grammar({
     false: $ => "testFalselegesher",
     none: $ => "testNonelegesher",
 
-    await: $ => prec(PREC.unary, seq("testawaitlegesher", $._expression)),
+    await: $ => prec(PREC.unary, seq("testawaitlegesher", $.expression)),
 
     comment: $ => token(seq("#", /.*/)),
 

@@ -38,13 +38,75 @@
     ]
   },
   {
-    "type": "_expression",
+    "type": "_simple_statement",
     "named": true,
     "subtypes": [
       {
-        "type": "_primary_expression",
+        "type": "assert_statement",
         "named": true
       },
+      {
+        "type": "break_statement",
+        "named": true
+      },
+      {
+        "type": "continue_statement",
+        "named": true
+      },
+      {
+        "type": "delete_statement",
+        "named": true
+      },
+      {
+        "type": "exec_statement",
+        "named": true
+      },
+      {
+        "type": "expression_statement",
+        "named": true
+      },
+      {
+        "type": "future_import_statement",
+        "named": true
+      },
+      {
+        "type": "global_statement",
+        "named": true
+      },
+      {
+        "type": "import_from_statement",
+        "named": true
+      },
+      {
+        "type": "import_statement",
+        "named": true
+      },
+      {
+        "type": "nonlocal_statement",
+        "named": true
+      },
+      {
+        "type": "pass_statement",
+        "named": true
+      },
+      {
+        "type": "print_statement",
+        "named": true
+      },
+      {
+        "type": "raise_statement",
+        "named": true
+      },
+      {
+        "type": "return_statement",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "expression",
+    "named": true,
+    "subtypes": [
       {
         "type": "await",
         "named": true
@@ -72,11 +134,15 @@
       {
         "type": "not_operator",
         "named": true
+      },
+      {
+        "type": "primary_expression",
+        "named": true
       }
     ]
   },
   {
-    "type": "_parameter",
+    "type": "parameter",
     "named": true,
     "subtypes": [
       {
@@ -84,7 +150,7 @@
         "named": true
       },
       {
-        "type": "dictionary_splat",
+        "type": "dictionary_splat_pattern",
         "named": true
       },
       {
@@ -92,11 +158,11 @@
         "named": true
       },
       {
-        "type": "list_splat",
+        "type": "list_splat_pattern",
         "named": true
       },
       {
-        "type": "tuple",
+        "type": "tuple_pattern",
         "named": true
       },
       {
@@ -110,7 +176,37 @@
     ]
   },
   {
-    "type": "_primary_expression",
+    "type": "pattern",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "attribute",
+        "named": true
+      },
+      {
+        "type": "identifier",
+        "named": true
+      },
+      {
+        "type": "list_pattern",
+        "named": true
+      },
+      {
+        "type": "list_splat_pattern",
+        "named": true
+      },
+      {
+        "type": "subscript",
+        "named": true
+      },
+      {
+        "type": "tuple_pattern",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "primary_expression",
     "named": true,
     "subtypes": [
       {
@@ -208,72 +304,6 @@
     ]
   },
   {
-    "type": "_simple_statement",
-    "named": true,
-    "subtypes": [
-      {
-        "type": "assert_statement",
-        "named": true
-      },
-      {
-        "type": "break_statement",
-        "named": true
-      },
-      {
-        "type": "continue_statement",
-        "named": true
-      },
-      {
-        "type": "delete_statement",
-        "named": true
-      },
-      {
-        "type": "exec_statement",
-        "named": true
-      },
-      {
-        "type": "expression_statement",
-        "named": true
-      },
-      {
-        "type": "future_import_statement",
-        "named": true
-      },
-      {
-        "type": "global_statement",
-        "named": true
-      },
-      {
-        "type": "import_from_statement",
-        "named": true
-      },
-      {
-        "type": "import_statement",
-        "named": true
-      },
-      {
-        "type": "nonlocal_statement",
-        "named": true
-      },
-      {
-        "type": "pass_statement",
-        "named": true
-      },
-      {
-        "type": "print_statement",
-        "named": true
-      },
-      {
-        "type": "raise_statement",
-        "named": true
-      },
-      {
-        "type": "return_statement",
-        "named": true
-      }
-    ]
-  },
-  {
     "type": "aliased_import",
     "named": true,
     "fields": {
@@ -308,11 +338,11 @@
       "required": false,
       "types": [
         {
-          "type": "_expression",
+          "type": "dictionary_splat",
           "named": true
         },
         {
-          "type": "dictionary_splat",
+          "type": "expression",
           "named": true
         },
         {
@@ -339,7 +369,7 @@
       "required": true,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -354,7 +384,11 @@
         "required": true,
         "types": [
           {
-            "type": "expression_list",
+            "type": "pattern",
+            "named": true
+          },
+          {
+            "type": "pattern_list",
             "named": true
           }
         ]
@@ -369,6 +403,10 @@
           },
           {
             "type": "augmented_assignment",
+            "named": true
+          },
+          {
+            "type": "expression",
             "named": true
           },
           {
@@ -412,7 +450,7 @@
         "required": true,
         "types": [
           {
-            "type": "_primary_expression",
+            "type": "primary_expression",
             "named": true
           }
         ]
@@ -428,7 +466,11 @@
         "required": true,
         "types": [
           {
-            "type": "expression_list",
+            "type": "pattern",
+            "named": true
+          },
+          {
+            "type": "pattern_list",
             "named": true
           }
         ]
@@ -504,6 +546,10 @@
             "named": true
           },
           {
+            "type": "expression",
+            "named": true
+          },
+          {
             "type": "expression_list",
             "named": true
           },
@@ -524,7 +570,7 @@
       "required": true,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -539,7 +585,7 @@
         "required": true,
         "types": [
           {
-            "type": "_primary_expression",
+            "type": "primary_expression",
             "named": true
           }
         ]
@@ -607,7 +653,7 @@
         "required": true,
         "types": [
           {
-            "type": "_primary_expression",
+            "type": "primary_expression",
             "named": true
           }
         ]
@@ -642,7 +688,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -666,7 +712,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -701,7 +747,7 @@
         "required": true,
         "types": [
           {
-            "type": "_primary_expression",
+            "type": "primary_expression",
             "named": true
           }
         ]
@@ -717,7 +763,7 @@
       "required": true,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -768,7 +814,7 @@
       "required": true,
       "types": [
         {
-          "type": "_primary_expression",
+          "type": "primary_expression",
           "named": true
         }
       ]
@@ -798,7 +844,7 @@
       "required": true,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -884,7 +930,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -899,6 +945,10 @@
       "multiple": false,
       "required": true,
       "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
         {
           "type": "expression_list",
           "named": true
@@ -964,7 +1014,30 @@
       "required": true,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "dictionary_splat_pattern",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "attribute",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "subscript",
           "named": true
         }
       ]
@@ -994,7 +1067,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1036,11 +1109,11 @@
       "required": true,
       "types": [
         {
-          "type": "_expression",
+          "type": "block",
           "named": true
         },
         {
-          "type": "block",
+          "type": "expression",
           "named": true
         }
       ]
@@ -1066,7 +1139,7 @@
       "required": false,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -1081,7 +1154,7 @@
       "required": true,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -1096,15 +1169,15 @@
       "required": true,
       "types": [
         {
-          "type": "_expression",
-          "named": true
-        },
-        {
           "type": "assignment",
           "named": true
         },
         {
           "type": "augmented_assignment",
+          "named": true
+        },
+        {
+          "type": "expression",
           "named": true
         },
         {
@@ -1138,7 +1211,11 @@
         "required": true,
         "types": [
           {
-            "type": "variables",
+            "type": "pattern",
+            "named": true
+          },
+          {
+            "type": "pattern_list",
             "named": true
           }
         ]
@@ -1152,7 +1229,7 @@
             "named": false
           },
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1188,7 +1265,11 @@
         "required": true,
         "types": [
           {
-            "type": "variables",
+            "type": "pattern",
+            "named": true
+          },
+          {
+            "type": "pattern_list",
             "named": true
           }
         ]
@@ -1197,6 +1278,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "expression",
+            "named": true
+          },
           {
             "type": "expression_list",
             "named": true
@@ -1214,7 +1299,7 @@
       "required": true,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -1310,7 +1395,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1355,7 +1440,7 @@
       "required": true,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -1384,7 +1469,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1479,7 +1564,7 @@
       "required": true,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         },
         {
@@ -1512,7 +1597,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1528,7 +1613,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1554,7 +1639,7 @@
       "required": true,
       "types": [
         {
-          "type": "_parameter",
+          "type": "parameter",
           "named": true
         }
       ]
@@ -1569,7 +1654,7 @@
       "required": false,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         },
         {
@@ -1596,7 +1681,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1618,7 +1703,37 @@
     }
   },
   {
+    "type": "list_pattern",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "pattern",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "list_splat",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "list_splat_pattern",
     "named": true,
     "fields": {},
     "children": {
@@ -1626,7 +1741,15 @@
       "required": false,
       "types": [
         {
-          "type": "_expression",
+          "type": "attribute",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "subscript",
           "named": true
         }
       ]
@@ -1670,7 +1793,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1701,7 +1824,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1717,7 +1840,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1727,7 +1850,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1743,7 +1866,7 @@
       "required": false,
       "types": [
         {
-          "type": "_parameter",
+          "type": "parameter",
           "named": true
         }
       ]
@@ -1758,7 +1881,7 @@
       "required": true,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         },
         {
@@ -1801,6 +1924,21 @@
     "fields": {}
   },
   {
+    "type": "pattern_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "pattern",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "print_statement",
     "named": true,
     "fields": {
@@ -1809,7 +1947,7 @@
         "required": false,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1835,7 +1973,7 @@
         "required": false,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1845,6 +1983,10 @@
       "multiple": false,
       "required": false,
       "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
         {
           "type": "expression_list",
           "named": true
@@ -1880,6 +2022,10 @@
       "required": false,
       "types": [
         {
+          "type": "expression",
+          "named": true
+        },
+        {
           "type": "expression_list",
           "named": true
         }
@@ -1895,11 +2041,19 @@
       "required": true,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         },
         {
           "type": "list_splat",
+          "named": true
+        },
+        {
+          "type": "parenthesized_list_splat",
+          "named": true
+        },
+        {
+          "type": "yield",
           "named": true
         }
       ]
@@ -1914,7 +2068,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1944,7 +2098,7 @@
       "required": false,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -1978,11 +2132,7 @@
         "required": true,
         "types": [
           {
-            "type": ",",
-            "named": false
-          },
-          {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           },
           {
@@ -1996,7 +2146,7 @@
         "required": true,
         "types": [
           {
-            "type": "_primary_expression",
+            "type": "primary_expression",
             "named": true
           }
         ]
@@ -2046,7 +2196,7 @@
       "required": false,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         },
         {
@@ -2065,6 +2215,21 @@
     }
   },
   {
+    "type": "tuple_pattern",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "pattern",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "type",
     "named": true,
     "fields": {},
@@ -2073,7 +2238,7 @@
       "required": true,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -2108,7 +2273,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -2135,7 +2300,7 @@
       "required": true,
       "types": [
         {
-          "type": "dictionary_splat",
+          "type": "dictionary_splat_pattern",
           "named": true
         },
         {
@@ -2143,7 +2308,7 @@
           "named": true
         },
         {
-          "type": "list_splat",
+          "type": "list_splat_pattern",
           "named": true
         }
       ]
@@ -2158,7 +2323,7 @@
         "required": true,
         "types": [
           {
-            "type": "_primary_expression",
+            "type": "primary_expression",
             "named": true
           }
         ]
@@ -2181,21 +2346,6 @@
           }
         ]
       }
-    }
-  },
-  {
-    "type": "variables",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_primary_expression",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -2227,7 +2377,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -2248,7 +2398,7 @@
         "required": false,
         "types": [
           {
-            "type": "_expression",
+            "type": "pattern",
             "named": true
           }
         ]
@@ -2258,7 +2408,7 @@
         "required": true,
         "types": [
           {
-            "type": "_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -2300,7 +2450,7 @@
       "required": false,
       "types": [
         {
-          "type": "_expression",
+          "type": "expression",
           "named": true
         },
         {
@@ -2481,6 +2631,10 @@
   {
     "type": "__future__",
     "named": false
+  },
+  {
+    "type": "comment",
+    "named": true
   },
   {
     "type": "ellipsis",

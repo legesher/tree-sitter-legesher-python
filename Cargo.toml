@@ -1,0 +1,32 @@
+[package]
+name = "tree-sitter-legesher-python"
+description = "Legesher's python grammar for tree-sitter"
+version = "0.15.3"
+authors = [
+  "Madison Edgar <withmadico@gmail.com>",
+  "Max Brunsfeld <maxbrunsfeld@gmail.com>",
+  "Douglas Creager <dcreager@dcreager.net>",
+]
+license = "MIT"
+readme = "bindings/rust/README.md"
+keywords = ["incremental", "parsing", "python", "legesher"]
+categories = ["parsing", "text-editors"]
+repository = "https://github.com/legesher/tree-sitter-legesher-python"
+edition = "2018"
+
+build = "bindings/rust/build.rs"
+include = [
+"bindings/rust/*",
+"grammar.js",
+"queries/*",
+"src/*",
+]
+
+[lib]
+path = "bindings/rust/lib.rs"
+
+[dependencies]
+tree-sitter = "0.17"
+
+[build-dependencies]
+cc = "1.0"

@@ -194,7 +194,7 @@ testreturnlegesher testnotlegesher b
   (return_statement (expression_list
     (binary_operator (identifier) (identifier))
     (identifier)))
-  (return_statement (expression_list (not_operator (identifier)))))
+  (return_statement (not_operator (identifier))))
 
 =====================================
 If statements
@@ -341,14 +341,14 @@ testforlegesher x, testinlegesher [(1,), (2,), (3,)]:
 
 (module
   (for_statement
-    left: (variables (identifier) (identifier))
-    right: (expression_list (identifier))
+    left: (pattern_list (identifier) (identifier))
+    right: (identifier)
     body: (block
       (print_statement
         argument: (identifier))
       (for_statement
-        left: (variables (identifier) (identifier))
-        right: (expression_list (identifier))
+        left: (pattern_list (identifier) (identifier))
+        right: (identifier)
         body: (block
           (print_statement
             argument: (identifier)))))
@@ -357,8 +357,8 @@ testforlegesher x, testinlegesher [(1,), (2,), (3,)]:
         (print_statement
           argument: (identifier)))))
   (for_statement
-    left: (variables (identifier))
-    right: (expression_list (list (tuple (integer)) (tuple (integer)) (tuple (integer))))
+    left: (pattern_list (identifier))
+    right: (list (tuple (integer)) (tuple (integer)) (tuple (integer)))
     body: (block
       (expression_statement (identifier)))))
 
@@ -515,8 +515,8 @@ testasynclegesher testdeflegesher d(a:str="default", b=c) -> testNonelegesher:
       (default_parameter
         name: (identifier)
         value: (identifier))
-      (list_splat (identifier))
-      (dictionary_splat (identifier)))
+      (list_splat_pattern (identifier))
+      (dictionary_splat_pattern (identifier)))
     body: (block
       (expression_statement (identifier))))
   (function_definition
@@ -525,7 +525,7 @@ testasynclegesher testdeflegesher d(a:str="default", b=c) -> testNonelegesher:
       (typed_parameter (identifier) type: (type (identifier))))
     return_type: (type (none))
     body: (block
-      (return_statement (expression_list (none)))))
+      (return_statement (none))))
   (function_definition
     name: (identifier)
     parameters: (parameters
@@ -538,7 +538,7 @@ testasynclegesher testdeflegesher d(a:str="default", b=c) -> testNonelegesher:
         value: (identifier)))
     return_type: (type (none))
     body: (block
-      (return_statement (expression_list (none))))))
+      (return_statement (none)))))
 
 =====================================
 Function definitions
@@ -568,20 +568,20 @@ testdeflegesher h(*a):
 (module
   (function_definition
     name: (identifier)
-    parameters: (parameters (tuple (identifier) (identifier)))
+    parameters: (parameters (tuple_pattern (identifier) (identifier)))
     body: (block
-      (return_statement (expression_list (tuple (identifier) (identifier))))))
+      (return_statement (tuple (identifier) (identifier)))))
   (function_definition
     name: (identifier)
     parameters: (parameters (typed_parameter
-      (list_splat (identifier))
+      (list_splat_pattern (identifier))
       type: (type (identifier))))
     body: (block
       (pass_statement)))
   (function_definition
     name: (identifier)
     parameters: (parameters (typed_parameter
-      (dictionary_splat (identifier))
+      (dictionary_splat_pattern (identifier))
       type: (type (identifier))))
     body: (block
       (pass_statement)))
@@ -595,10 +595,10 @@ testdeflegesher h(*a):
     parameters: (parameters
       (identifier)
       (identifier)
-      (list_splat)
+      (list_splat_pattern)
       (identifier)
       (default_parameter name: (identifier) value: (integer))
-      (dictionary_splat (identifier)))
+      (dictionary_splat_pattern (identifier)))
     body: (block
       (return_statement (expression_list
         (identifier)
@@ -608,7 +608,7 @@ testdeflegesher h(*a):
         (identifier)))))
    (function_definition
      name: (identifier)
-     parameters: (parameters (list_splat (identifier)))
+     parameters: (parameters (list_splat_pattern (identifier)))
      body: (block
        (expression_statement
          (call function:
@@ -682,7 +682,7 @@ testclasslegesher D(Sequence[T, U]):
         (identifier)
         (parameters (identifier))
         (block
-          (return_statement (expression_list (identifier)))))))
+          (return_statement (identifier))))))
  (class_definition
     (identifier)
     (argument_list)
@@ -812,9 +812,9 @@ testraiselegesher RunTimeError('NO') testfromlegesher e
 (module
   (raise_statement)
   (raise_statement
-    (expression_list (call (identifier) (argument_list (string)))))
+    (call (identifier) (argument_list (string))))
   (raise_statement
-    (expression_list (call (identifier) (argument_list (string))))
+    (call (identifier) (argument_list (string)))
     (identifier)))
 
 ====================================================
