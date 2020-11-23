@@ -22,9 +22,12 @@ checkout examples/flask pallets/flask de464c03e134127140e5622e230790806a133ff9
 
 known_failures="$(cat script/known_failures.txt)"
 
+new_failures="$(cat script/new_failures.txt)"
+
 tree-sitter parse -q \
   'examples/**/*.py' \
   $(for file in $known_failures; do echo "!${file}"; done)
+  $(for file in $new_failures; do echo "!${file}"; done)
 
 example_count=$(find examples -name '*.py' | wc -l)
 failure_count=$(wc -w <<< "$known_failures")
