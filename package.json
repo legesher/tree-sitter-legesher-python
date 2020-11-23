@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-legesher-python",
-  "version": "0.15.3",
+  "version": "0.15.4",
   "details": {
     "tree-sitter-python-version": "0.16.1",
     "latest-commit": "c4282ba411d990d313c5f8e7850bcaaf46fbf7da"
