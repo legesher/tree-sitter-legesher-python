@@ -117,6 +117,15 @@
       "contributions": [
         "ideas"
       ]
+    },
+    {
+      "login": "alxnull",
+      "name": "alxnull",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/26907770?v=4",
+      "profile": "https://github.com/alxnull",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7
