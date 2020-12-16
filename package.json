@@ -29,6 +29,7 @@
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.21.5",
     "js-beautify": "^1.13.0",
+    "lodash": "^4.17.20",
     "prettier": "^1.18.2",
     "prettydiff2": "^2.2.8",
     "tree-sitter-cli": "^0.17.0",
