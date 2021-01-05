@@ -892,7 +892,7 @@ module.exports = grammar({
     _not_escape_sequence: $ => "\\",
 
     format_specifier: $ =>
-      seq(":", repeat(choice(/[^{}\n]+/, $.format_expression))),
+      seq(":", repeat(choice(token(prec(1, /[^{}\n]+/)), $.format_expression))),
 
     format_expression: $ => seq("{", $.expression, "}"),
 
