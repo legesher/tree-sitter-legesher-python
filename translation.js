@@ -15,9 +15,6 @@
  *    legesher repository and/or legesher-translation repository.
  *
  * STEPS FOR COMPLETION:
- * TODO: create object variable of all files that need keyword translations
- *       - differentiate between what files need to be initially translated
-           and which files are changed as a result of tree-sitter configuration
  * TODO: pull keyword language translation for programming language from the
  *       legesher-translations repository
  * TODO: take file variable and find the keywords in files that need to be
@@ -27,15 +24,16 @@
  * TODO: run tests to confirm bindings are correct
  *
  */
-
-//  TODO: create variable of all files that need keyword translations
-// preFiles : all of the files that need to be initially translated before the
-//            the tree-sitter configuration
-
+'use strict';
 const _ = require('lodash');
 const fs = require('fs');
 
-// TODO: there are files with special formatting that need special conditions
+// TODO: pull keyword language translation for programming language from the
+//       legesher-translations repository
+// NOTE: Translation API isn't created yet
+const translationFile = require('./keywords.json');
+
+/** @param {array} preFiles list of files with simple replace translations */
 const preFiles = [
   'examples/compound-statement-without-trailing-newline.py',
   // 'examples/crlf-line-endings.py',
@@ -52,28 +50,42 @@ const preFiles = [
   // 'examples/trailing-whitespace.py',
   // 'grammar.js',
   // 'queries/highlights.scm',
+];
+
+/** @param {array} specialFiles list of files with special translation rules */
+const specialFiles = [
   // 'test/corpus/expressions.txt',
   // 'test/corpus/literals.txt',
   // 'test/corpus/statements.txt',
   // 'test/highlight/keywords.py',
 ];
 
-// postFiles : all of the files that are translated as a result of running the
-//            the tree-sitter configuration. These need to be checked for the
-//            correct translation
+/** @param {array} postFiles list of files translated as a result of running
+ *         the tree-sitter configuration.
+ */
 const postFiles = [
   'src/parser.c',
   'src/grammar.json',
   'src/node-types.json',
 ];
 
-// TODO: pull keyword language translation for programming language from the
-//       legesher-translations repository
-// TODO: Translation API isn't created yet, so use keywords file in the meantime
-const keywordsFile = require('./keywords.json');
+/**
+ * Create the path for the new translation file with the abbreviation
+ *   The file variable will come in this format:
+ *     'examples/compound-statement-without-trailing-newline.py'
+ *   The ab variable will come in this format:
+ *     'en'
+ *   The returned string will be in this format:
+ *     'examples/compound-statement-without-trailing-newline-en.py'
+ * @param {string} file original name of the file
+ * @param {string} ab translation language abbreviation
+ * @return {string} new path for translation file
+ */
+function createNewFilePath(file, ab) {
+  const f = _.split(file, '.py');
+  return `${f[0]}-${ab}.py`;
+}
 
-// TODO: take file variable and find the keywords in files that need to be
-//      exchanged with the translated keyword
 /**
  * Read in pre files and search through text for keyword list
  * @param {file} file that needs to be searched
@@ -85,9 +97,12 @@ function parsePreFile(file) {
 
   readStream.on('data', function(chunk) {
     data += chunk;
+  }).on('error', function(err) {
+    console.log(err);
   }).on('end', function() {
-    console.log(data);
+    console.log('INSIDE END - this is the data from the parsed file:', data);
   });
+  console.log('RETURN PARSE - this is the data from the parsed file:', data);
   return data;
 }
 
@@ -107,48 +122,67 @@ function simpleReplaceKeywords(keywords, fileData) {
   console.log('final:', fileData);
   return fileData;
 }
+
 /**
- * Map out each keyword
- * @param {string} key keyword
- * @param {string} value value
- * @param {string} fileData of files that need to be searched
- * @return {string} data text for files
+ * Translate PreFiles
+ * @param {array} pre list of files that need to be searched
+ * @param {array} tra translation data
  */
-// function simpleReplaceKeyword(key, value, fileData) {
-//   console.log('key', key, 'value', value, 'fileData', fileData);
-//
-//   if (_.includes(fileData, key)) {
-//     // replace
-//     console.log('matched with', key);
-//   }
-//   return fileData;
-// }
+function translatePre(pre, tra) {
+  _.each(pre, function(file) {
+    const fn = createNewFilePath(file, tra.translationAbbreviation);
+    const f = parsePreFile(file);
+    console.log('f: ', f);
+    console.log(fn);
+    simpleReplaceKeywords(tra.python, f);
+  });
+};
+
+/**
+ * Translate Special Condition Files
+ * @param {array} spe list of special files need to be searched with conditions
+ * @param {array} tra translation data
+ */
+function translateSpecial(spe, tra) {};
+
+/**
+ * Run Tree-Sitter configuration with new translated files
+ */
+function runTreeSitter() {};
+
+/**
+ * Translate Post Files
+ * @param {array} post list of files that need to be checked after run
+ * @param {array} tra translation data
+ */
+function translatePost(post, tra) {};
 
 /**
  * Search for keyword list in files
- * @param {array} files The first number
- * @param {array} keywords list of keywords
+ * @param {array} pre list of files that need to be searched
+ * @param {array} spe list of special files need to be searched with conditions
+ * @param {array} post list of files that need to be checked after run
+ * @param {array} tra translation data
  */
-function checkFiles(files, keywords) {
-  _.map(files, function(v, k) {
+function checkFiles(pre, spe, post, tra) {
+  _.map(pre, function(v, k) {
     // console.log('KEY:', k, 'VALUE:', v);
   });
 }
 
 /**
- * Translate files
+ * Run full translation of Tree-Sitter-Legesher-Python
  * @param {array} pre list of files that need to be searched
- * @param {array} post list of files that need to be checked
- * @param {array} keywords list of keywords
+ * @param {array} spe list of special files need to be searched with conditions
+ * @param {array} post list of files that need to be checked after run
+ * @param {array} tra translation data
  */
-function translate(pre, post, keywords) {
-  _.each(pre, function(file) {
-    const f = parsePreFile(file);
-    simpleReplaceKeywords(keywords, f);
-  });
-
-  // checkFiles(pre);
-  // checkFiles(post);
+function translate(pre, spe, post, tra) {
+  translatePre(pre, tra);
+  translateSpecial(spe, tra);
+  runTreeSitter();
+  translatePost(post, tra);
+  checkFiles(pre, spe, post, tra);
 };
 
-translate(preFiles, postFiles, keywordsFile);
+translate(preFiles, specialFiles, postFiles, translationFile);
