@@ -94,6 +94,7 @@ function createNewFilePath(file, ab) {
 function parsePreFile(file) {
   let data = '';
   const readStream = fs.createReadStream(file, 'utf8');
+  const fn = createNewFilePath(file, translationFile.translationAbbreviation);
 
   readStream.on('data', function(chunk) {
     data += chunk;
@@ -101,9 +102,10 @@ function parsePreFile(file) {
     console.log(err);
   }).on('end', function() {
     console.log('INSIDE END - this is the data from the parsed file:', data);
+    const newData = simpleReplaceKeywords(translationFile.python, data);
+    createNewFile(fn, newData);
+    return newData;
   });
-  console.log('RETURN PARSE - this is the data from the parsed file:', data);
-  return data;
 }
 
 /**
@@ -113,15 +115,26 @@ function parsePreFile(file) {
  * @return {string} data text for files
  */
 function simpleReplaceKeywords(keywords, fileData) {
+  let newFile = fileData;
   _.forIn(keywords, function(value, key) {
-    console.log('filedata before: ', fileData);
-    _.replace(fileData, key, value);
-    console.log('fileData after: ', fileData);
+    newFile = _.replace(newFile, new RegExp(key, 'g'), value);
   });
-
-  console.log('final:', fileData);
-  return fileData;
+  console.log('final:', newFile);
+  return newFile;
 }
+
+
+/**
+ * Create a new file with translated content
+ * @param {string} name filename
+ * @param {string} data content for file
+ */
+function createNewFile(name, data) {
+  fs.writeFile(name, data, function(err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
+};
 
 /**
  * Translate PreFiles
@@ -131,10 +144,8 @@ function simpleReplaceKeywords(keywords, fileData) {
 function translatePre(pre, tra) {
   _.each(pre, function(file) {
     const fn = createNewFilePath(file, tra.translationAbbreviation);
-    const f = parsePreFile(file);
-    console.log('f: ', f);
-    console.log(fn);
-    simpleReplaceKeywords(tra.python, f);
+    const parsedFile = parsePreFile(file);
+    console.log(fn, parsedFile);
   });
 };
 
