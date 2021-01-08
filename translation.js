@@ -36,20 +36,20 @@ const translationFile = require('./keywords.json');
 /** @param {array} preFiles list of files with simple replace translations */
 const preFiles = [
   'examples/compound-statement-without-trailing-newline.py',
-  // 'examples/crlf-line-endings.py',
-  // 'examples/mixed-spaces-tabs.py',
-  // 'examples/multiple-newlines.py',
-  // 'examples/python2-grammar-crlf.py',
-  // 'examples/python2-grammar.py',
-  // 'examples/python3-grammar-crlf.py',
-  // 'examples/python3-grammar.py',
-  // 'examples/python3.8_grammar.py',
-  // 'examples/simple-numbers.py',
-  // 'examples/simple-statements-without-trailing-newline.py',
-  // 'examples/tabs.py',
-  // 'examples/trailing-whitespace.py',
-  // 'grammar.js',
-  // 'queries/highlights.scm',
+  'examples/crlf-line-endings.py',
+  'examples/mixed-spaces-tabs.py',
+  'examples/multiple-newlines.py',
+  'examples/python2-grammar-crlf.py',
+  'examples/python2-grammar.py',
+  'examples/python3-grammar-crlf.py',
+  'examples/python3-grammar.py',
+  'examples/python3.8_grammar.py',
+  'examples/simple-numbers.py',
+  'examples/simple-statements-without-trailing-newline.py',
+  'examples/tabs.py',
+  'examples/trailing-whitespace.py',
+  'grammar.js',
+  'queries/highlights.scm',
 ];
 
 /** @param {array} specialFiles list of files with special translation rules */
@@ -76,14 +76,22 @@ const postFiles = [
  *   The ab variable will come in this format:
  *     'en'
  *   The returned string will be in this format:
- *     'examples/compound-statement-without-trailing-newline-en.py'
+ *     'examples/locale/en/compound-statement-without-trailing-newline-en.py'
  * @param {string} file original name of the file
  * @param {string} ab translation language abbreviation
  * @return {string} new path for translation file
  */
 function createNewFilePath(file, ab) {
-  const f = _.split(file, '.py');
-  return `${f[0]}-${ab}.py`;
+  let path = '';
+  const f = _.split(file, new RegExp(`\.(py|scm|js)$`));
+  if (_.includes(f[0], `/`)) {
+    const g = _.split(f[0], `/`);
+    path = `${g[0]}/locale/${ab}/${g[1]}-${ab}.${f[1]}`;
+  } else {
+    path = `locale/${ab}/${f[0]}-${ab}.${f[1]}`;
+  }
+  console.log(path);
+  return path;
 }
 
 /**
@@ -197,3 +205,10 @@ function translate(pre, spe, post, tra) {
 };
 
 translate(preFiles, specialFiles, postFiles, translationFile);
+
+// linter changes
+// newline at end
+// first if statement tab in examples/locale/en/crlf-line-endings-en.py
+// examples/locale/en/multiple-newlines-en.py needs newlines at the end of file
+// line 309 in examples/python2-grammar.py
+// trailing-whitespace is all messed up

@@ -298,7 +298,7 @@ testclasslegesher GrammarTests(unittest.TestCase):
         # 'print' (test ',')* [test]
         testimportlegesher StringIO
 
-        # Can't test testprintlegesher to real stdout without comparing output
+        # Can't test printing to real stdout without comparing output
         # which is not available in unittest.
         save_stdout = sys.stdout
         sys.stdout = StringIO.StringIO()
@@ -316,7 +316,7 @@ testclasslegesher GrammarTests(unittest.TestCase):
         testprintlegesher >> sys.stdout, 0 testorlegesher 1, 0 testorlegesher 1,
         testprintlegesher >> sys.stdout, 0 testorlegesher 1
 
-        # test testprintlegesher to an instance
+        # test printing to an instance
         testclasslegesher Gulp:
             testdeflegesher write(self, msg): testpasslegesher
 
@@ -528,20 +528,20 @@ hello world
         # 'if' test ':' suite ('elif' test ':' suite)* ['else' ':' suite]
         testiflegesher 1: testpasslegesher
         testiflegesher 1: testpasslegesher
-        testelselegesher:  testpasslegesher
+        testelselegesher: testpasslegesher
         testiflegesher 0: testpasslegesher
         testeliflegesher 0: testpasslegesher
         testiflegesher 0: testpasslegesher
         testeliflegesher 0: testpasslegesher
         testeliflegesher 0: testpasslegesher
         testeliflegesher 0: testpasslegesher
-        testelselegesher:  testpasslegesher
+        testelselegesher: testpasslegesher
 
     testdeflegesher testWhile(self):
         # 'while' test ':' suite ['else' ':' suite]
         testwhilelegesher 0: testpasslegesher
         testwhilelegesher 0: testpasslegesher
-        testelselegesher:  testpasslegesher
+        testelselegesher: testpasslegesher
 
         # Issue1920: "while 0" is optimized away,
         # ensure that the "else" clause is still present.
@@ -556,7 +556,7 @@ hello world
         # 'for' exprlist 'in' exprlist ':' suite ['else' ':' suite]
         testforlegesher i testinlegesher 1, 2, 3: testpasslegesher
         testforlegesher i, j, k testinlegesher (): testpasslegesher
-        testelselegesher:  testpasslegesher
+        testelselegesher: testpasslegesher
         testclasslegesher Squares:
             testdeflegesher __init__(self, max):
                 self.max = max
@@ -594,7 +594,7 @@ hello world
         testexceptlegesher TypeError testaslegesher msg: testpasslegesher
         testexceptlegesher RuntimeError, msg: testpasslegesher
         testexceptlegesher: testpasslegesher
-        testelselegesher:  testpasslegesher
+        testelselegesher: testpasslegesher
         testtrylegesher: 1/0
         testexceptlegesher (EOFError, TypeError, ZeroDivisionError): testpasslegesher
         testtrylegesher: 1/0

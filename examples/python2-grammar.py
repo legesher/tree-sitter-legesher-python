@@ -7,11 +7,13 @@
 # filterwarnings() call to this module.  Therefore, to shut up the
 # regression test, the filterwarnings() call has been added to
 # regrtest.py.
-testfromlegesher test.test_support testimportlegesher  run_unittest, check_syntax_error
+
+testfromlegesher test.test_support testimportlegesher run_unittest, check_syntax_error
 testimportlegesher unittest
 testimportlegesher sys
 # testing import *
 testfromlegesher sys testimportlegesher *
+
 testclasslegesher TokenTests(unittest.TestCase):
 
     testdeflegesher testBackslash(self):
@@ -30,7 +32,7 @@ testclasslegesher TokenTests(unittest.TestCase):
         self.assertEquals(2147483647, 017777777777)
         # "0x" is not a valid literal
         self.assertRaises(SyntaxError, eval, "0x")
-        testfromlegesher sys testimportlegesher  maxint
+        testfromlegesher sys testimportlegesher maxint
         testiflegesher maxint == 2147483647:
             self.assertEquals(-2147483647-1, -020000000000)
             # XXX -2147483648
@@ -295,9 +297,9 @@ testclasslegesher GrammarTests(unittest.TestCase):
 
     testdeflegesher testPrintStmt(self):
         # 'print' (test ',')* [test]
-        testimportlegesher  StringIO
+        testimportlegesher StringIO
 
-        # Can't test testprintlegesher to real stdout without comparing output
+        # Can't test printing to real stdout without comparing output
         # which is not available in unittest.
         save_stdout = sys.stdout
         sys.stdout = StringIO.StringIO()
@@ -305,8 +307,8 @@ testclasslegesher GrammarTests(unittest.TestCase):
         testprintlegesher 1, 2, 3
         testprintlegesher 1, 2, 3,
         testprintlegesher
-        testprintlegesher testorlegesher 1, 0 testorlegesher 1,
-        testprintlegesher testorlegesher 1
+        testprintlegesher 0 testorlegesher 1, 0 testorlegesher 1,
+        testprintlegesher 0 testorlegesher 1
 
         # 'print' '>>' test ','
         testprintlegesher >> sys.stdout, 1, 2, 3
@@ -315,7 +317,7 @@ testclasslegesher GrammarTests(unittest.TestCase):
         testprintlegesher >> sys.stdout, 0 testorlegesher 1, 0 testorlegesher 1,
         testprintlegesher >> sys.stdout, 0 testorlegesher 1
 
-        # test testprintlegesher to an instance
+        # test printing to an instance
         testclasslegesher Gulp:
             testdeflegesher write(self, msg): testpasslegesher
 
