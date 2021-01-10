@@ -212,3 +212,5 @@ translate(preFiles, specialFiles, postFiles, translationFile);
 // examples/locale/en/multiple-newlines-en.py needs newlines at the end of file
 // line 309 in examples/python2-grammar.py
 // trailing-whitespace is all messed up
+// built in functions for highlights.scm
+// exec function or __import__ is not tempalted out for highlights.scm
