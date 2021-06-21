@@ -16,6 +16,7 @@
   "author": "Madison Edgar <withmadico@gmail.com> https://withmadi.co",
   "license": "MIT",
   "dependencies": {
+    "eslint-plugin-prettier": "^3.3.1",
     "nan": "^2.14.2"
   },
   "devDependencies": {

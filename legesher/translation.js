@@ -17,8 +17,6 @@
  * STEPS FOR COMPLETION:
  * TODO: pull keyword language translation for programming language from the
  *       legesher-translations repository
- * TODO: take file variable and find the keywords in files that need to be
-         exchanged with the translated keyword
  * TODO: change the associated keywords with the translation
  * TODO: run tree-sitter configuration to rebuild parser bindings
  * TODO: run tests to confirm bindings are correct
@@ -32,42 +30,24 @@ const fs = require('fs');
 //       legesher-translations repository
 // NOTE: Translation API isn't created yet
 const translationFile = require('./keywords.json');
+const files = require('./files.json').files;
 
 /** @param {array} preFiles list of files with simple replace translations */
-const preFiles = [
-  'examples/compound-statement-without-trailing-newline.py',
-  'examples/crlf-line-endings.py',
-  'examples/mixed-spaces-tabs.py',
-  'examples/multiple-newlines.py',
-  'examples/python2-grammar-crlf.py',
-  'examples/python2-grammar.py',
-  'examples/python3-grammar-crlf.py',
-  'examples/python3-grammar.py',
-  'examples/python3.8_grammar.py',
-  'examples/simple-numbers.py',
-  'examples/simple-statements-without-trailing-newline.py',
-  'examples/tabs.py',
-  'examples/trailing-whitespace.py',
-  'grammar.js',
-  'queries/highlights.scm',
-];
+const preFiles = _.filter(files, {
+  parseType: "pre"
+});
 
 /** @param {array} specialFiles list of files with special translation rules */
-const specialFiles = [
-  // 'test/corpus/expressions.txt',
-  // 'test/corpus/literals.txt',
-  // 'test/corpus/statements.txt',
-  // 'test/highlight/keywords.py',
-];
+const specialFiles = _.filter(files, {
+  parseType: "special"
+});
 
 /** @param {array} postFiles list of files translated as a result of running
  *         the tree-sitter configuration.
  */
-const postFiles = [
-  'src/parser.c',
-  'src/grammar.json',
-  'src/node-types.json',
-];
+const postFiles = _.filter(files, {
+  parseType: "post"
+});
 
 /**
  * Create the path for the new translation file with the abbreviation
@@ -90,7 +70,7 @@ function createNewFilePath(file, ab) {
   } else {
     path = `locale/${ab}/${f[0]}-${ab}.${f[1]}`;
   }
-  console.log(path);
+  console.log(`new path created...`);
   return path;
 }
 
@@ -102,16 +82,39 @@ function createNewFilePath(file, ab) {
 function parsePreFile(file) {
   let data = '';
   const readStream = fs.createReadStream(file, 'utf8');
-  const fn = createNewFilePath(file, translationFile.translationAbbreviation);
 
   readStream.on('data', function(chunk) {
     data += chunk;
   }).on('error', function(err) {
     console.log(err);
   }).on('end', function() {
-    console.log('INSIDE END - this is the data from the parsed file:', data);
+    console.log(`file read stream completed...`);
+    const fn = createNewFilePath(file, translationFile.translationAbbreviation);
     const newData = simpleReplaceKeywords(translationFile.python, data);
     createNewFile(fn, newData);
+    return newData;
+  });
+}
+
+/**
+ * Read in special files and search through text for keyword list and add new
+ * rules for their special replacement rules
+ * @param {file} file that needs to be searched
+ * @return {string} data text for files
+ */
+function parseSpeFile(file) {
+  let data = '';
+  const readStream = fs.createReadStream(file, 'utf8');
+
+  readStream.on('data', function(chunk) {
+    data += chunk;
+  }).on('error', function(err) {
+    console.log(err);
+  }).on('end', function() {
+    console.log(`file read stream completed...`);
+    const fn = createNewFilePath(file, translationFile.translationAbbreviation);
+    const newData = specialReplaceKeywords(translationFile.python, data);
+    // createNewFile(fn, newData);
     return newData;
   });
 }
@@ -127,10 +130,32 @@ function simpleReplaceKeywords(keywords, fileData) {
   _.forIn(keywords, function(value, key) {
     newFile = _.replace(newFile, new RegExp(key, 'g'), value);
   });
-  console.log('final:', newFile);
+  if (_.includes(newFile, `name: 'python_legesher',`)) {
+    newFile = _.replace(newFile, `name: 'python_legesher',`,
+      `name: 'python_legesher_${translationFile.translationAbbreviation}',`);
+  }
+  console.log(`simple keywords replaced...`);
   return newFile;
 }
 
+/**
+ * Special replacement rules for keywords
+ * @param {array} keywords list of keywords
+ * @param {string} fileData of files that need to be searched
+ * @return {string} data text for files
+ */
+function specialReplaceKeywords(keywords, fileData) {
+  let newFile = fileData;
+  _.forIn(keywords, function(value, key) {
+    newFile = _.replace(newFile, new RegExp(key, 'g'), value);
+  });
+  if (_.includes(newFile, `name: 'python_legesher',`)) {
+    newFile = _.replace(newFile, `name: 'python_legesher',`,
+      `name: 'python_legesher_${translationFile.translationAbbreviation}',`);
+  }
+  console.log(`simple keywords replaced...`);
+  return newFile;
+}
 
 /**
  * Create a new file with translated content
@@ -140,7 +165,7 @@ function simpleReplaceKeywords(keywords, fileData) {
 function createNewFile(name, data) {
   fs.writeFile(name, data, function(err) {
     if (err) throw err;
-    console.log('Saved!');
+    console.log(`new file saved!`);
   });
 };
 
@@ -151,9 +176,8 @@ function createNewFile(name, data) {
  */
 function translatePre(pre, tra) {
   _.each(pre, function(file) {
-    const fn = createNewFilePath(file, tra.translationAbbreviation);
-    const parsedFile = parsePreFile(file);
-    console.log(fn, parsedFile);
+    console.log(`Simple translation starting for ${file}`);
+    parsePreFile(file);
   });
 };
 
@@ -162,7 +186,12 @@ function translatePre(pre, tra) {
  * @param {array} spe list of special files need to be searched with conditions
  * @param {array} tra translation data
  */
-function translateSpecial(spe, tra) {};
+function translateSpecial(spe, tra) {
+  _.each(spe, function(file) {
+    console.log(`Special translation starting for ${file}`);
+    parseSpecialFile(file);
+  });
+};
 
 /**
  * Run Tree-Sitter configuration with new translated files
@@ -197,11 +226,11 @@ function checkFiles(pre, spe, post, tra) {
  * @param {array} tra translation data
  */
 function translate(pre, spe, post, tra) {
-  translatePre(pre, tra);
-  translateSpecial(spe, tra);
-  runTreeSitter();
-  translatePost(post, tra);
-  checkFiles(pre, spe, post, tra);
+  // translatePre(pre, tra);
+  // translateSpecial(spe, tra);
+  // runTreeSitter();
+  // translatePost(post, tra);
+  // checkFiles(pre, spe, post, tra);
 };
 
 translate(preFiles, specialFiles, postFiles, translationFile);

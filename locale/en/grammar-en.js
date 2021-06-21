@@ -23,7 +23,7 @@ const PREC = {
 };
 
 module.exports = grammar({
-  name: 'python_legesher',
+  name: 'python_legesher_en',
 
   extras: $ => [$.comment, /[\s\f\uFEFF\u2060\u200B]|\\\r?\n/],
 

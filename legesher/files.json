@@ -1,0 +1,92 @@
+{
+  "files": [
+    {
+      "name": "examples/compound-statement-without-trailing-newline.py",
+      "parseType": "pre"
+    },
+    {
+      "name": "examples/crlf-line-endings.py",
+      "parseType": "pre"
+    },
+    {
+      "name": "examples/mixed-spaces-tabs.py",
+      "parseType": "pre"
+    },
+    {
+      "name": "examples/multiple-newlines.py",
+      "parseType": "pre"
+    },
+    {
+      "name": "examples/python2-grammar-crlf.py",
+      "parseType": "pre"
+    },
+    {
+      "name": "examples/python2-grammar.py",
+      "parseType": "pre"
+    },
+    {
+      "name": "examples/python3-grammar-crlf.py",
+      "parseType": "pre"
+    },
+    {
+      "name": "examples/python3-grammar.py",
+      "parseType": "pre"
+    },
+    {
+      "name": "examples/python3.8_grammar.py",
+      "parseType": "pre"
+    },
+    {
+      "name": "examples/simple-numbers.py",
+      "parseType": "pre"
+    },
+    {
+      "name": "examples/simple-statements-without-trailing-newline.py",
+      "parseType": "pre"
+    },
+    {
+      "name": "examples/tabs.py",
+      "parseType": "pre"
+    },
+    {
+      "name": "examples/trailing-whitespace.py",
+      "parseType": "pre"
+    },
+    {
+      "name": "grammar.js",
+      "parseType": "pre"
+    },
+    {
+      "name": "queries/highlights.scm",
+      "parseType": "pre"
+    },
+    {
+      "name": "test/corpus/expressions.txt",
+      "parseType": "pre"
+    },
+    {
+      "name": "test/corpus/literals.txt",
+      "parseType": "pre"
+    },
+    {
+      "name": "test/corpus/statements.txt",
+      "parseType": "pre"
+    },
+    {
+      "name": "test/highlight/keywords.py",
+      "parseType": "special"
+    },
+    {
+      "name": "src/parser.c",
+      "parseType": "post"
+    },
+    {
+      "name": "src/grammar.json",
+      "parseType": "post"
+    },
+    {
+      "name": "src/node-types.json",
+      "parseType": "post"
+    }
+  ]
+}
