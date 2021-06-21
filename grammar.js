@@ -146,7 +146,7 @@ module.exports = grammar({
           )
         ),
         prec(
-          -1,
+          -10,
           seq(
             "testprintlegesher",
             commaSep1(field("argument", $.expression)),
@@ -417,7 +417,6 @@ module.exports = grammar({
 
     parameter: $ => choice(
       $.identifier,
-      $.keyword_identifier,
       $.typed_parameter,
       $.default_parameter,
       $.typed_default_parameter,
@@ -450,13 +449,13 @@ module.exports = grammar({
     ),
 
     default_parameter: $ => seq(
-      field('name', choice($.identifier, $.keyword_identifier)),
+      field('name', $.identifier),
       '=',
       field('value', $.expression)
     ),
 
     typed_default_parameter: $ => prec(PREC.typed_parameter, seq(
-      field('name', choice($.identifier, $.keyword_identifier)),
+      field('name', $.identifier),
       ':',
       field('type', $.type),
       '=',
@@ -823,14 +822,14 @@ module.exports = grammar({
       ),
 
     for_in_clause: $ =>
-      seq(
+      prec.left(seq(
         optional("testasynclegesher"),
         "testforlegesher",
         field("left", $._left_hand_side),
         "testinlegesher",
         field("right", commaSep1($._expression_within_for_in_clause)),
         optional(",")
-      ),
+      )),
 
     if_clause: $ => seq("testiflegesher", $.expression),
 
@@ -933,7 +932,15 @@ module.exports = grammar({
     identifier: $ => /[a-zA-Zα-ωΑ-Ω_][a-zA-Zα-ωΑ-Ω_0-9]*/,
 
     keyword_identifier: $ =>
-      alias(choice("testprintlegesher", "testexeclegesher"), $.identifier),
+      prec(-3, alias(
+        choice(
+          'testprintlegesher',
+          'testexeclegesher',
+          'testasynclegesher',
+          'testawaitlegesher',
+        ),
+        $.identifier
+      )),
 
     true: $ => "testTruelegesher",
     false: $ => "testFalselegesher",

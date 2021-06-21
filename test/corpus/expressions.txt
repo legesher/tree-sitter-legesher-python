@@ -232,6 +232,21 @@ testexeclegesher("""testexeclegesherexec _code_ testinlegesher _globs_, _locs_""
       (argument_list (string)))))
 
 =====================================
+Async / await used as identifiers
+=====================================
+
+testasynclegesher = 4
+testawaitlegesher = 5
+testprintlegesher testasynclegesher, testawaitlegesher
+
+---
+
+(module
+  (expression_statement (assignment (identifier) (integer)))
+  (expression_statement (assignment (identifier) (integer)))
+  (print_statement (identifier) (identifier)))
+
+=====================================
 Calls with splats
 =====================================
 
