@@ -737,9 +737,10 @@ testasynclegesher testwithlegesher a testaslegesher b:
 
 (module
   (with_statement
-    (with_item
-      value: (identifier)
-      alias: (identifier))
+    (with_clause
+       (with_item
+         value: (identifier)
+         alias: (identifier)))
     body: (block
       (for_statement
         left: (identifier)
