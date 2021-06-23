@@ -2982,82 +2982,86 @@
             "name": "primary_expression"
           },
           {
-            "type": "REPEAT1",
+            "type": "FIELD",
+            "name": "operators",
             "content": {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "CHOICE",
-                  "members": [
-                    {
-                      "type": "STRING",
-                      "value": "<"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "<="
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "=="
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "!="
-                    },
-                    {
-                      "type": "STRING",
-                      "value": ">="
-                    },
-                    {
-                      "type": "STRING",
-                      "value": ">"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "<>"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "testinlegesher"
-                    },
-                    {
-                      "type": "SEQ",
-                      "members": [
-                        {
-                          "type": "STRING",
-                          "value": "testnotlegesher"
-                        },
-                        {
-                          "type": "STRING",
-                          "value": "testinlegesher"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "testislegesher"
-                    },
-                    {
-                      "type": "SEQ",
-                      "members": [
-                        {
-                          "type": "STRING",
-                          "value": "testislegesher"
-                        },
-                        {
-                          "type": "STRING",
-                          "value": "testnotlegesher"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "primary_expression"
-                }
-              ]
+              "type": "REPEAT1",
+              "content": {
+                "type": "SEQ",
+                "members": [
+                  {
+                    "type": "CHOICE",
+                    "members": [
+                      {
+                        "type": "STRING",
+                        "value": "<"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "<="
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "=="
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "!="
+                      },
+                      {
+                        "type": "STRING",
+                        "value": ">="
+                      },
+                      {
+                        "type": "STRING",
+                        "value": ">"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "<>"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "testinlegesher"
+                      },
+                      {
+                        "type": "SEQ",
+                        "members": [
+                          {
+                            "type": "STRING",
+                            "value": "testnotlegesher"
+                          },
+                          {
+                            "type": "STRING",
+                            "value": "testinlegesher"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "testislegesher"
+                      },
+                      {
+                        "type": "SEQ",
+                        "members": [
+                          {
+                            "type": "STRING",
+                            "value": "testislegesher"
+                          },
+                          {
+                            "type": "STRING",
+                            "value": "testnotlegesher"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "SYMBOL",
+                    "name": "primary_expression"
+                  }
+                ]
+              }
             }
           }
         ]

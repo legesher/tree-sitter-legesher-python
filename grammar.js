@@ -590,23 +590,23 @@ module.exports = grammar({
         PREC.compare,
         seq(
           $.primary_expression,
-          repeat1(
-            seq(
+          field('operators',
+            repeat1(seq(
               choice(
-                "<",
-                "<=",
-                "==",
-                "!=",
-                ">=",
-                ">",
-                "<>",
-                "testinlegesher",
-                seq("testnotlegesher", "testinlegesher"),
-                "testislegesher",
-                seq("testislegesher", "testnotlegesher")
+                '<',
+                '<=',
+                '==',
+                '!=',
+                '>=',
+                '>',
+                '<>',
+                'testinlegesher',
+                seq('testnotlegesher', 'testinlegesher'),
+                'testislegesher',
+                seq('testislegesher', 'testnotlegesher')
               ),
               $.primary_expression
-            )
+            ))
           )
         )
       ),

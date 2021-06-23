@@ -808,9 +808,60 @@
   {
     "type": "comparison_operator",
     "named": true,
-    "fields": {},
+    "fields": {
+      "operators": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "!=",
+            "named": false
+          },
+          {
+            "type": "<",
+            "named": false
+          },
+          {
+            "type": "<=",
+            "named": false
+          },
+          {
+            "type": "<>",
+            "named": false
+          },
+          {
+            "type": "==",
+            "named": false
+          },
+          {
+            "type": ">",
+            "named": false
+          },
+          {
+            "type": ">=",
+            "named": false
+          },
+          {
+            "type": "primary_expression",
+            "named": true
+          },
+          {
+            "type": "testinlegesher",
+            "named": false
+          },
+          {
+            "type": "testislegesher",
+            "named": false
+          },
+          {
+            "type": "testnotlegesher",
+            "named": false
+          }
+        ]
+      }
+    },
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
