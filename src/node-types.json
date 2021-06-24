@@ -842,10 +842,6 @@
             "named": false
           },
           {
-            "type": "primary_expression",
-            "named": true
-          },
-          {
             "type": "testinlegesher",
             "named": false
           },
@@ -861,7 +857,7 @@
       }
     },
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
         {
