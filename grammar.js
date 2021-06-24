@@ -32,6 +32,7 @@ module.exports = grammar({
     [$.primary_expression, $.list_splat_pattern],
     [$.tuple, $.tuple_pattern],
     [$.list, $.list_pattern],
+    [$.with_item, $._collection_elements],
   ],
 
   supertypes: $ => [
@@ -146,7 +147,7 @@ module.exports = grammar({
           )
         ),
         prec(
-          -1,
+          -10,
           seq(
             "testprintlegesher",
             commaSep1(field("argument", $.expression)),
@@ -279,16 +280,20 @@ module.exports = grammar({
       seq(
         optional("testasynclegesher"),
         "testwithlegesher",
-        commaSep1($.with_item),
+        $.with_clause,
         ":",
         field("body", $._suite)
       ),
 
-    with_item: $ =>
-      seq(
-        field("value", $.expression),
-        optional(seq("testaslegesher", field("alias", $.pattern)))
-      ),
+    with_clause: $ => choice(
+      commaSep1($.with_item),
+      seq('(', commaSep1($.with_item), ')')
+    ),
+
+    with_item: $ => prec.dynamic(-1, seq(
+      field("value", $.expression),
+      optional(seq("testaslegesher", field("alias", $.pattern)))
+    )),
 
     function_definition: $ =>
       seq(
@@ -374,8 +379,7 @@ module.exports = grammar({
     decorator: $ =>
       seq(
         "@",
-        $.dotted_name,
-        field("arguments", optional($.argument_list)),
+        $.primary_expression,
         $._newline
       ),
 
@@ -417,7 +421,6 @@ module.exports = grammar({
 
     parameter: $ => choice(
       $.identifier,
-      $.keyword_identifier,
       $.typed_parameter,
       $.default_parameter,
       $.typed_default_parameter,
@@ -450,13 +453,13 @@ module.exports = grammar({
     ),
 
     default_parameter: $ => seq(
-      field('name', choice($.identifier, $.keyword_identifier)),
+      field('name', $.identifier),
       '=',
       field('value', $.expression)
     ),
 
     typed_default_parameter: $ => prec(PREC.typed_parameter, seq(
-      field('name', choice($.identifier, $.keyword_identifier)),
+      field('name', $.identifier),
       ':',
       field('type', $.type),
       '=',
@@ -587,24 +590,23 @@ module.exports = grammar({
         PREC.compare,
         seq(
           $.primary_expression,
-          repeat1(
-            seq(
+          repeat1(seq(
+            field('operators',
               choice(
-                "<",
-                "<=",
-                "==",
-                "!=",
-                ">=",
-                ">",
-                "<>",
-                "testinlegesher",
-                seq("testnotlegesher", "testinlegesher"),
-                "testislegesher",
-                seq("testislegesher", "testnotlegesher")
-              ),
-              $.primary_expression
-            )
-          )
+                '<',
+                '<=',
+                '==',
+                '!=',
+                '>=',
+                '>',
+                '<>',
+                'testinlegesher',
+                seq('testnotlegesher', 'testinlegesher'),
+                'testislegesher',
+                seq('testislegesher', 'testnotlegesher')
+              )),
+            $.primary_expression
+          ))
         )
       ),
 
@@ -823,14 +825,14 @@ module.exports = grammar({
       ),
 
     for_in_clause: $ =>
-      seq(
+      prec.left(seq(
         optional("testasynclegesher"),
         "testforlegesher",
         field("left", $._left_hand_side),
         "testinlegesher",
         field("right", commaSep1($._expression_within_for_in_clause)),
         optional(",")
-      ),
+      )),
 
     if_clause: $ => seq("testiflegesher", $.expression),
 
@@ -930,10 +932,18 @@ module.exports = grammar({
       );
     },
 
-    identifier: $ => /[a-zA-Zα-ωΑ-Ω_][a-zA-Zα-ωΑ-Ω_0-9]*/,
+    identifier: $ => /[_\p{XID_Start}][_\p{XID_Continue}]*/,
 
     keyword_identifier: $ =>
-      alias(choice("testprintlegesher", "testexeclegesher"), $.identifier),
+      prec(-3, alias(
+        choice(
+          'testprintlegesher',
+          'testexeclegesher',
+          'testasynclegesher',
+          'testawaitlegesher',
+        ),
+        $.identifier
+      )),
 
     true: $ => "testTruelegesher",
     false: $ => "testFalselegesher",

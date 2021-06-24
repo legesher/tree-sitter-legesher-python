@@ -808,7 +808,54 @@
   {
     "type": "comparison_operator",
     "named": true,
-    "fields": {},
+    "fields": {
+      "operators": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "!=",
+            "named": false
+          },
+          {
+            "type": "<",
+            "named": false
+          },
+          {
+            "type": "<=",
+            "named": false
+          },
+          {
+            "type": "<>",
+            "named": false
+          },
+          {
+            "type": "==",
+            "named": false
+          },
+          {
+            "type": ">",
+            "named": false
+          },
+          {
+            "type": ">=",
+            "named": false
+          },
+          {
+            "type": "testinlegesher",
+            "named": false
+          },
+          {
+            "type": "testislegesher",
+            "named": false
+          },
+          {
+            "type": "testnotlegesher",
+            "named": false
+          }
+        ]
+      }
+    },
     "children": {
       "multiple": true,
       "required": true,
@@ -888,24 +935,13 @@
   {
     "type": "decorator",
     "named": true,
-    "fields": {
-      "arguments": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "argument_list",
-            "named": true
-          }
-        ]
-      }
-    },
+    "fields": {},
     "children": {
       "multiple": false,
       "required": true,
       "types": [
         {
-          "type": "dotted_name",
+          "type": "primary_expression",
           "named": true
         }
       ]
@@ -2390,6 +2426,21 @@
     "fields": {}
   },
   {
+    "type": "with_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "with_item",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "with_item",
     "named": true,
     "fields": {
@@ -2431,11 +2482,11 @@
       }
     },
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
-          "type": "with_item",
+          "type": "with_clause",
           "named": true
         }
       ]
