@@ -250,7 +250,10 @@ struct Scanner {
         indent_length = 0;
       } else if (lexer->lookahead == '\\') {
         skip(lexer);
-        if (iswspace(lexer->lookahead)) {
+        if (lexer->lookahead == '\r') {
+          skip(lexer);
+        }
+        if (lexer->lookahead == '\n') {
           skip(lexer);
         } else {
           return false;

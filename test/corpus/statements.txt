@@ -954,3 +954,24 @@ testiflegesher a:
     (function_definition (identifier) (parameters) (block
       (expression_statement (call (identifier) (argument_list)))))
     (expression_statement (call (identifier) (argument_list))))))
+
+================================================================================
+Escaped newline
+================================================================================
+
+len("a") \
+testorlegesher len("aa")
+
+--------------------------------------------------------------------------------
+
+(module
+  (expression_statement
+    (boolean_operator
+      (call
+        (identifier)
+        (argument_list
+          (string)))
+      (call
+        (identifier)
+        (argument_list
+          (string))))))
