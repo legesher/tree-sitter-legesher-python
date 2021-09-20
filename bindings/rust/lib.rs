@@ -30,14 +30,14 @@
 use tree_sitter::Language;
 
 extern "C" {
-    fn tree_sitter_python() -> Language;
+    fn tree_sitter_python_legesher() -> Language;
 }
 
 /// Returns the tree-sitter [Language][] for this grammar.
 ///
 /// [Language]: https://docs.rs/tree-sitter/*/tree_sitter/struct.Language.html
 pub fn language() -> Language {
-    unsafe { tree_sitter_python() }
+    unsafe { tree_sitter_python_legesher() }
 }
 
 /// The source of the Python tree-sitter grammar description.
