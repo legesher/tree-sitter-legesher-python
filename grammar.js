@@ -856,6 +856,7 @@ module.exports = grammar({
         repeat(
           choice(
             $.interpolation,
+            $._escape_interpolation,
             $.escape_sequence,
             $._not_escape_sequence,
             $._string_content
@@ -872,6 +873,8 @@ module.exports = grammar({
         optional($.format_specifier),
         "}"
       ),
+
+    _escape_interpolation: $ => choice('{{', '}}'),
 
     escape_sequence: $ =>
       token(

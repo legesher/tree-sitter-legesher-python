@@ -3,7 +3,7 @@
   "version": "0.19.3",
   "details": {
     "tree-sitter-python-version": "0.19.0",
-    "latest-commit": "9b84b7fd9da1aa74c8a8afae58b7dcc4c109cda4"
+    "latest-commit": "60023625a136a340fa52542261e225e814e268fd"
   },
   "description": "Legesher's python grammar for tree-sitter",
   "main": "bindings/node",
@@ -37,6 +37,7 @@
     "build": "tree-sitter generate && node-gyp build",
     "test": "tree-sitter test && script/parse-examples",
     "test-windows": "tree-sitter test",
+    "parse": "tree-sitter parse",
     "semantic-release": "semantic-release"
   },
   "repository": "https://github.com/legesher/tree-sitter-legesher-python",
