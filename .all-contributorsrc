@@ -126,6 +126,33 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "kevintham",
+      "name": "Kevin Tham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4452117?v=4",
+      "profile": "https://github.com/kevintham",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "rishav-gh",
+      "name": "rishav-gh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/104017110?v=4",
+      "profile": "https://github.com/rishav-gh",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "andikaMaulana",
+      "name": "Andika Maulana",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31788726?v=4",
+      "profile": "https://github.com/andikaMaulana",
+      "contributions": [
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7
