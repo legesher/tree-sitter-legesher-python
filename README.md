@@ -1,7 +1,7 @@
 > [!NOTE]
 > **This repository is part of the Legesher ecosystem.** A major update consolidating and improving this functionality is in active development and will be released as open source in 2026.
 >
-> The current development work is happening in **[Legesher/legesher → `libs/core/`](https://github.com/Legesher/legesher/tree/main/libs/core)**. Follow progress at **[legesher.io](https://legesher.io)** or join the community on Discord.
+> The current development work is happening in **[Legesher/legesher → `libs/core/`](https://github.com/Legesher/legesher/tree/main/libs/core)**. Follow progress at **[legesher.io](https://legesher.io)** or join the community on **[Slack](https://legesher.io/go/slack)**.
 >
 > This repo's current state is pinned as the legacy release for reference. See the legacy release and the All Contributors table for full contributor credits.
 
