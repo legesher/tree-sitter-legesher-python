@@ -1,3 +1,12 @@
+> [!NOTE]
+> **This repository is part of the Legesher ecosystem.** A major update consolidating and improving this functionality is in active development and will be released as open source in 2026.
+>
+> The current development work is happening in **[Legesher/legesher → `libs/core/`](https://github.com/Legesher/legesher/tree/main/libs/core)**. Follow progress at **[legesher.io](https://legesher.io)** or join the community on Discord.
+>
+> This repo's current state is pinned as the legacy release for reference. See the legacy release and the All Contributors table for full contributor credits.
+
+---
+
 <img src="/lib/images/README-EggPeggy.png" align="center"/>
 
 <h1 align="center">Legesher's Tree-Sitter-Python</h1>
@@ -22,7 +31,7 @@
     <!-- <a href="https://github.com/legesher/tree-sitter-legesher-python/graphs/contributors" alt="Contributors">
         <img src="https://img.shields.io/github/contributors/legesher/tree-sitter-legesher-python?style=flat-square&color=f58977&labelColor=black" /></a> -->
     <a href="#the-community" alt="All Contributors">
-        <img src="https://img.shields.io/badge/all_contributors-12-black?style=flat-square&color=f58977&labelColor=black" /></a>
+        <img src="https://img.shields.io/badge/all_contributors-15-black?style=flat-square&color=f58977&labelColor=black" /></a>
     <a href="https://instagram.com/withmadico" alt="Sponsors on Github">
         <img src="https://img.shields.io/badge/sponsor-@withmadico-black?style=flat-square&color=f58977&labelColor=black" /></a>
 
@@ -186,6 +195,11 @@ Meet our [community](https://github.com/legesher/legesher/tree/master/community)
     <td align="center"><a href="https://blenderbell.artstation.com/"><img src="https://avatars3.githubusercontent.com/u/32410407?v=4?s=100" width="100px;" alt=""/><br /><sub><b>calra123</b></sub></a><br /><a href="https://github.com/legesher/tree-sitter-legesher-python/commits?author=calra123" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/AjaiDubey"><img src="https://avatars3.githubusercontent.com/u/44136561?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ajai Dubey</b></sub></a><br /><a href="#ideas-AjaiDubey" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/alxnull"><img src="https://avatars1.githubusercontent.com/u/26907770?v=4?s=100" width="100px;" alt=""/><br /><sub><b>alxnull</b></sub></a><br /><a href="#maintenance-alxnull" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/kevintham"><img src="https://avatars.githubusercontent.com/u/4452117?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kevin Tham</b></sub></a><br /><a href="https://github.com/legesher/tree-sitter-legesher-python/commits?author=kevintham" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/rishav-gh"><img src="https://avatars.githubusercontent.com/u/104017110?v=4?s=100" width="100px;" alt=""/><br /><sub><b>rishav-gh</b></sub></a><br /><a href="#ideas-rishav-gh" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/andikaMaulana"><img src="https://avatars.githubusercontent.com/u/31788726?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andika Maulana</b></sub></a><br /><a href="#ideas-andikaMaulana" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
